@@ -12,3 +12,4 @@ C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\DataAccess\obj\Debug
 C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\DataAccess\obj\Debug\net6.0\DataAccess.pdb
 C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache
 C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\DataAccess\obj\Debug\net6.0\DataAccess.sourcelink.json

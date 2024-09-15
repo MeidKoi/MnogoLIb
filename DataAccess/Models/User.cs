@@ -39,25 +39,25 @@ namespace DataAccess.Models
         public int? DeletedBy { get; set; }
         public DateTime? DeletedTime { get; set; }
 
-        public virtual Role IdRoleNavigation { get; set; } = null!;
-        public virtual ICollection<Chat> ChatDeletedByNavigations { get; set; }
-        public virtual ICollection<Chat> ChatIdOwnerNavigations { get; set; }
-        public virtual ICollection<Chat> ChatLastUpdateByNavigations { get; set; }
-        public virtual ICollection<ChatUser> ChatUserCreatedByNavigations { get; set; }
-        public virtual ICollection<ChatUser> ChatUserDeletedByNavigations { get; set; }
-        public virtual ICollection<ChatUser> ChatUserIdUserNavigations { get; set; }
-        public virtual ICollection<CommentRate> CommentRates { get; set; }
-        public virtual ICollection<Comment> Comments { get; set; }
-        public virtual ICollection<File> FileCreatedByNavigations { get; set; }
-        public virtual ICollection<File> FileDeletedByNavigations { get; set; }
-        public virtual ICollection<File> FileLastUpdateByNavigations { get; set; }
-        public virtual ICollection<Material> MaterialCreatedByNavigations { get; set; }
-        public virtual ICollection<Material> MaterialDeletedByNavigations { get; set; }
-        public virtual ICollection<Material> MaterialLastUpdateByNavigations { get; set; }
-        public virtual ICollection<MaterialsUserStatus> MaterialsUserStatuses { get; set; }
-        public virtual ICollection<MessagesUser> MessagesUserDeletedByNavigations { get; set; }
-        public virtual ICollection<MessagesUser> MessagesUserIdUserNavigations { get; set; }
-        public virtual ICollection<PaymentUser> PaymentUsers { get; set; }
-        public virtual ICollection<Rate> Rates { get; set; }
+        public virtual Role? IdRoleNavigation { get; set; } = null!;
+        public virtual ICollection<Chat>? ChatDeletedByNavigations { get; set; }
+        public virtual ICollection<Chat>? ChatIdOwnerNavigations { get; set; }
+        public virtual ICollection<Chat>? ChatLastUpdateByNavigations { get; set; }
+        public virtual ICollection<ChatUser>? ChatUserCreatedByNavigations { get; set; }
+        public virtual ICollection<ChatUser>? ChatUserDeletedByNavigations { get; set; }
+        public virtual ICollection<ChatUser>? ChatUserIdUserNavigations { get; set; }
+        public virtual ICollection<CommentRate>? CommentRates { get; set; }
+        public virtual ICollection<Comment>? Comments { get; set; }
+        public virtual ICollection<File>? FileCreatedByNavigations { get; set; }
+        public virtual ICollection<File>? FileDeletedByNavigations { get; set; }
+        public virtual ICollection<File>? FileLastUpdateByNavigations { get; set; }
+        public virtual ICollection<Material>? MaterialCreatedByNavigations { get; set; }
+        public virtual ICollection<Material>? MaterialDeletedByNavigations { get; set; }
+        public virtual ICollection<Material>? MaterialLastUpdateByNavigations { get; set; }
+        public virtual ICollection<MaterialsUserStatus>? MaterialsUserStatuses { get; set; }
+        public virtual ICollection<MessagesUser>? MessagesUserDeletedByNavigations { get; set; }
+        public virtual ICollection<MessagesUser>? MessagesUserIdUserNavigations { get; set; }
+        public virtual ICollection<PaymentUser>? PaymentUsers { get; set; }
+        public virtual ICollection<Rate>? Rates { get; set; }
     }
 }

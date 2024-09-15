@@ -9,3 +9,8 @@ C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\BusinessLogic\obj\De
 C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\BusinessLogic\obj\Debug\net6.0\refint\BusinessLogic.dll
 C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\BusinessLogic\obj\Debug\net6.0\BusinessLogic.pdb
 C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\BusinessLogic\obj\Debug\net6.0\ref\BusinessLogic.dll
+C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\BusinessLogic\bin\Debug\net6.0\DataAccess.dll
+C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\BusinessLogic\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\BusinessLogic\obj\Debug\net6.0\BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\BusinessLogic\obj\Debug\net6.0\BusinessLogic.sourcelink.json
+C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\BusinessLogic\obj\Debug\net6.0\Business.CF5D6E35.Up2Date
