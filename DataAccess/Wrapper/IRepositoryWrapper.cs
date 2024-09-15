@@ -14,6 +14,12 @@ namespace DataAccess.Wrapper
         IAuthorRepository Author { get; }
         IAuthorStatusRepository AuthorStatus { get; }
         ICategoryRepository Category { get; }
+        IChatRepository Chat { get; }
+        IChatUserRepository ChatUser { get; }
+        ICommentRepository Comment { get; }
+        ICommentRateRepository CommentRate { get; }
+        IFileRepository File { get; }
+        IGroupMaterialRepository GroupMaterial { get; }
         void Save();
     }
 }

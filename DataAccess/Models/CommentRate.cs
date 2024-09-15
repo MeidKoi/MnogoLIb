@@ -12,7 +12,7 @@ namespace DataAccess.Models
         public DateTime LastUpdateTime { get; set; }
         public DateTime? DeletedTime { get; set; }
 
-        public virtual Comment IdCommentNavigation { get; set; } = null!;
-        public virtual User IdUserNavigation { get; set; } = null!;
+        public virtual Comment? IdCommentNavigation { get; set; } = null!;
+        public virtual User? IdUserNavigation { get; set; } = null!;
     }
 }

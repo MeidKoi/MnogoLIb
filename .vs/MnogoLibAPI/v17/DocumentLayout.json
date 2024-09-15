@@ -7,28 +7,28 @@
       "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\groupmaterialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\groupmaterialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\materalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\materalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\groupmaterialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\groupmaterialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\materialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\materialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\interfaces\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\interfaces\\igroupmaterialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\igroupmaterialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\interfaces\\iauthorstatusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\iauthorstatusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\interfaces\\imaterialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\imaterialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\wrapper\\repositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,12 +39,176 @@
       "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\wrapper\\irepositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\repositories\\groupmaterialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repositories\\groupmaterialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\repositories\\materialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repositories\\materialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\interfaces\\igroupmaterialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\interfaces\\igroupmaterialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\interfaces\\imaterialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\interfaces\\imaterialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\interfaces\\ifilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\interfaces\\ifilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\interfaces\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\interfaces\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\repositories\\filerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repositories\\filerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\interfaces\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\interfaces\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\repositories\\commentraterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repositories\\commentraterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\interfaces\\icommentraterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\interfaces\\icommentraterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\commentrateservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\commentrateservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\interfaces\\icommentrateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\icommentrateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\models\\commentrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\models\\commentrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\chatusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\chatusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\commentratecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\commentratecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\chatuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\chatuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\interfaces\\iauthorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\iauthorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\interfaces\\ichatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\ichatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\repositories\\chatuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repositories\\chatuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\interfaces\\ichatuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\interfaces\\ichatuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\interfaces\\ichatuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\ichatuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\models\\chatuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\models\\chatuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\repositories\\chatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repositories\\chatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\interfaces\\ichatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\interfaces\\ichatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\authorstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\authorstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\interfaces\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\repositories\\authorstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repositories\\authorstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\repositories\\authorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repositories\\authorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\interfaces\\iauthorstatusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\iauthorstatusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,10 +219,6 @@
       "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\authorstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\authorstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\authorstatusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\authorstatusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -67,28 +227,12 @@
       "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\repositories\\authorstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repositories\\authorstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\interfaces\\iauthorstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\interfaces\\iauthorstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\interfaces\\iauthorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\iauthorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\repositories\\materialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repositories\\materialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -97,18 +241,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\interfaces\\iauthorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\interfaces\\iauthorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\interfaces\\imaterialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\interfaces\\imaterialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\materalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\materalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\interfaces\\imaterialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\imaterialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\models\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -174,158 +306,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ICategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\ICategoryService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\ICategoryService.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\ICategoryService.cs",
-              "RelativeToolTip": "BusinessLogic\\Interfaces\\ICategoryService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAlAAAA",
+              "DocumentIndex": 3,
+              "Title": "GroupMaterialService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\GroupMaterialService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\GroupMaterialService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\GroupMaterialService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\GroupMaterialService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T12:50:38.739Z",
+              "WhenOpened": "2024-09-15T14:33:49.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IGroupMaterialService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\IGroupMaterialService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\IGroupMaterialService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\IGroupMaterialService.cs",
+              "RelativeToolTip": "BusinessLogic\\Interfaces\\IGroupMaterialService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T14:33:05.676Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\CategoryRepository.cs",
-              "RelativeDocumentMoniker": "DataAccess\\Repositories\\CategoryRepository.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\CategoryRepository.cs",
-              "RelativeToolTip": "DataAccess\\Repositories\\CategoryRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABSAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T12:48:19.162Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IAuthorStatusService.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\IAuthorStatusService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\IAuthorStatusService.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\IAuthorStatusService.cs",
-              "RelativeToolTip": "BusinessLogic\\Interfaces\\IAuthorStatusService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T12:40:50.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AuthorRepository.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\AuthorRepository.cs",
-              "RelativeDocumentMoniker": "DataAccess\\Repositories\\AuthorRepository.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\AuthorRepository.cs",
-              "RelativeToolTip": "DataAccess\\Repositories\\AuthorRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T12:17:50.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MaterialService.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\MaterialService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\MaterialService.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\MaterialService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\MaterialService.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAAADMAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T11:46:51.023Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthorController.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\AuthorController.cs",
-              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\AuthorController.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\AuthorController.cs",
-              "RelativeToolTip": "MnogoLibAPI\\Controllers\\AuthorController.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAwwDEAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T12:25:26.848Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Program.cs",
-              "RelativeDocumentMoniker": "MnogoLibAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Program.cs",
-              "RelativeToolTip": "MnogoLibAPI\\Program.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAIAywBkAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T09:09:31.93Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\CategoryService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\CategoryService.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\CategoryService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\CategoryService.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAqwAsAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T12:51:31.026Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "MnogoLibAPI\\Controllers\\CategoryController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAA6wCQAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T12:53:38.827Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ICategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\ICategoryRepository.cs",
-              "RelativeDocumentMoniker": "DataAccess\\Interfaces\\ICategoryRepository.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\ICategoryRepository.cs",
-              "RelativeToolTip": "DataAccess\\Interfaces\\ICategoryRepository.cs",
+              "Title": "GroupMaterialRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\GroupMaterialRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repositories\\GroupMaterialRepository.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\GroupMaterialRepository.cs",
+              "RelativeToolTip": "DataAccess\\Repositories\\GroupMaterialRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T12:47:28.613Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IAuthorStatusRepository.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IAuthorStatusRepository.cs",
-              "RelativeDocumentMoniker": "DataAccess\\Interfaces\\IAuthorStatusRepository.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IAuthorStatusRepository.cs",
-              "RelativeToolTip": "DataAccess\\Interfaces\\IAuthorStatusRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T12:37:31.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "AuthorStatusRepository.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\AuthorStatusRepository.cs",
-              "RelativeDocumentMoniker": "DataAccess\\Repositories\\AuthorStatusRepository.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\AuthorStatusRepository.cs",
-              "RelativeToolTip": "DataAccess\\Repositories\\AuthorStatusRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T12:38:16.481Z",
+              "WhenOpened": "2024-09-15T14:29:44.301Z",
               "EditorCaption": ""
             },
             {
@@ -336,7 +351,7 @@
               "RelativeDocumentMoniker": "DataAccess\\Wrapper\\IRepositoryWrapper.cs",
               "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Wrapper\\IRepositoryWrapper.cs",
               "RelativeToolTip": "DataAccess\\Wrapper\\IRepositoryWrapper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAArAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAYwBMAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T13:08:45.994Z",
               "EditorCaption": ""
@@ -349,157 +364,105 @@
               "RelativeDocumentMoniker": "DataAccess\\Wrapper\\RepositoryWrapper.cs",
               "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Wrapper\\RepositoryWrapper.cs",
               "RelativeToolTip": "DataAccess\\Wrapper\\RepositoryWrapper.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAmwEwAAAANAAAA",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAAAJ4AAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T13:09:10.539Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AuthorStatusService.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\AuthorStatusService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\AuthorStatusService.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\AuthorStatusService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\AuthorStatusService.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAIwC8AAAAiAAAA",
+              "DocumentIndex": 2,
+              "Title": "MateralController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\MateralController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\MateralController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\MateralController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\MateralController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAUwDEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T12:41:46.062Z",
+              "WhenOpened": "2024-09-15T11:50:00.127Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AuthorStatusController.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\AuthorStatusController.cs",
-              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\AuthorStatusController.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\AuthorStatusController.cs",
-              "RelativeToolTip": "MnogoLibAPI\\Controllers\\AuthorStatusController.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAwwCYAAAA6AAAA",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Program.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Program.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAhwBAAAABmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T12:44:03.944Z",
+              "WhenOpened": "2024-09-15T09:09:31.93Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "RepositoryBase.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\RepositoryBase.cs",
-              "RelativeDocumentMoniker": "DataAccess\\Repositories\\RepositoryBase.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\RepositoryBase.cs",
-              "RelativeToolTip": "DataAccess\\Repositories\\RepositoryBase.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAABSAAAA",
+              "DocumentIndex": 1,
+              "Title": "GroupMaterialController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\GroupMaterialController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\GroupMaterialController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\GroupMaterialController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\GroupMaterialController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T13:00:00.306Z",
+              "WhenOpened": "2024-09-15T14:35:52.397Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "MnogoLibAPI\\WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\WeatherForecast.cs",
-              "RelativeToolTip": "MnogoLibAPI\\WeatherForecast.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 11,
+              "Title": "IGroupMaterialRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IGroupMaterialRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Interfaces\\IGroupMaterialRepository.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IGroupMaterialRepository.cs",
+              "RelativeToolTip": "DataAccess\\Interfaces\\IGroupMaterialRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T12:45:43.888Z",
+              "WhenOpened": "2024-09-15T14:28:45.154Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "AuthorService.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\AuthorService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\AuthorService.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\AuthorService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\AuthorService.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAwwDoAAAAAAAAA",
+              "Title": "AuthorController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\AuthorController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\AuthorController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\AuthorController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\AuthorController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAUwDEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T12:23:15.327Z",
+              "WhenOpened": "2024-09-15T12:25:26.848Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "MaterialRepository.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\MaterialRepository.cs",
-              "RelativeDocumentMoniker": "DataAccess\\Repositories\\MaterialRepository.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\MaterialRepository.cs",
-              "RelativeToolTip": "DataAccess\\Repositories\\MaterialRepository.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "MaterialService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\MaterialService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\MaterialService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\MaterialService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\MaterialService.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAiwDQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T11:39:50.502Z",
+              "WhenOpened": "2024-09-15T11:46:51.023Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\IUserService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\IUserService.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\IUserService.cs",
-              "RelativeToolTip": "BusinessLogic\\Interfaces\\IUserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "DocumentIndex": 17,
+              "Title": "CommentService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\CommentService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\CommentService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\CommentService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\CommentService.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAiwDoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T09:01:23.341Z",
+              "WhenOpened": "2024-09-15T13:38:21.177Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "DataAccess\\Interfaces\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IUserRepository.cs",
-              "RelativeToolTip": "DataAccess\\Interfaces\\IUserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T08:54:55.085Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "IMaterialRepository.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IMaterialRepository.cs",
-              "RelativeDocumentMoniker": "DataAccess\\Interfaces\\IMaterialRepository.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IMaterialRepository.cs",
-              "RelativeToolTip": "DataAccess\\Interfaces\\IMaterialRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T11:37:36.174Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "IAuthorRepository.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IAuthorRepository.cs",
-              "RelativeDocumentMoniker": "DataAccess\\Interfaces\\IAuthorRepository.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IAuthorRepository.cs",
-              "RelativeToolTip": "DataAccess\\Interfaces\\IAuthorRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T12:11:02.118Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IAuthorService.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\IAuthorService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\IAuthorService.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\IAuthorService.cs",
-              "RelativeToolTip": "BusinessLogic\\Interfaces\\IAuthorService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T12:22:32.857Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 6,
               "Title": "IMaterialService.cs",
               "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\IMaterialService.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\IMaterialService.cs",
@@ -512,7 +475,608 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CommentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\CommentRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repositories\\CommentRepository.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\CommentRepository.cs",
+              "RelativeToolTip": "DataAccess\\Repositories\\CommentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:29:04.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MaterialRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\MaterialRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repositories\\MaterialRepository.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\MaterialRepository.cs",
+              "RelativeToolTip": "DataAccess\\Repositories\\MaterialRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T11:39:50.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FileRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\FileRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repositories\\FileRepository.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\FileRepository.cs",
+              "RelativeToolTip": "DataAccess\\Repositories\\FileRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T14:17:29.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IFileRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IFileRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Interfaces\\IFileRepository.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IFileRepository.cs",
+              "RelativeToolTip": "DataAccess\\Interfaces\\IFileRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T14:15:52.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IMaterialRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IMaterialRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Interfaces\\IMaterialRepository.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IMaterialRepository.cs",
+              "RelativeToolTip": "DataAccess\\Interfaces\\IMaterialRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T11:37:36.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IFileService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\IFileService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\IFileService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\IFileService.cs",
+              "RelativeToolTip": "BusinessLogic\\Interfaces\\IFileService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T14:21:11.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FileService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\FileService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\FileService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\FileService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\FileService.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAIwDIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T14:22:21.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FileController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\FileController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\FileController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\FileController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\FileController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAIwCQAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T14:25:22.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ICommentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\ICommentRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Interfaces\\ICommentRepository.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\ICommentRepository.cs",
+              "RelativeToolTip": "DataAccess\\Interfaces\\ICommentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:28:06.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CommentRateRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\CommentRateRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repositories\\CommentRateRepository.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\CommentRateRepository.cs",
+              "RelativeToolTip": "DataAccess\\Repositories\\CommentRateRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:58:08.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ICommentService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\ICommentService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\ICommentService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\ICommentService.cs",
+              "RelativeToolTip": "BusinessLogic\\Interfaces\\ICommentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:32:54.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ICommentRateRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\ICommentRateRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Interfaces\\ICommentRateRepository.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\ICommentRateRepository.cs",
+              "RelativeToolTip": "DataAccess\\Interfaces\\ICommentRateRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:57:21.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CommentRateServices.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\CommentRateServices.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\CommentRateServices.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\CommentRateServices.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\CommentRateServices.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T14:02:28.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CommentController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\CommentController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\CommentController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\CommentController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\CommentController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAgwCYAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:41:30.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ChatUserController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\ChatUserController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\ChatUserController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\ChatUserController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\ChatUserController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAUwDMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:20:02.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\ChatController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\ChatController.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAUwDIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:07:52.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ChatUserService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\ChatUserService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\ChatUserService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\ChatUserService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\ChatUserService.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAiwDoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:15:42.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 27,
+              "Title": "CommentRate.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Models\\CommentRate.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Models\\CommentRate.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Models\\CommentRate.cs",
+              "RelativeToolTip": "DataAccess\\Models\\CommentRate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T14:08:50.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ICommentRateService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\ICommentRateService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\ICommentRateService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\ICommentRateService.cs",
+              "RelativeToolTip": "BusinessLogic\\Interfaces\\ICommentRateService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T14:01:14.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CommentRateController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\CommentRateController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\CommentRateController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\CommentRateController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\CommentRateController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T14:05:26.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ChatService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\ChatService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\ChatService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\ChatService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\ChatService.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAiwDEAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:06:09.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ChatUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\ChatUserRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repositories\\ChatUserRepository.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\ChatUserRepository.cs",
+              "RelativeToolTip": "DataAccess\\Repositories\\ChatUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:12:16.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IAuthorService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\IAuthorService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\IAuthorService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\IAuthorService.cs",
+              "RelativeToolTip": "BusinessLogic\\Interfaces\\IAuthorService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T12:22:32.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Models\\Comment.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Models\\Comment.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Models\\Comment.cs",
+              "RelativeToolTip": "DataAccess\\Models\\Comment.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:27:49.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "BusinessLogic\\Interfaces\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T09:01:23.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IChatService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\IChatService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\IChatService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\IChatService.cs",
+              "RelativeToolTip": "BusinessLogic\\Interfaces\\IChatService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:05:39.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "IChatUserService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\IChatUserService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\IChatUserService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\IChatUserService.cs",
+              "RelativeToolTip": "BusinessLogic\\Interfaces\\IChatUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:15:05.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IChatUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IChatUserRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Interfaces\\IChatUserRepository.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IChatUserRepository.cs",
+              "RelativeToolTip": "DataAccess\\Interfaces\\IChatUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:11:29.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ChatUser.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Models\\ChatUser.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Models\\ChatUser.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Models\\ChatUser.cs",
+              "RelativeToolTip": "DataAccess\\Models\\ChatUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:25:28.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ChatRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\ChatRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repositories\\ChatRepository.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\ChatRepository.cs",
+              "RelativeToolTip": "DataAccess\\Repositories\\ChatRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:03:48.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repositories\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\CategoryRepository.cs",
+              "RelativeToolTip": "DataAccess\\Repositories\\CategoryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T12:48:19.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\CategoryService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\CategoryService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\CategoryService.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAiwDoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T12:51:31.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ICategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\ICategoryService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\ICategoryService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\ICategoryService.cs",
+              "RelativeToolTip": "BusinessLogic\\Interfaces\\ICategoryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T12:50:38.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "AuthorStatusRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\AuthorStatusRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repositories\\AuthorStatusRepository.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\AuthorStatusRepository.cs",
+              "RelativeToolTip": "DataAccess\\Repositories\\AuthorStatusRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T12:38:16.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "IChatRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IChatRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Interfaces\\IChatRepository.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IChatRepository.cs",
+              "RelativeToolTip": "DataAccess\\Interfaces\\IChatRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T13:02:50.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "AuthorStatusController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\AuthorStatusController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\AuthorStatusController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\AuthorStatusController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\AuthorStatusController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAUwDEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T12:44:03.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "AuthorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\AuthorRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repositories\\AuthorRepository.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\AuthorRepository.cs",
+              "RelativeToolTip": "DataAccess\\Repositories\\AuthorRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T12:17:50.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "IAuthorStatusService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\IAuthorStatusService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\IAuthorStatusService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Interfaces\\IAuthorStatusService.cs",
+              "RelativeToolTip": "BusinessLogic\\Interfaces\\IAuthorStatusService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T12:40:50.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAA6wCQAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T12:53:38.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Interfaces\\ICategoryRepository.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\ICategoryRepository.cs",
+              "RelativeToolTip": "DataAccess\\Interfaces\\ICategoryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T12:47:28.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "IAuthorStatusRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IAuthorStatusRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Interfaces\\IAuthorStatusRepository.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IAuthorStatusRepository.cs",
+              "RelativeToolTip": "DataAccess\\Interfaces\\IAuthorStatusRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T12:37:31.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "AuthorStatusService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\AuthorStatusService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\AuthorStatusService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\AuthorStatusService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\AuthorStatusService.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAIwC8AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T12:41:46.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "RepositoryBase.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\RepositoryBase.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repositories\\RepositoryBase.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\RepositoryBase.cs",
+              "RelativeToolTip": "DataAccess\\Repositories\\RepositoryBase.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T13:00:00.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\WeatherForecast.cs",
+              "RelativeToolTip": "MnogoLibAPI\\WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T12:45:43.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "AuthorService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\AuthorService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\AuthorService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\AuthorService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\AuthorService.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAwwDoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T12:23:15.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "DataAccess\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T08:54:55.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "IAuthorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IAuthorRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Interfaces\\IAuthorRepository.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IAuthorRepository.cs",
+              "RelativeToolTip": "DataAccess\\Interfaces\\IAuthorRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T12:11:02.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
               "Title": "Material.cs",
               "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Models\\Material.cs",
               "RelativeDocumentMoniker": "DataAccess\\Models\\Material.cs",
@@ -520,25 +1084,11 @@
               "RelativeToolTip": "DataAccess\\Models\\Material.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAcwCEAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T11:54:23.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T11:54:23.984Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "MateralController.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\MateralController.cs",
-              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\MateralController.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\MateralController.cs",
-              "RelativeToolTip": "MnogoLibAPI\\Controllers\\MateralController.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAwwCYAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T11:50:00.127Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 63,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Services\\UserService.cs",
@@ -546,12 +1096,11 @@
               "RelativeToolTip": "BusinessLogic\\Services\\UserService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T11:46:25.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T11:46:25.537Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 62,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\UserController.cs",
@@ -559,12 +1108,11 @@
               "RelativeToolTip": "MnogoLibAPI\\Controllers\\UserController.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAAAADEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T09:08:02.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T09:08:02.153Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 61,
               "Title": "MnogoLibContext.cs",
               "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Models\\MnogoLibContext.cs",
               "RelativeDocumentMoniker": "DataAccess\\Models\\MnogoLibContext.cs",
@@ -572,12 +1120,11 @@
               "RelativeToolTip": "DataAccess\\Models\\MnogoLibContext.cs",
               "ViewState": "AQIAAOUAAAAAAAAAAAAuwCcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T12:53:29.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T12:53:29.097Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 64,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Models\\User.cs",
               "RelativeDocumentMoniker": "DataAccess\\Models\\User.cs",
@@ -585,12 +1132,11 @@
               "RelativeToolTip": "DataAccess\\Models\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAswBwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T09:15:58.693Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T09:15:58.693Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 65,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "DataAccess\\Repositories\\UserRepository.cs",
@@ -598,12 +1144,11 @@
               "RelativeToolTip": "DataAccess\\Repositories\\UserRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T08:56:26.766Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T08:56:26.766Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 66,
               "Title": "IRepositoryBase.cs",
               "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Interfaces\\IRepositoryBase.cs",
               "RelativeDocumentMoniker": "DataAccess\\Interfaces\\IRepositoryBase.cs",
@@ -615,7 +1160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 67,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Class1.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Class1.cs",
@@ -627,7 +1172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 68,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\Domain\\Class1.cs",
               "RelativeDocumentMoniker": "Domain\\Class1.cs",
@@ -639,7 +1184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 69,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Class1.cs",
               "RelativeDocumentMoniker": "DataAccess\\Class1.cs",

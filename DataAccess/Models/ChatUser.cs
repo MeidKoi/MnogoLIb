@@ -12,9 +12,9 @@ namespace DataAccess.Models
         public int? DeletedBy { get; set; }
         public DateTime? DeletedTime { get; set; }
 
-        public virtual User CreatedByNavigation { get; set; } = null!;
+        public virtual User? CreatedByNavigation { get; set; } = null!;
         public virtual User? DeletedByNavigation { get; set; }
-        public virtual Chat IdChatNavigation { get; set; } = null!;
+        public virtual Chat? IdChatNavigation { get; set; } = null!;
         public virtual User IdUserNavigation { get; set; } = null!;
     }
 }

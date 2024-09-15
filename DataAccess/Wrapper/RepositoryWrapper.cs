@@ -83,6 +83,91 @@ namespace DataAccess.Wrapper
             }
         }
 
+        private IChatRepository _chat;
+
+        public IChatRepository Chat
+        {
+            get
+            {
+                if (_chat == null)
+                {
+                    _chat = new ChatRepository(_repoContext);
+                }
+                return _chat;
+            }
+        }
+
+        private IChatUserRepository _chatUser;
+
+        public IChatUserRepository ChatUser
+        {
+            get
+            {
+                if (_chatUser == null)
+                {
+                    _chatUser = new ChatUserRepository(_repoContext);
+                }
+                return _chatUser;
+            }
+        }
+
+        private ICommentRepository _comment;
+
+        public ICommentRepository Comment
+        {
+            get
+            {
+                if (_comment == null)
+                {
+                    _comment = new CommentRepository(_repoContext);
+                }
+                return _comment;
+            }
+        }
+
+
+        private ICommentRateRepository _commentRate;
+
+        public ICommentRateRepository CommentRate
+        {
+            get
+            {
+                if (_commentRate == null)
+                {
+                    _commentRate = new CommentRateRepository(_repoContext);
+                }
+                return _commentRate;
+            }
+        }
+
+        private IFileRepository _file;
+
+        public IFileRepository File
+        {
+            get
+            {
+                if (_file == null)
+                {
+                    _file = new FileRepository(_repoContext);
+                }
+                return _file;
+            }
+        }
+
+        private IGroupMaterialRepository _groupMaterial;
+
+        public IGroupMaterialRepository GroupMaterial
+        {
+            get
+            {
+                if (_groupMaterial == null)
+                {
+                    _groupMaterial = new GroupMaterialRepository(_repoContext);
+                }
+                return _groupMaterial;
+            }
+        }
+
         public RepositoryWrapper(MnogoLibContext repoContext)
         {
             _repoContext = repoContext;
