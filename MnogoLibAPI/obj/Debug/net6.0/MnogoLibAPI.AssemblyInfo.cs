@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MnogoLibAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33e90fa479c4b5a1a55bfecacc944c4e25f3f92f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68752b7bf79209808c91ec6381d584a57e5b38e7")]
 [assembly: System.Reflection.AssemblyProductAttribute("MnogoLibAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MnogoLibAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

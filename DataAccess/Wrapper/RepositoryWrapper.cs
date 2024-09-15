@@ -27,6 +27,61 @@ namespace DataAccess.Wrapper
             }
         }
 
+        private IMaterialRepository _material;
+
+        public IMaterialRepository Material
+        {
+            get
+            {
+                if (_material == null)
+                {
+                    _material = new MaterialRepository(_repoContext);
+                }
+                return _material;
+            }
+        }
+
+        private IAuthorRepository _author;
+
+        public IAuthorRepository Author
+        {
+            get
+            {
+                if (_author == null)
+                {
+                    _author = new AuthorRepository(_repoContext);
+                }
+                return _author;
+            }
+        }
+
+        private IAuthorStatusRepository _authorStatus;
+
+        public IAuthorStatusRepository AuthorStatus
+        {
+            get
+            {
+                if (_authorStatus == null)
+                {
+                    _authorStatus = new AuthorStatusRepository(_repoContext);
+                }
+                return _authorStatus;
+            }
+        }
+
+        private ICategoryRepository _category;
+
+        public ICategoryRepository Category
+        {
+            get
+            {
+                if (_category == null)
+                {
+                    _category = new CategoryRepository(_repoContext);
+                }
+                return _category;
+            }
+        }
 
         public RepositoryWrapper(MnogoLibContext repoContext)
         {

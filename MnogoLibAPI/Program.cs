@@ -18,6 +18,10 @@ namespace MnogoLibAPI
 
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             builder.Services.AddScoped<IUserService, UserService>();
+            builder.Services.AddScoped<IMaterialService, MaterialService>();
+            builder.Services.AddScoped<IAuthorService, AuthorService>();
+            builder.Services.AddScoped<IAuthorStatusService, AuthorStatusService>();
+            builder.Services.AddScoped<ICategoryService, CategoryService>();
 
             // Add services to the container.
 

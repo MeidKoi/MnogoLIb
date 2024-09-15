@@ -29,19 +29,19 @@ namespace DataAccess.Models
         public DateTime? DeletedTime { get; set; }
         public int FileIcon { get; set; }
 
-        public virtual User CreatedByNavigation { get; set; } = null!;
+        public virtual User? CreatedByNavigation { get; set; } = null!;
         public virtual User? DeletedByNavigation { get; set; }
-        public virtual File FileIconNavigation { get; set; } = null!;
-        public virtual Author IdAuthorNavigation { get; set; } = null!;
-        public virtual AuthorStatus IdAuthorStatusNavigation { get; set; } = null!;
-        public virtual Category IdCategoryNavigation { get; set; } = null!;
-        public virtual User LastUpdateByNavigation { get; set; } = null!;
-        public virtual ICollection<MaterialFile> MaterialFiles { get; set; }
-        public virtual ICollection<MaterialsUserStatus> MaterialsUserStatuses { get; set; }
-        public virtual ICollection<Rate> Rates { get; set; }
+        public virtual File? FileIconNavigation { get; set; } = null!;
+        public virtual Author? IdAuthorNavigation { get; set; } = null!;
+        public virtual AuthorStatus? IdAuthorStatusNavigation { get; set; } = null!;
+        public virtual Category? IdCategoryNavigation { get; set; } = null!;
+        public virtual User? LastUpdateByNavigation { get; set; } = null!;
+        public virtual ICollection<MaterialFile>? MaterialFiles { get; set; }
+        public virtual ICollection<MaterialsUserStatus>? MaterialsUserStatuses { get; set; }
+        public virtual ICollection<Rate>? Rates { get; set; }
 
-        public virtual ICollection<Comment> IdComments { get; set; }
-        public virtual ICollection<Genre> IdGenres { get; set; }
-        public virtual ICollection<GroupMaterial> IdGroups { get; set; }
+        public virtual ICollection<Comment>? IdComments { get; set; }
+        public virtual ICollection<Genre>? IdGenres { get; set; }
+        public virtual ICollection<GroupMaterial>? IdGroups { get; set; }
     }
 }
