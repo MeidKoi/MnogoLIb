@@ -20,6 +20,12 @@ namespace DataAccess.Wrapper
         ICommentRateRepository CommentRate { get; }
         IFileRepository File { get; }
         IGroupMaterialRepository GroupMaterial { get; }
+        IMaterialFileRepository MaterialFile { get; }
+        IMaterialsUserStatusRepository MaterialsUserStatus { get; }
+        IMessageUserRepository MessageUser { get; }
+        IPaymentRepository Payment { get;  }
+        IPaymentUserRepository PaymentUser { get; }
+        IRateRepository Rate { get; }
         void Save();
     }
 }

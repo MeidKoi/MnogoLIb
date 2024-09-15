@@ -28,6 +28,12 @@ namespace MnogoLibAPI
             builder.Services.AddScoped<ICommentRateService, CommentRateServices>();
             builder.Services.AddScoped<IFileService, FileService>();
             builder.Services.AddScoped<IGroupMaterialService, GroupMaterialService>();
+            builder.Services.AddScoped<IMaterialFileService, MaterialFileService>();
+            builder.Services.AddScoped<IMaterialsUserStatusService, MaterialsUserStatusService>();
+            builder.Services.AddScoped<IMessageUserService, MessageUserService>();
+            builder.Services.AddScoped<IPaymentService, PaymentService>();
+            builder.Services.AddScoped<IPaymentUserService, PaymentUserService>();
+            builder.Services.AddScoped<IRateService, RateService>();
 
             // Add services to the container.
 

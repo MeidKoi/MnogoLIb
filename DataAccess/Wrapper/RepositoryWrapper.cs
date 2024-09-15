@@ -168,6 +168,90 @@ namespace DataAccess.Wrapper
             }
         }
 
+        private IMaterialFileRepository _materialFile;
+
+        public IMaterialFileRepository MaterialFile
+        {
+            get
+            {
+                if (_materialFile == null)
+                {
+                    _materialFile = new MaterialFileRepository(_repoContext);
+                }
+                return _materialFile;
+            }
+        }
+
+        private IMaterialsUserStatusRepository _materialsUserStatus;
+
+        public IMaterialsUserStatusRepository MaterialsUserStatus
+        {
+            get
+            {
+                if (_materialsUserStatus == null)
+                {
+                    _materialsUserStatus = new MaterialsUserStatusRepository(_repoContext);
+                }
+                return _materialsUserStatus;
+            }
+        }
+
+        private IMessageUserRepository _messageUser;
+
+        public IMessageUserRepository MessageUser
+        {
+            get
+            {
+                if (_messageUser == null)
+                {
+                    _messageUser = new MessageUserRepository(_repoContext);
+                }
+                return _messageUser;
+            }
+        }
+
+        private IPaymentRepository _payment;
+
+        public IPaymentRepository Payment
+        {
+            get
+            {
+                if (_payment == null)
+                {
+                    _payment = new PaymentRepository(_repoContext);
+                }
+                return _payment;
+            }
+        }
+
+        private IPaymentUserRepository _paymentUser;
+
+        public IPaymentUserRepository PaymentUser
+        {
+            get
+            {
+                if (_paymentUser == null)
+                {
+                    _paymentUser = new PaymentUserRepository(_repoContext);
+                }
+                return _paymentUser;
+            }
+        }
+
+        private IRateRepository _rate;
+
+        public IRateRepository Rate
+        {
+            get
+            {
+                if (_rate == null)
+                {
+                    _rate = new RateRepository(_repoContext);
+                }
+                return _rate;
+            }
+        }
+
         public RepositoryWrapper(MnogoLibContext repoContext)
         {
             _repoContext = repoContext;
