@@ -1,7 +1,6 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
 using Domain.Wrapper;
-using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLogic.Services
 {
@@ -14,40 +13,37 @@ namespace BusinessLogic.Services
             _repositoryWrapper = repositoryWrapper;
         }
 
-        public Task<List<MessagesUser>> GetAll()
+        public async Task<List<MessagesUser>> GetAll()
         {
-            return _repositoryWrapper.MessageUser.FindAll().ToListAsync();
+            return await _repositoryWrapper.MessageUser.FindAll();
         }
 
-        public Task<MessagesUser> GetById(int id)
+        public async Task<MessagesUser> GetById(int id)
         {
-            var material = _repositoryWrapper.MessageUser
-                .FindByCondition(x => x.IdMessage == id).First();
-            return Task.FromResult(material);
+            var user = await _repositoryWrapper.MessageUser
+                .FindByCondition(x => x.IdMessage == id);
+            return user.First();
         }
 
-        public Task Create(MessagesUser model)
+        public async Task Create(MessagesUser model)
         {
             _repositoryWrapper.MessageUser.Create(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Update(MessagesUser model)
+        public async Task Update(MessagesUser model)
         {
             _repositoryWrapper.MessageUser.Update(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Delete(int id)
+        public async Task Delete(int id)
         {
-            var material = _repositoryWrapper.MessageUser
-                .FindByCondition(x => x.IdMessage == id).First();
+            var user = await _repositoryWrapper.MessageUser
+                .FindByCondition(x => x.IdMessage == id);
 
-            _repositoryWrapper.MessageUser.Delete(material);
+            _repositoryWrapper.MessageUser.Delete(user.First());
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
     }
 }

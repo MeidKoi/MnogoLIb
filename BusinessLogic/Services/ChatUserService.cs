@@ -1,12 +1,6 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
 using Domain.Wrapper;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BusinessLogic.Services
 {
@@ -19,40 +13,37 @@ namespace BusinessLogic.Services
             _repositoryWrapper = repositoryWrapper;
         }
 
-        public Task<List<ChatUser>> GetAll()
+        public async Task<List<ChatUser>> GetAll()
         {
-            return _repositoryWrapper.ChatUser.FindAll().ToListAsync();
+            return await _repositoryWrapper.ChatUser.FindAll();
         }
 
-        public Task<ChatUser> GetById(int idChat, int idUser)
+        public async Task<ChatUser> GetById(int idChat, int idUser)
         {
-            var chat = _repositoryWrapper.ChatUser
-                .FindByCondition(x => x.IdChat == idChat && x.IdUser == idUser).First();
-            return Task.FromResult(chat);
+            var user = await _repositoryWrapper.ChatUser
+                .FindByCondition(x => x.IdChat == idChat && x.IdUser == idUser);
+            return user.First();
         }
 
-        public Task Create(ChatUser model)
+        public async Task Create(ChatUser model)
         {
             _repositoryWrapper.ChatUser.Create(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Update(ChatUser model)
+        public async Task Update(ChatUser model)
         {
             _repositoryWrapper.ChatUser.Update(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Delete(int idChat, int idUser)
+        public async Task Delete(int idChat, int idUser)
         {
-            var chatUser = _repositoryWrapper.ChatUser
-                .FindByCondition(x => x.IdChat == idChat && x.IdUser == idUser).First();
+            var user = await _repositoryWrapper.ChatUser
+                .FindByCondition(x => x.IdChat == idChat && x.IdUser == idUser);
 
-            _repositoryWrapper.ChatUser.Delete(chatUser);
+            _repositoryWrapper.ChatUser.Delete(user.First());
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
     }
 }

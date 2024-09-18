@@ -1,7 +1,6 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
 using Domain.Wrapper;
-using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLogic.Services
 {
@@ -14,40 +13,37 @@ namespace BusinessLogic.Services
             _repositoryWrapper = repositoryWrapper;
         }
 
-        public Task<List<User>> GetAll()
+        public async Task<List<User>> GetAll()
         {
-            return _repositoryWrapper.User.FindAll().ToListAsync();
+            return await _repositoryWrapper.User.FindAll();
         }
 
-        public Task<User> GetById(int id)
+        public async Task<User> GetById(int id)
         {
-            var user = _repositoryWrapper.User
-                .FindByCondition(x => x.IdUser == id).First();
-            return Task.FromResult(user);
+            var user = await _repositoryWrapper.User
+                .FindByCondition(x => x.IdUser == id);
+            return user.First();
         }
 
-        public Task Create(User model)
+        public async Task Create(User model)
         {
             _repositoryWrapper.User.Create(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Update(User model)
+        public async Task Update(User model)
         {
             _repositoryWrapper.User.Update(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Delete(int id)
+        public async Task Delete(int id)
         {
-            var user = _repositoryWrapper.User
-                .FindByCondition(x => x.IdUser == id).First();
+            var user = await _repositoryWrapper.User
+                .FindByCondition(x => x.IdUser == id);
 
-            _repositoryWrapper.User.Delete(user);
+            _repositoryWrapper.User.Delete(user.First());
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
     }
 }

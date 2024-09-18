@@ -1,7 +1,6 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
 using Domain.Wrapper;
-using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLogic.Services
 {
@@ -14,40 +13,37 @@ namespace BusinessLogic.Services
             _repositoryWrapper = repositoryWrapper;
         }
 
-        public Task<List<Payment>> GetAll()
+        public async Task<List<Payment>> GetAll()
         {
-            return _repositoryWrapper.Payment.FindAll().ToListAsync();
+            return await _repositoryWrapper.Payment.FindAll();
         }
 
-        public Task<Payment> GetById(int id)
+        public async Task<Payment> GetById(int id)
         {
-            var material = _repositoryWrapper.Payment
-                .FindByCondition(x => x.IdPayment == id).First();
-            return Task.FromResult(material);
+            var user = await _repositoryWrapper.Payment
+                .FindByCondition(x => x.IdPayment == id);
+            return user.First();
         }
 
-        public Task Create(Payment model)
+        public async Task Create(Payment model)
         {
             _repositoryWrapper.Payment.Create(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Update(Payment model)
+        public async Task Update(Payment model)
         {
             _repositoryWrapper.Payment.Update(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Delete(int id)
+        public async Task Delete(int id)
         {
-            var material = _repositoryWrapper.Payment
-                .FindByCondition(x => x.IdPayment == id).First();
+            var user = await _repositoryWrapper.Payment
+                .FindByCondition(x => x.IdPayment == id);
 
-            _repositoryWrapper.Payment.Delete(material);
+            _repositoryWrapper.Payment.Delete(user.First());
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
     }
 }

@@ -1,7 +1,6 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
 using Domain.Wrapper;
-using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLogic.Services
 {
@@ -14,40 +13,37 @@ namespace BusinessLogic.Services
             _repositoryWrapper = repositoryWrapper;
         }
 
-        public Task<List<Material>> GetAll()
+        public async Task<List<Material>> GetAll()
         {
-            return _repositoryWrapper.Material.FindAll().ToListAsync();
+            return await _repositoryWrapper.Material.FindAll();
         }
 
-        public Task<Material> GetById(int id)
+        public async Task<Material> GetById(int id)
         {
-            var material = _repositoryWrapper.Material
-                .FindByCondition(x => x.IdMaterial == id).First();
-            return Task.FromResult(material);
+            var user = await _repositoryWrapper.Material
+                .FindByCondition(x => x.IdMaterial == id);
+            return user.First();
         }
 
-        public Task Create(Material model)
+        public async Task Create(Material model)
         {
             _repositoryWrapper.Material.Create(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Update(Material model)
+        public async Task Update(Material model)
         {
             _repositoryWrapper.Material.Update(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Delete(int id)
+        public async Task Delete(int id)
         {
-            var material = _repositoryWrapper.Material
-                .FindByCondition(x => x.IdMaterial == id).First();
+            var user = await _repositoryWrapper.Material
+                .FindByCondition(x => x.IdMaterial == id);
 
-            _repositoryWrapper.Material.Delete(material);
+            _repositoryWrapper.Material.Delete(user.First());
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
     }
 }

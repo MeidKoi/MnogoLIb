@@ -12,8 +12,6 @@ namespace Domain.Wrapper
         IUserRepository User { get; }
         IMaterialRepository Material { get; }
         IAuthorRepository Author { get; }
-        IAuthorStatusRepository AuthorStatus { get; }
-        ICategoryRepository Category { get; }
         IChatRepository Chat { get; }
         IChatUserRepository ChatUser { get; }
         ICommentRepository Comment { get; }
@@ -26,6 +24,6 @@ namespace Domain.Wrapper
         IPaymentRepository Payment { get;  }
         IPaymentUserRepository PaymentUser { get; }
         IRateRepository Rate { get; }
-        void Save();
+        Task Save();
     }
 }

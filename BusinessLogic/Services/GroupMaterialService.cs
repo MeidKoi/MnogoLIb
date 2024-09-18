@@ -1,7 +1,6 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
 using Domain.Wrapper;
-using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLogic.Services
 {
@@ -14,40 +13,37 @@ namespace BusinessLogic.Services
             _repositoryWrapper = repositoryWrapper;
         }
 
-        public Task<List<GroupMaterial>> GetAll()
+        public async Task<List<GroupMaterial>> GetAll()
         {
-            return _repositoryWrapper.GroupMaterial.FindAll().ToListAsync();
+            return await _repositoryWrapper.GroupMaterial.FindAll();
         }
 
-        public Task<GroupMaterial> GetById(int id)
+        public async Task<GroupMaterial> GetById(int id)
         {
-            var material = _repositoryWrapper.GroupMaterial
-                .FindByCondition(x => x.IdGroup == id).First();
-            return Task.FromResult(material);
+            var user = await _repositoryWrapper.GroupMaterial
+                .FindByCondition(x => x.IdGroup == id);
+            return user.First();
         }
 
-        public Task Create(GroupMaterial model)
+        public async Task Create(GroupMaterial model)
         {
             _repositoryWrapper.GroupMaterial.Create(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Update(GroupMaterial model)
+        public async Task Update(GroupMaterial model)
         {
             _repositoryWrapper.GroupMaterial.Update(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Delete(int id)
+        public async Task Delete(int id)
         {
-            var material = _repositoryWrapper.GroupMaterial
-                .FindByCondition(x => x.IdGroup == id).First();
+            var user = await _repositoryWrapper.GroupMaterial
+                .FindByCondition(x => x.IdGroup == id);
 
-            _repositoryWrapper.GroupMaterial.Delete(material);
+            _repositoryWrapper.GroupMaterial.Delete(user.First());
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
     }
 }

@@ -1,12 +1,6 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
 using Domain.Wrapper;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using File = Domain.Models.File;
 
 namespace BusinessLogic.Services
@@ -20,40 +14,37 @@ namespace BusinessLogic.Services
             _repositoryWrapper = repositoryWrapper;
         }
 
-        public Task<List<File>> GetAll()
+        public async Task<List<File>> GetAll()
         {
-            return _repositoryWrapper.File.FindAll().ToListAsync();
+            return await _repositoryWrapper.File.FindAll();
         }
 
-        public Task<File> GetById(int id)
+        public async Task<File> GetById(int id)
         {
-            var file = _repositoryWrapper.File
-                .FindByCondition(x => x.IdFile == id).First();
-            return Task.FromResult(file);
+            var user = await _repositoryWrapper.File
+                .FindByCondition(x => x.IdFile == id);
+            return user.First();
         }
 
-        public Task Create(File model)
+        public async Task Create(File model)
         {
             _repositoryWrapper.File.Create(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Update(File model)
+        public async Task Update(File model)
         {
             _repositoryWrapper.File.Update(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Delete(int id)
+        public async Task Delete(int id)
         {
-            var file = _repositoryWrapper.File
-                .FindByCondition(x => x.IdFile == id).First();
+            var user = await _repositoryWrapper.File
+                .FindByCondition(x => x.IdFile == id);
 
-            _repositoryWrapper.File.Delete(file);
+            _repositoryWrapper.File.Delete(user.First());
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
     }
 }

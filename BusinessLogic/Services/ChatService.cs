@@ -1,12 +1,6 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
 using Domain.Wrapper;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BusinessLogic.Services
 {
@@ -19,40 +13,37 @@ namespace BusinessLogic.Services
             _repositoryWrapper = repositoryWrapper;
         }
 
-        public Task<List<Chat>> GetAll()
+        public async Task<List<Chat>> GetAll()
         {
-            return _repositoryWrapper.Chat.FindAll().ToListAsync();
+            return await _repositoryWrapper.Chat.FindAll();
         }
 
-        public Task<Chat> GetById(int id)
+        public async Task<Chat> GetById(int id)
         {
-            var chat = _repositoryWrapper.Chat
-                .FindByCondition(x => x.IdChat == id).First();
-            return Task.FromResult(chat);
+            var user = await _repositoryWrapper.Chat
+                .FindByCondition(x => x.IdChat == id);
+            return user.First();
         }
 
-        public Task Create(Chat model)
+        public async Task Create(Chat model)
         {
             _repositoryWrapper.Chat.Create(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Update(Chat model)
+        public async Task Update(Chat model)
         {
             _repositoryWrapper.Chat.Update(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Delete(int id)
+        public async Task Delete(int id)
         {
-            var chat = _repositoryWrapper.Chat
-                .FindByCondition(x => x.IdChat == id).First();
+            var user = await _repositoryWrapper.Chat
+                .FindByCondition(x => x.IdChat == id);
 
-            _repositoryWrapper.Chat.Delete(chat);
+            _repositoryWrapper.Chat.Delete(user.First());
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
     }
 }

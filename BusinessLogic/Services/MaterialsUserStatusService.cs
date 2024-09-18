@@ -1,12 +1,6 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
 using Domain.Wrapper;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BusinessLogic.Services
 {
@@ -19,40 +13,40 @@ namespace BusinessLogic.Services
             _repositoryWrapper = repositoryWrapper;
         }
 
-        public Task<List<MaterialsUserStatus>> GetAll()
+        public async Task<List<MaterialsUserStatus>> GetAll()
         {
-            return _repositoryWrapper.MaterialsUserStatus.FindAll().ToListAsync();
+            return await _repositoryWrapper.MaterialsUserStatus.FindAll();
         }
 
-        public Task<MaterialsUserStatus> GetById(int idMaterial, int idUser, int idUserStatus)
+        public async Task<MaterialsUserStatus> GetById(int idMaterial, int idUserStatus, int idUser)
         {
-            var chat = _repositoryWrapper.MaterialsUserStatus
-                .FindByCondition(x => x.IdMaterial == idMaterial && x.IdUser == idUser && x.IdUserStatus == idUserStatus).First();
-            return Task.FromResult(chat);
+            var user = await _repositoryWrapper.MaterialsUserStatus
+                .FindByCondition(x => x.IdMaterial == idMaterial && x.IdUserStatus == idUserStatus && x.IdUser == idUser);
+            return user.First();
         }
 
-        public Task Create(MaterialsUserStatus model)
+        public async Task Create(MaterialsUserStatus model)
         {
             _repositoryWrapper.MaterialsUserStatus.Create(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Update(MaterialsUserStatus model)
+        public async Task Update(MaterialsUserStatus model)
         {
             _repositoryWrapper.MaterialsUserStatus.Update(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Delete(int idMaterial, int idUser, int idUserStatus)
+        public async Task Delete(int idMaterial, int idUserStatus, int idUser)
         {
-            var chatUser = _repositoryWrapper.MaterialsUserStatus
-                .FindByCondition(x => x.IdMaterial == idMaterial && x.IdUser == idUser && x.IdUserStatus == idUserStatus).First();
+            var user = await _repositoryWrapper.MaterialsUserStatus
+                .FindByCondition(x => x.IdMaterial == idMaterial && x.IdUserStatus == idUserStatus && x.IdUser == idUser);
 
-            _repositoryWrapper.MaterialsUserStatus.Delete(chatUser);
+            _repositoryWrapper.MaterialsUserStatus.Delete(user.First());
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
     }
 }
+
+//(int idMaterial, int idMaterialsUserStatus, int idMaterialsUserStatusStatus)
+//(x => x.IdMaterial == idMaterial && x.IdMaterialsUserStatus == idMaterialsUserStatus && x.IdMaterialsUserStatusStatus == idMaterialsUserStatusStatus).First();

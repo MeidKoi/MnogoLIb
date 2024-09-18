@@ -1,12 +1,6 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
 using Domain.Wrapper;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BusinessLogic.Services
 {
@@ -19,40 +13,37 @@ namespace BusinessLogic.Services
             _repositoryWrapper = repositoryWrapper;
         }
 
-        public Task<List<Author>> GetAll()
+        public async Task<List<Author>> GetAll()
         {
-            return _repositoryWrapper.Author.FindAll().ToListAsync();
+            return await _repositoryWrapper.Author.FindAll();
         }
 
-        public Task<Author> GetById(int id)
+        public async Task<Author> GetById(int id)
         {
-            var material = _repositoryWrapper.Author
-                .FindByCondition(x => x.IdAuthor == id).First();
-            return Task.FromResult(material);
+            var user = await _repositoryWrapper.Author
+                .FindByCondition(x => x.IdAuthor == id);
+            return user.First();
         }
 
-        public Task Create(Author model)
+        public async Task Create(Author model)
         {
             _repositoryWrapper.Author.Create(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Update(Author model)
+        public async Task Update(Author model)
         {
             _repositoryWrapper.Author.Update(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Delete(int id)
+        public async Task Delete(int id)
         {
-            var material = _repositoryWrapper.Author
-                .FindByCondition(x => x.IdAuthor == id).First();
+            var user = await _repositoryWrapper.Author
+                .FindByCondition(x => x.IdAuthor == id);
 
-            _repositoryWrapper.Author.Delete(material);
+            _repositoryWrapper.Author.Delete(user.First());
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
     }
 }

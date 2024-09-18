@@ -55,33 +55,6 @@ namespace Domain.Wrapper
             }
         }
 
-        private IAuthorStatusRepository _authorStatus;
-
-        public IAuthorStatusRepository AuthorStatus
-        {
-            get
-            {
-                if (_authorStatus == null)
-                {
-                    _authorStatus = new AuthorStatusRepository(_repoContext);
-                }
-                return _authorStatus;
-            }
-        }
-
-        private ICategoryRepository _category;
-
-        public ICategoryRepository Category
-        {
-            get
-            {
-                if (_category == null)
-                {
-                    _category = new CategoryRepository(_repoContext);
-                }
-                return _category;
-            }
-        }
 
         private IChatRepository _chat;
 
@@ -257,9 +230,9 @@ namespace Domain.Wrapper
             _repoContext = repoContext;
         }
 
-        public void Save()
+        public async Task Save()
         {
-            _repoContext.SaveChanges();
+            await _repoContext.SaveChangesAsync();
         }
     }
 }

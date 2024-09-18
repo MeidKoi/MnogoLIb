@@ -1,12 +1,6 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
 using Domain.Wrapper;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BusinessLogic.Services
 {
@@ -19,40 +13,37 @@ namespace BusinessLogic.Services
             _repositoryWrapper = repositoryWrapper;
         }
 
-        public Task<List<PaymentUser>> GetAll()
+        public async Task<List<PaymentUser>> GetAll()
         {
-            return _repositoryWrapper.PaymentUser.FindAll().ToListAsync();
+            return await _repositoryWrapper.PaymentUser.FindAll();
         }
 
-        public Task<PaymentUser> GetById(int idPayment, int idUser)
+        public async Task<PaymentUser> GetById(int idPayment, int idUser)
         {
-            var chat = _repositoryWrapper.PaymentUser
-                .FindByCondition(x => x.IdPayment == idPayment && x.IdUser == idUser).First();
-            return Task.FromResult(chat);
+            var user = await _repositoryWrapper.PaymentUser
+                .FindByCondition(x => x.IdPayment == idPayment && x.IdUser == idUser);
+            return user.First();
         }
 
-        public Task Create(PaymentUser model)
+        public async Task Create(PaymentUser model)
         {
             _repositoryWrapper.PaymentUser.Create(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Update(PaymentUser model)
+        public async Task Update(PaymentUser model)
         {
             _repositoryWrapper.PaymentUser.Update(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Delete(int idPayment, int idUser)
+        public async Task Delete(int idPayment, int idUser)
         {
-            var chatUser = _repositoryWrapper.PaymentUser
-                .FindByCondition(x => x.IdPayment == idPayment && x.IdUser == idUser).First();
+            var user = await _repositoryWrapper.PaymentUser
+                .FindByCondition(x => x.IdPayment == idPayment && x.IdUser == idUser);
 
-            _repositoryWrapper.PaymentUser.Delete(chatUser);
+            _repositoryWrapper.PaymentUser.Delete(user.First());
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
     }
 }

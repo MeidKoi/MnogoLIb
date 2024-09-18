@@ -1,58 +1,49 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
 using Domain.Wrapper;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BusinessLogic.Services
 {
-    public class CommentRateServices : ICommentRateService
+    public class CommentRateService : ICommentRateService
     {
         private IRepositoryWrapper _repositoryWrapper;
 
-        public CommentRateServices(IRepositoryWrapper repositoryWrapper)
+        public CommentRateService(IRepositoryWrapper repositoryWrapper)
         {
             _repositoryWrapper = repositoryWrapper;
         }
 
-        public Task<List<CommentRate>> GetAll()
+        public async Task<List<CommentRate>> GetAll()
         {
-            return _repositoryWrapper.CommentRate.FindAll().ToListAsync();
+            return await _repositoryWrapper.CommentRate.FindAll();
         }
 
-        public Task<CommentRate> GetById(int idComment, int idUser)
+        public async Task<CommentRate> GetById(int idComment, int idUser)
         {
-            var chat = _repositoryWrapper.CommentRate
-                .FindByCondition(x => x.IdComment == idComment && x.IdUser == idUser).First();
-            return Task.FromResult(chat);
+            var user = await _repositoryWrapper.CommentRate
+                .FindByCondition(x => x.IdComment == idComment && x.IdUser == idUser);
+            return user.First();
         }
 
-        public Task Create(CommentRate model)
+        public async Task Create(CommentRate model)
         {
             _repositoryWrapper.CommentRate.Create(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Update(CommentRate model)
+        public async Task Update(CommentRate model)
         {
             _repositoryWrapper.CommentRate.Update(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Delete(int idComment, int idUser)
+        public async Task Delete(int idComment, int idUser)
         {
-            var chatUser = _repositoryWrapper.CommentRate
-                .FindByCondition(x => x.IdComment == idComment && x.IdUser == idUser).First();
+            var user = await _repositoryWrapper.CommentRate
+                .FindByCondition(x => x.IdComment == idComment && x.IdUser == idUser);
 
-            _repositoryWrapper.CommentRate.Delete(chatUser);
+            _repositoryWrapper.CommentRate.Delete(user.First());
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
     }
 }

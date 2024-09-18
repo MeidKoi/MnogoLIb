@@ -1,12 +1,6 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
 using Domain.Wrapper;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BusinessLogic.Services
 {
@@ -19,40 +13,39 @@ namespace BusinessLogic.Services
             _repositoryWrapper = repositoryWrapper;
         }
 
-        public Task<List<MaterialFile>> GetAll()
+        public async Task<List<MaterialFile>> GetAll()
         {
-            return _repositoryWrapper.MaterialFile.FindAll().ToListAsync();
+            return await _repositoryWrapper.MaterialFile.FindAll();
         }
 
-        public Task<MaterialFile> GetById(int idMaterial, int idFile)
+        public async Task<MaterialFile> GetById(int idMaterial, int idFile)
         {
-            var chat = _repositoryWrapper.MaterialFile
-                .FindByCondition(x => x.IdMaterial == idMaterial && x.IdFile == idFile).First();
-            return Task.FromResult(chat);
+            var user = await _repositoryWrapper.MaterialFile
+                .FindByCondition(x => x.IdMaterial == idMaterial && x.IdFile == idFile);
+            return user.First();
         }
 
-        public Task Create(MaterialFile model)
+        public async Task Create(MaterialFile model)
         {
             _repositoryWrapper.MaterialFile.Create(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Update(MaterialFile model)
+        public async Task Update(MaterialFile model)
         {
             _repositoryWrapper.MaterialFile.Update(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Delete(int idMaterial, int idFile)
+        public async Task Delete(int idMaterial, int idFile)
         {
-            var chatUser = _repositoryWrapper.MaterialFile
-                .FindByCondition(x => x.IdMaterial == idMaterial && x.IdFile == idFile).First();
+            var user = await _repositoryWrapper.MaterialFile
+                .FindByCondition(x => x.IdMaterial == idMaterial && x.IdFile == idFile);
 
-            _repositoryWrapper.MaterialFile.Delete(chatUser);
+            _repositoryWrapper.MaterialFile.Delete(user.First());
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
     }
 }
+
+

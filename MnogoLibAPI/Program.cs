@@ -20,12 +20,10 @@ namespace MnogoLibAPI
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<IMaterialService, MaterialService>();
             builder.Services.AddScoped<IAuthorService, AuthorService>();
-            builder.Services.AddScoped<IAuthorStatusService, AuthorStatusService>();
-            builder.Services.AddScoped<ICategoryService, CategoryService>();
             builder.Services.AddScoped<IChatService, ChatService>();
             builder.Services.AddScoped<IChatUserService, ChatUserService>();
             builder.Services.AddScoped<ICommentService, CommentService>();
-            builder.Services.AddScoped<ICommentRateService, CommentRateServices>();
+            builder.Services.AddScoped<ICommentRateService, CommentRateService>();
             builder.Services.AddScoped<IFileService, FileService>();
             builder.Services.AddScoped<IGroupMaterialService, GroupMaterialService>();
             builder.Services.AddScoped<IMaterialFileService, MaterialFileService>();

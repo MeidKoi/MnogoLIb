@@ -1,12 +1,6 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
 using Domain.Wrapper;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BusinessLogic.Services
 {
@@ -19,40 +13,37 @@ namespace BusinessLogic.Services
             _repositoryWrapper = repositoryWrapper;
         }
 
-        public Task<List<Comment>> GetAll()
+        public async Task<List<Comment>> GetAll()
         {
-            return _repositoryWrapper.Comment.FindAll().ToListAsync();
+            return await _repositoryWrapper.Comment.FindAll();
         }
 
-        public Task<Comment> GetById(int id)
+        public async Task<Comment> GetById(int id)
         {
-            var comment = _repositoryWrapper.Comment
-                .FindByCondition(x => x.IdComment == id).First();
-            return Task.FromResult(comment);
+            var user = await _repositoryWrapper.Comment
+                .FindByCondition(x => x.IdComment == id);
+            return user.First();
         }
 
-        public Task Create(Comment model)
+        public async Task Create(Comment model)
         {
             _repositoryWrapper.Comment.Create(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Update(Comment model)
+        public async Task Update(Comment model)
         {
             _repositoryWrapper.Comment.Update(model);
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
 
-        public Task Delete(int id)
+        public async Task Delete(int id)
         {
-            var comment = _repositoryWrapper.Comment
-                .FindByCondition(x => x.IdComment == id).First();
+            var user = await _repositoryWrapper.Comment
+                .FindByCondition(x => x.IdComment == id);
 
-            _repositoryWrapper.Comment.Delete(comment);
+            _repositoryWrapper.Comment.Delete(user.First());
             _repositoryWrapper.Save();
-            return Task.CompletedTask;
         }
     }
 }
