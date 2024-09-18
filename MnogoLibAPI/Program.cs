@@ -1,7 +1,7 @@
 using BusinessLogic.Services;
-using BusinessLogic.Interfaces;
-using DataAccess.Models;
-using DataAccess.Wrapper;
+using Domain.Models;
+using Domain.Wrapper;
+using Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace MnogoLibAPI

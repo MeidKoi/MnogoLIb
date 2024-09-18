@@ -69,3 +69,5 @@ C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\MnogoLibAPI\bin\Debu
 C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\MnogoLibAPI\bin\Debug\net6.0\BusinessLogic.pdb
 C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\MnogoLibAPI\bin\Debug\net6.0\DataAccess.pdb
 C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\MnogoLibAPI\obj\Debug\net6.0\MnogoLibAPI.sourcelink.json
+C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\MnogoLibAPI\bin\Debug\net6.0\Domain.dll
+C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\MnogoLibAPI\bin\Debug\net6.0\Domain.pdb

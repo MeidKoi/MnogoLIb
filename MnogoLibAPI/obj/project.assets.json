@@ -829,7 +829,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "DataAccess": "1.0.0"
+          "Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.33"
         },
         "compile": {
           "bin/placeholder/BusinessLogic.dll": {}
@@ -842,6 +843,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.33"
         },
         "compile": {
@@ -849,6 +851,16 @@
         },
         "runtime": {
           "bin/placeholder/DataAccess.dll": {}
+        }
+      },
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
         }
       }
     }
@@ -2363,11 +2375,17 @@
       "type": "project",
       "path": "../DataAccess/DataAccess.csproj",
       "msbuildProject": "../DataAccess/DataAccess.csproj"
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "BusinessLogic >= 1.0.0",
+      "DataAccess >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -2406,6 +2424,9 @@
           "projectReferences": {
             "C:\\Users\\dshin\\OneDrive\\Рабочий стол\\MnogoLibAPI\\BusinessLogic\\BusinessLogic.csproj": {
               "projectPath": "C:\\Users\\dshin\\OneDrive\\Рабочий стол\\MnogoLibAPI\\BusinessLogic\\BusinessLogic.csproj"
+            },
+            "C:\\Users\\dshin\\OneDrive\\Рабочий стол\\MnogoLibAPI\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\dshin\\OneDrive\\Рабочий стол\\MnogoLibAPI\\DataAccess\\DataAccess.csproj"
             }
           }
         }

@@ -1,7 +1,7 @@
-﻿using BusinessLogic.Interfaces;
-using DataAccess.Models;
+﻿using Domain.Interfaces;
+using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
-using File = DataAccess.Models.File;
+using File = Domain.Models.File;
 
 namespace BackendApi.Controllers
 {
