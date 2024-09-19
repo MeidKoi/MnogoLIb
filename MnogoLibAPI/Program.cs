@@ -3,6 +3,8 @@ using Domain.Models;
 using Domain.Wrapper;
 using Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+using System.Reflection;
 
 namespace MnogoLibAPI
 {
@@ -32,6 +34,28 @@ namespace MnogoLibAPI
             builder.Services.AddScoped<IPaymentService, PaymentService>();
             builder.Services.AddScoped<IPaymentUserService, PaymentUserService>();
             builder.Services.AddScoped<IRateService, RateService>();
+
+            builder.Services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "MnogoLib API",
+                    Description = "Данное API позволяет взаимодействовать с основными и самыми часто используемыми сущностями",
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Пример контакта",
+                        Url = new Uri("https://example.com/contact")
+                    },
+                    License = new OpenApiLicense
+                    {
+                        Name = "Пример лицензии",
+                        Url = new Uri("https://example.com/license")
+                    }
+                });
+                var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
+            });
 
             // Add services to the container.
 

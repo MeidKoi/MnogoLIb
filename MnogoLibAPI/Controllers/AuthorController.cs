@@ -14,17 +14,59 @@ namespace BackendApi.Controllers
             _authorService = authorService;
         }
 
+
+        /// <summary>
+        /// Получение информации о всех авторах
+        /// </summary>
+        /// <returns></returns>
+
+        // GET api/<AuthorController>
+
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
             return Ok(await _authorService.GetAll());
         }
 
+        /// <summary>
+        /// Получение информации о авторе по id
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     Get /Todo
+        ///     {
+        ///        "id" : 1
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="id">ID</param>
+        /// <returns></returns>
+
+        // GET api/<AuthorController>
+
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             return Ok(await _authorService.GetById(id));
         }
+
+        /// <summary>
+        /// Создание нового автора
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     POST /Todo
+        ///     {
+        ///       "nameAuthor": "string"
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="author">Автор</param>
+        /// <returns></returns>
+
+        // POST api/<AuthorController>
 
         [HttpPost]
         public async Task<IActionResult> Add(Author author)
@@ -33,12 +75,49 @@ namespace BackendApi.Controllers
             return Ok();
         }
 
+
+        /// <summary>
+        /// Изменение информации о авторе
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     PUT /Todo
+        ///     {
+        ///       "idAuthor": 0,
+        ///       "nameAuthor": "string"
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="author">Автор</param>
+        /// <returns></returns>
+
+        // PUT api/<AuthorController>
+
+
         [HttpPut]
         public async Task<IActionResult> Update(Author author)
         {
             await _authorService.Update(author);
             return Ok();
         }
+
+        /// <summary>
+        /// Удаление автора
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     DELETE /Todo
+        ///     {
+        ///         id: 1
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="id">ID</param>
+        /// <returns></returns>
+
+        // DELETE api/<AuthorController>
 
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)

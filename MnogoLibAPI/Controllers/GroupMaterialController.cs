@@ -14,17 +14,61 @@ namespace BackendApi.Controllers
             _groupMaterialService = materialService;
         }
 
+        /// <summary>
+        /// Получение информации о всех группах
+        /// </summary>
+        /// <returns></returns>
+
+        // GET api/<GroupMaterialController>
+
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
             return Ok(await _groupMaterialService.GetAll());
         }
 
+
+        /// <summary>
+        /// Получение информации о группе по id
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     Get /Todo
+        ///     {
+        ///        "id" : 1
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="id">ID</param>
+        /// <returns></returns>
+
+        // GET api/<GroupMaterialController>
+
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             return Ok(await _groupMaterialService.GetById(id));
         }
+
+
+        /// <summary>
+        /// Создание новой группы
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     POST /Todo
+        ///     {
+        ///       "nameGroup": "string",
+        ///       "descriptionGroup": "string",
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="material">Группа</param>
+        /// <returns></returns>
+
+        // POST api/<GroupMaterialController>
 
         [HttpPost]
         public async Task<IActionResult> Add(GroupMaterial material)
@@ -33,12 +77,48 @@ namespace BackendApi.Controllers
             return Ok();
         }
 
+        /// <summary>
+        /// Изменение информации о пользователе
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     PUT /Todo
+        ///     {
+        ///       "idGroup": 0,
+        ///       "nameGroup": "string",
+        ///       "descriptionGroup": "string",
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="material">Группа</param>
+        /// <returns></returns>
+
+        // PUT api/<GroupMaterialController>
+
         [HttpPut]
         public async Task<IActionResult> Update(GroupMaterial material)
         {
             await _groupMaterialService.Update(material);
             return Ok();
         }
+
+        /// <summary>
+        /// Удаление пользователя
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     DELETE /Todo
+        ///     {
+        ///         id: 1
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="id">ID</param>
+        /// <returns></returns>
+
+        // DELETE api/<GroupMaterialController>
 
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)

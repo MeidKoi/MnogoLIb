@@ -73,3 +73,5 @@ C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\MnogoLibAPI\bin\Debu
 C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\MnogoLibAPI\bin\Debug\net6.0\Domain.pdb
 C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\MnogoLibAPI\bin\Debug\net6.0\Humanizer.dll
 C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\MnogoLibAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\MnogoLibAPI\bin\Debug\net6.0\MnogoLibAPI.xml
+C:\Users\dshin\OneDrive\Рабочий стол\MnogoLibAPI\MnogoLibAPI\obj\Debug\net6.0\MnogoLibAPI.xml

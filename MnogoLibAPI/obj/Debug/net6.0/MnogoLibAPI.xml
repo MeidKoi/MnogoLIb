@@ -1,0 +1,626 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MnogoLibAPI</name>
+    </assembly>
+    <members>
+        <member name="M:BackendApi.Controllers.AuthorController.GetAll">
+            <summary>
+            Получение информации о всех авторах
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.AuthorController.GetById(System.Int32)">
+             <summary>
+             Получение информации о авторе по id
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 Get /Todo
+                 {
+                    "id" : 1
+                 }
+            
+             </remarks>
+             <param name="id">ID</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.AuthorController.Add(Domain.Models.Author)">
+             <summary>
+             Создание нового автора
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                   "nameAuthor": "string"
+                 }
+            
+             </remarks>
+             <param name="author">Автор</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.AuthorController.Update(Domain.Models.Author)">
+             <summary>
+             Изменение информации о авторе
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                   "idAuthor": 0,
+                   "nameAuthor": "string"
+                 }
+            
+             </remarks>
+             <param name="author">Автор</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.AuthorController.Delete(System.Int32)">
+             <summary>
+             Удаление автора
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 DELETE /Todo
+                 {
+                     id: 1
+                 }
+            
+             </remarks>
+             <param name="id">ID</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.ChatController.GetAll">
+            <summary>
+            Получение информации о всех чатах
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:BackendApi.Controllers.ChatController.GetById(System.Int32)">
+             <summary>
+             Получение информации о чате по id
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 Get /Todo
+                 {
+                    "idChat": 0
+                 }
+            
+             </remarks>
+             <param name="id">ID</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.ChatController.Add(Domain.Models.Chat)">
+             <summary>
+             Создание нового чата
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                    "idChat": 0,
+                    "idOwner": 0,
+                    "nameChat": "string"
+                 }
+            
+             </remarks>
+             <param name="author">Автор</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.ChatController.Update(Domain.Models.Chat)">
+             <summary>
+             Изменение информации о чате
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                     "idChat": 0,
+                     "idOwner": 0,
+                     "nameChat": "string",
+                     "createdTime": "2024-09-19T14:34:41.968Z",
+                     "lastUpdateBy": 0,
+                     "lastUpdateTime": "2024-09-19T14:34:41.969Z",
+                     "deletedBy": 0,
+                     "deletedTime": "2024-09-19T14:34:41.969Z"
+                 }
+            
+             </remarks>
+             <param name="author">Автор</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.ChatController.Delete(System.Int32)">
+             <summary>
+             Удаление чата
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 DELETE /Todo
+                 {
+                     id: 1
+                 }
+            
+             </remarks>
+             <param name="id">ID</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.ChatUserController.GetAll">
+            <summary>
+            Получение информации о всех пользователях чатов
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:BackendApi.Controllers.ChatUserController.GetById(System.Int32,System.Int32)">
+             <summary>
+             Получение информации о пользователях в чате по id
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 Get /Todo
+                 {
+                    "idChat": 0
+                 }
+            
+             </remarks>
+             <param name="idChat">IDChat</param>
+             <param name="idUser">IDUser</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.ChatUserController.Add(Domain.Models.ChatUser)">
+             <summary>
+             Добовление нового пользователя в чат
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                    "idUser": 0,
+                    "idChat": 0
+                 }
+            
+             </remarks>
+             <param name="chatUser">Пользователь чата</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.ChatUserController.Update(Domain.Models.ChatUser)">
+             <summary>
+             Изменение информации о пользователе чата
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                     "idUser": 0,
+                     "idChat": 0,
+                     "createdBy": 0,
+                     "createdTime": "2024-09-19T14:50:41.116Z",
+                     "deletedBy": 0,
+                     "deletedTime": "2024-09-19T14:50:41.116Z",
+                 }
+            
+             </remarks>
+             <param name="chatUser">Пользователь чата</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.ChatUserController.Delete(System.Int32,System.Int32)">
+             <summary>
+             Удаление пользователя чата
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 DELETE /Todo
+                 {
+                     id: 1
+                 }
+            
+             </remarks>
+             <param name="idChat">IDChat</param>
+             <param name="idUser">IDUser</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.CommentController.GetAll">
+            <summary>
+            Получение информации о всех комментариях
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.CommentController.GetById(System.Int32)">
+             <summary>
+             Получение информации о комментарии по id
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 Get /Todo
+                 {
+                    "id" : 1
+                 }
+            
+             </remarks>
+             <param name="idComment">ID</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.CommentController.Add(Domain.Models.Comment)">
+             <summary>
+             Создание нового комментария
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                     "idComment": 0,
+                     "textComment": "string",
+                     "idUser": 0
+                 }
+            
+             </remarks>
+             <param name="comment">Комментарий</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.CommentController.Update(Domain.Models.Comment)">
+             <summary>
+             Изменение информации о комментарие
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                   "idComment": 0,
+                   "textComment": "string",
+                   "idUser": 0,
+                   "createdTime": "2024-09-19T15:04:44.267Z",
+                   "lastUpdateTime": "2024-09-19T15:04:44.267Z",
+                   "deletedTime": "2024-09-19T15:04:44.267Z",
+                 }
+            
+             </remarks>
+             <param name="comment">Комментарий</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.CommentController.Delete(System.Int32)">
+             <summary>
+             Удаление комментария    
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 DELETE /Todo
+                 {
+                     id: 1
+                 }
+            
+             </remarks>
+             <param name="idComment">ID</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.CommentRateController.GetAll">
+            <summary>
+            Получение информации о всех оценках комментариев
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:BackendApi.Controllers.CommentRateController.GetById(System.Int32,System.Int32)">
+             <summary>
+             Получение информации об оценках комментариев по id
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 Get /Todo
+                 {
+                    "idChat": 0
+                 }
+            
+             </remarks>
+             <param name="idComment">IDChat</param>
+             <param name="idUser">IDUser</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.CommentRateController.Add(Domain.Models.CommentRate)">
+             <summary>
+             Добовление новой оценки комментария
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                    "idUser": 0,
+                    "idChat": 0
+                 }
+            
+             </remarks>
+             <param name="chatUser">Пользователь чата</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.CommentRateController.Update(Domain.Models.CommentRate)">
+             <summary>
+             Изменение информации о пользователе чата
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                   "idUser": 0,
+                   "idComment": 0,
+                   "value": 0,
+                   "createdTime": "2024-09-19T15:18:41.474Z",
+                   "lastUpdateTime": "2024-09-19T15:18:41.474Z",
+                   "deletedTime": "2024-09-19T15:18:41.474Z",
+                 }
+            
+             </remarks>
+             <param name="commentRateService">Оценка</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.CommentRateController.Delete(System.Int32,System.Int32)">
+             <summary>
+             Удаление оценки комментария
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 DELETE /Todo
+                 {
+                     id: 1
+                 }
+            
+             </remarks>
+             <param name="idComment">IDChat</param>
+             <param name="idUser">IDUser</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.FileController.GetAll">
+            <summary>
+            Получение информации о всех файлах
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.FileController.GetById(System.Int32)">
+             <summary>
+             Получение информации о файле по id
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 Get /Todo
+                 {
+                    "id" : 1
+                 }
+            
+             </remarks>
+             <param name="id">ID</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.FileController.Add(Domain.Models.File)">
+             <summary>
+             Создание нового файла
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                  "nameFile": "string",
+                  "pathFile": "string",
+                 }
+            
+             </remarks>
+             <param name="file">Файл</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.FileController.Update(Domain.Models.File)">
+             <summary>
+             Изменение информации о файле
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                   "nameFile": "string",
+                   "pathFile": "string",
+                   "createdBy": 0,
+                   "createdTime": "2024-09-19T15:27:09.529Z",
+                   "lastUpdateBy": 0,
+                   "lastUpdateTime": "2024-09-19T15:27:09.529Z",
+                   "deletedBy": 0,
+                   "deletedTime": "2024-09-19T15:27:09.529Z",
+                 }
+            
+             </remarks>
+             <param name="file">Файл</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.FileController.Delete(System.Int32)">
+             <summary>
+             Удаление файла
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 DELETE /Todo
+                 {
+                     id: 1
+                 }
+            
+             </remarks>
+             <param name="id">ID</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.GroupMaterialController.GetAll">
+            <summary>
+            Получение информации о всех группах
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.GroupMaterialController.GetById(System.Int32)">
+             <summary>
+             Получение информации о группе по id
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 Get /Todo
+                 {
+                    "id" : 1
+                 }
+            
+             </remarks>
+             <param name="id">ID</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.GroupMaterialController.Add(Domain.Models.GroupMaterial)">
+             <summary>
+             Создание новой группы
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                   "nameGroup": "string",
+                   "descriptionGroup": "string",
+                 }
+            
+             </remarks>
+             <param name="material">Группа</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.GroupMaterialController.Update(Domain.Models.GroupMaterial)">
+             <summary>
+             Изменение информации о пользователе
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                   "idGroup": 0,
+                   "nameGroup": "string",
+                   "descriptionGroup": "string",
+                 }
+            
+             </remarks>
+             <param name="material">Группа</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.GroupMaterialController.Delete(System.Int32)">
+             <summary>
+             Удаление пользователя
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 DELETE /Todo
+                 {
+                     id: 1
+                 }
+            
+             </remarks>
+             <param name="id">ID</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.UserController.GetAll">
+            <summary>
+            Получение информации о всех пользователях
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.UserController.GetById(System.Int32)">
+             <summary>
+             Получение информации о пользователе по id
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 Get /Todo
+                 {
+                    "id" : 1
+                 }
+            
+             </remarks>
+             <param name="id">ID</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.UserController.Add(Domain.Models.User)">
+             <summary>
+             Создание нового пользователя
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                    "email" : "email@gmail.com"
+                    "passwordUser" : "!Pa$$word123@",
+                    "nicknameUser": "string",
+                 }
+            
+             </remarks>
+             <param name="user">Пользователь</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.UserController.Update(Domain.Models.User)">
+             <summary>
+             Изменение информации о пользователе
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                   "idUser": 1,
+                   "emailUser": "string",
+                   "passwordUser": "string",
+                   "nicknameUser": "string",
+                   "idRole": 1,
+                   "createdTime": "2024-09-19T14:05:14.947Z",
+                   "lastUpdateBy": 1,
+                   "lastUpdateTime": "2024-09-19T14:05:14.947Z",
+                   "deletedBy": 1,
+                   "deletedTime": "2024-09-19T14:05:14.947Z"
+                 }
+            
+             </remarks>
+             <param name="user">Пользователь</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.UserController.Delete(System.Int32)">
+             <summary>
+             Удаление пользователя
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 DELETE /Todo
+                 {
+                     id: 1
+                 }
+            
+             </remarks>
+             <param name="id">ID</param>
+             <returns></returns>
+        </member>
+    </members>
+</doc>
