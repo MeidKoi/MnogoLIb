@@ -33,22 +33,13 @@ namespace BackendApi.Controllers
         /// <summary>
         /// Получение информации об оценках комментариев по id
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     Get /Todo
-        ///     {
-        ///        "idChat": 0
-        ///     }
-        ///
-        /// </remarks>
         /// <param name="idComment">IDChat</param>
         /// <param name="idUser">IDUser</param>
         /// <returns></returns>
 
         // GET api/<CommentRateController>
 
-        [HttpGet("{id}")]
+        [HttpGet("{idComment}/{idUser}")]
         public async Task<IActionResult> GetById(int idUser, int idComment)
         {
             return Ok(await _commentRateService.GetById(idUser, idComment));
@@ -67,7 +58,7 @@ namespace BackendApi.Controllers
         ///     }
         ///
         /// </remarks>
-        /// <param name="chatUser">Пользователь чата</param>
+        /// <param name="commentRateService">Пользователь чата</param>
         /// <returns></returns>
 
         // POST api/<CommentRateController>
@@ -91,7 +82,7 @@ namespace BackendApi.Controllers
         ///       "value": 0,
         ///       "createdTime": "2024-09-19T15:18:41.474Z",
         ///       "lastUpdateTime": "2024-09-19T15:18:41.474Z",
-        ///       "deletedTime": "2024-09-19T15:18:41.474Z",
+        ///       "deletedTime": "2024-09-19T15:18:41.474Z"
         ///     }
         ///
         /// </remarks>
@@ -109,15 +100,6 @@ namespace BackendApi.Controllers
         /// <summary>
         /// Удаление оценки комментария
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     DELETE /Todo
-        ///     {
-        ///         id: 1
-        ///     }
-        ///
-        /// </remarks>
         /// <param name="idComment">IDChat</param>
         /// <param name="idUser">IDUser</param>
         /// <returns></returns>

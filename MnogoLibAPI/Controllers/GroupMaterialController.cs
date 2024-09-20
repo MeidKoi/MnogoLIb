@@ -31,15 +31,6 @@ namespace BackendApi.Controllers
         /// <summary>
         /// Получение информации о группе по id
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     Get /Todo
-        ///     {
-        ///        "id" : 1
-        ///     }
-        ///
-        /// </remarks>
         /// <param name="id">ID</param>
         /// <returns></returns>
 
@@ -61,7 +52,7 @@ namespace BackendApi.Controllers
         ///     POST /Todo
         ///     {
         ///       "nameGroup": "string",
-        ///       "descriptionGroup": "string",
+        ///       "descriptionGroup": "string"
         ///     }
         ///
         /// </remarks>
@@ -87,7 +78,7 @@ namespace BackendApi.Controllers
         ///     {
         ///       "idGroup": 0,
         ///       "nameGroup": "string",
-        ///       "descriptionGroup": "string",
+        ///       "descriptionGroup": "string"
         ///     }
         ///
         /// </remarks>
@@ -106,15 +97,6 @@ namespace BackendApi.Controllers
         /// <summary>
         /// Удаление пользователя
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     DELETE /Todo
-        ///     {
-        ///         id: 1
-        ///     }
-        ///
-        /// </remarks>
         /// <param name="id">ID</param>
         /// <returns></returns>
 

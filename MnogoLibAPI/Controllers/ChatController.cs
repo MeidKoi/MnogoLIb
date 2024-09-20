@@ -31,15 +31,6 @@ namespace BackendApi.Controllers
         /// <summary>
         /// Получение информации о чате по id
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     Get /Todo
-        ///     {
-        ///        "idChat": 0
-        ///     }
-        ///
-        /// </remarks>
         /// <param name="id">ID</param>
         /// <returns></returns>
 
@@ -113,15 +104,6 @@ namespace BackendApi.Controllers
         /// <summary>
         /// Удаление чата
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     DELETE /Todo
-        ///     {
-        ///         id: 1
-        ///     }
-        ///
-        /// </remarks>
         /// <param name="id">ID</param>
         /// <returns></returns>
 

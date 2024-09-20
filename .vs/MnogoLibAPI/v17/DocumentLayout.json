@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\groupmaterialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\groupmaterialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\ratecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\ratecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -33,20 +29,16 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GroupMaterialController.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\GroupMaterialController.cs",
-              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\GroupMaterialController.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\GroupMaterialController.cs",
-              "RelativeToolTip": "MnogoLibAPI\\Controllers\\GroupMaterialController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAYwEEAAAALAAAA",
+              "Title": "RateController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\RateController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\RateController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\RateController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\RateController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T15:31:11.452Z",
+              "WhenOpened": "2024-09-20T18:17:50.485Z",
               "EditorCaption": ""
             },
             {
@@ -57,22 +49,9 @@
               "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\UserController.cs",
               "RelativeToolTip": "MnogoLibAPI\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAHYAAAAAAAAAAAAcwHUAAAAAAAAA",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAIwGwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T15:25:01.186Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FileController.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\FileController.cs",
-              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\FileController.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\FileController.cs",
-              "RelativeToolTip": "MnogoLibAPI\\Controllers\\FileController.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAgwEIAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T15:24:27.103Z",
+              "WhenOpened": "2024-09-20T18:18:00.318Z",
               "EditorCaption": ""
             }
           ]

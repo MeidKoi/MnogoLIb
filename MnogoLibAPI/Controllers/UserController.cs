@@ -31,15 +31,6 @@ namespace BackendApi.Controllers
         /// <summary>
         /// Получение информации о пользователе по id
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     Get /Todo
-        ///     {
-        ///        "id" : 1
-        ///     }
-        ///
-        /// </remarks>
         /// <param name="id">ID</param>
         /// <returns></returns>
 
@@ -118,15 +109,6 @@ namespace BackendApi.Controllers
         /// <summary>
         /// Удаление пользователя
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     DELETE /Todo
-        ///     {
-        ///         id: 1
-        ///     }
-        ///
-        /// </remarks>
         /// <param name="id">ID</param>
         /// <returns></returns>
 

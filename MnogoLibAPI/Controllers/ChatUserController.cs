@@ -32,22 +32,13 @@ namespace BackendApi.Controllers
         /// <summary>
         /// Получение информации о пользователях в чате по id
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     Get /Todo
-        ///     {
-        ///        "idChat": 0
-        ///     }
-        ///
-        /// </remarks>
         /// <param name="idChat">IDChat</param>
         /// <param name="idUser">IDUser</param>
         /// <returns></returns>
 
         // GET api/<ChatUserController>
 
-        [HttpGet("{id}")]
+        [HttpGet("{idChat}/{idUser}")]
         public async Task<IActionResult> GetById(int idChat, int idUser)
         {
             return Ok(await _chatUserService.GetById(idChat, idUser));
@@ -111,14 +102,6 @@ namespace BackendApi.Controllers
         /// Удаление пользователя чата
         /// </summary>
         /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     DELETE /Todo
-        ///     {
-        ///         id: 1
-        ///     }
-        ///
-        /// </remarks>
         /// <param name="idChat">IDChat</param>
         /// <param name="idUser">IDUser</param>
         /// <returns></returns>

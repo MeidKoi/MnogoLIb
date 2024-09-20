@@ -32,15 +32,6 @@ namespace BackendApi.Controllers
         /// <summary>
         /// Получение информации о файле по id
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     Get /Todo
-        ///     {
-        ///        "id" : 1
-        ///     }
-        ///
-        /// </remarks>
         /// <param name="id">ID</param>
         /// <returns></returns>
 
@@ -63,7 +54,7 @@ namespace BackendApi.Controllers
         ///     POST /Todo
         ///     {
         ///      "nameFile": "string",
-        ///      "pathFile": "string",
+        ///      "pathFile": "string"
         ///     }
         ///
         /// </remarks>
@@ -95,7 +86,7 @@ namespace BackendApi.Controllers
         ///       "lastUpdateBy": 0,
         ///       "lastUpdateTime": "2024-09-19T15:27:09.529Z",
         ///       "deletedBy": 0,
-        ///       "deletedTime": "2024-09-19T15:27:09.529Z",
+        ///       "deletedTime": "2024-09-19T15:27:09.529Z"
         ///     }
         ///
         /// </remarks>
@@ -116,15 +107,6 @@ namespace BackendApi.Controllers
         /// <summary>
         /// Удаление файла
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     DELETE /Todo
-        ///     {
-        ///         id: 1
-        ///     }
-        ///
-        /// </remarks>
         /// <param name="id">ID</param>
         /// <returns></returns>
 
