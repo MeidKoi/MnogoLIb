@@ -4,6 +4,9 @@ using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Xml.Linq;
+using Mapster;
+using MnogoLibAPI.Contracts.CommentRate;
+using MnogoLibAPI.Contracts.User;
 
 namespace BackendApi.Controllers
 {
@@ -27,7 +30,9 @@ namespace BackendApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _commentRateService.GetAll());
+            var Dto = await _commentRateService.GetAll();
+
+            return Ok(Dto.Adapt<List<GetCommentRateRequest>>());
         }
 
         /// <summary>
@@ -42,7 +47,8 @@ namespace BackendApi.Controllers
         [HttpGet("{idComment}/{idUser}")]
         public async Task<IActionResult> GetById(int idUser, int idComment)
         {
-            return Ok(await _commentRateService.GetById(idUser, idComment));
+            var Dto = await _commentRateService.GetById(idUser, idComment);
+            return Ok(Dto.Adapt<GetCommentRateRequest>());
         }
 
         /// <summary>
@@ -54,19 +60,21 @@ namespace BackendApi.Controllers
         ///     POST /Todo
         ///     {
         ///        "idUser": 0,
-        ///        "idChat": 0
+        ///        "idChat": 0,
+        ///        "value": 0
         ///     }
         ///
         /// </remarks>
-        /// <param name="commentRateService">Пользователь чата</param>
+        /// <param name="commentRate">Пользователь чата</param>
         /// <returns></returns>
 
         // POST api/<CommentRateController>
 
         [HttpPost]
-        public async Task<IActionResult> Add(CommentRate commentRateService)
+        public async Task<IActionResult> Add(CreateCommentRateRequest commentRate)
         {
-            await _commentRateService.Create(commentRateService);
+            var Dto = commentRate.Adapt<CommentRate>();
+            await _commentRateService.Create(Dto);
             return Ok();
         }
         /// <summary>
@@ -86,14 +94,15 @@ namespace BackendApi.Controllers
         ///     }
         ///
         /// </remarks>
-        /// <param name="commentRateService">Оценка</param>
+        /// <param name="commentRate">Оценка</param>
         /// <returns></returns>
 
         // PUT api/<CommentRateController>
         [HttpPut]
-        public async Task<IActionResult> Update(CommentRate commentRateService)
+        public async Task<IActionResult> Update(GetCommentRateRequest commentRate)
         {
-            await _commentRateService.Update(commentRateService);
+            var Dto = commentRate.Adapt<CommentRate>();
+            await _commentRateService.Update(Dto);
             return Ok();
         }
 

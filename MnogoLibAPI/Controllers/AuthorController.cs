@@ -1,6 +1,10 @@
-﻿using Domain.Interfaces;
+﻿using BusinessLogic.Services;
+using Domain.Interfaces;
 using Domain.Models;
+using Mapster;
 using Microsoft.AspNetCore.Mvc;
+using MnogoLibAPI.Contracts.Author;
+using MnogoLibAPI.Contracts.User;
 
 namespace BackendApi.Controllers
 {
@@ -14,7 +18,6 @@ namespace BackendApi.Controllers
             _authorService = authorService;
         }
 
-
         /// <summary>
         /// Получение информации о всех авторах
         /// </summary>
@@ -25,7 +28,9 @@ namespace BackendApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _authorService.GetAll());
+            var Dto = await _authorService.GetAll();
+
+            return Ok(Dto.Adapt<List<GetAuthorRequest>>());
         }
 
         /// <summary>
@@ -39,7 +44,8 @@ namespace BackendApi.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _authorService.GetById(id));
+            var Dto = await _authorService.GetById(id);
+            return Ok(Dto.Adapt<GetAuthorRequest>());
         }
 
         /// <summary>
@@ -60,9 +66,10 @@ namespace BackendApi.Controllers
         // POST api/<AuthorController>
 
         [HttpPost]
-        public async Task<IActionResult> Add(Author author)
+        public async Task<IActionResult> Add(CreateAuthorRequest author)
         {
-            await _authorService.Create(author);
+            var Dto = author.Adapt<Author>();
+            await _authorService.Create(Dto);
             return Ok();
         }
 
@@ -87,9 +94,10 @@ namespace BackendApi.Controllers
 
 
         [HttpPut]
-        public async Task<IActionResult> Update(Author author)
+        public async Task<IActionResult> Update(GetAuthorRequest author)
         {
-            await _authorService.Update(author);
+            var Dto = author.Adapt<Author>();
+            await _authorService.Update(Dto);
             return Ok();
         }
 

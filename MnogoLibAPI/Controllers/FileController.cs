@@ -1,7 +1,11 @@
-﻿using Domain.Interfaces;
+﻿using BusinessLogic.Services;
+using Domain.Interfaces;
 using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
+using MnogoLibAPI.Contracts.User;
 using File = Domain.Models.File;
+using Mapster;
+using MnogoLibAPI.Contracts.File;
 
 namespace BackendApi.Controllers
 {
@@ -26,7 +30,9 @@ namespace BackendApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _fileService.GetAll());
+            var Dto = await _fileService.GetAll();
+
+            return Ok(Dto.Adapt<List<GetFileRequest>>());
         }
 
         /// <summary>
@@ -41,7 +47,8 @@ namespace BackendApi.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _fileService.GetById(id));
+            var Dto = await _fileService.GetById(id);
+            return Ok(Dto.Adapt<GetFileRequest>());
         }
 
 
@@ -54,7 +61,8 @@ namespace BackendApi.Controllers
         ///     POST /Todo
         ///     {
         ///      "nameFile": "string",
-        ///      "pathFile": "string"
+        ///      "pathFile": "string",
+        ///      "createdBy": 0
         ///     }
         ///
         /// </remarks>
@@ -64,9 +72,10 @@ namespace BackendApi.Controllers
         // POST api/<FileController>
 
         [HttpPost]
-        public async Task<IActionResult> Add(File file)
+        public async Task<IActionResult> Add(CreateFileRequest file)
         {
-            await _fileService.Create(file);
+            var Dto = file.Adapt<File>();
+            await _fileService.Create(Dto);
             return Ok();
         }
 
@@ -79,6 +88,7 @@ namespace BackendApi.Controllers
         ///
         ///     PUT /Todo
         ///     {
+        ///       "idFile": 0,
         ///       "nameFile": "string",
         ///       "pathFile": "string",
         ///       "createdBy": 0,
@@ -97,9 +107,10 @@ namespace BackendApi.Controllers
 
 
         [HttpPut]
-        public async Task<IActionResult> Update(File file)
+        public async Task<IActionResult> Update(GetFileRequest file)
         {
-            await _fileService.Update(file);
+            var Dto = file.Adapt<File>();
+            await _fileService.Update(Dto);
             return Ok();
         }
 

@@ -1,6 +1,8 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
+using Mapster;
+using MnogoLibAPI.Contracts.User;
 
 namespace BackendApi.Controllers
 {
@@ -25,7 +27,9 @@ namespace BackendApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _userService.GetAll());
+            var Dto = await _userService.GetAll();
+
+            return Ok(Dto.Adapt<List<GetUserRequest>>());
         }
 
         /// <summary>
@@ -40,7 +44,8 @@ namespace BackendApi.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _userService.GetById(id));
+            var Dto = await _userService.GetById(id);
+            return Ok(Dto.Adapt<GetUserRequest>());
         }
 
 
@@ -64,9 +69,10 @@ namespace BackendApi.Controllers
         // POST api/<UsersController>
 
         [HttpPost]
-        public async Task<IActionResult> Add(User user)
+        public async Task<IActionResult> Add(CreateUserRequest user)
         {
-            await _userService.Create(user);
+            var Dto = user.Adapt<User>();
+            await _userService.Create(Dto);
             return Ok();
         }
 
@@ -99,9 +105,10 @@ namespace BackendApi.Controllers
 
 
         [HttpPut]
-        public async Task<IActionResult> Update(User user)
+        public async Task<IActionResult> Update(GetUserRequest user)
         {
-            await _userService.Update(user);
+            var Dto = user.Adapt<User>();
+            await _userService.Update(Dto);
             return Ok();
         }
 

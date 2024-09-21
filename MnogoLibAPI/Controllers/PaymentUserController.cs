@@ -3,6 +3,9 @@ using BusinessLogic.Services;
 using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using MnogoLibAPI.Contracts.PaymentUser;
+using Mapster;
+using MnogoLibAPI.Contracts.User;
 
 namespace BackendApi.Controllers
 {
@@ -10,10 +13,10 @@ namespace BackendApi.Controllers
     [ApiController]
     public class PaymentUserController : ControllerBase
     {
-        private IPaymentUserService _chatUserService;
+        private IPaymentUserService _paymentUser;
         public PaymentUserController(IPaymentUserService chatUserService)
         {
-            _chatUserService = chatUserService;
+            _paymentUser = chatUserService;
         }
 
         /// <summary>
@@ -26,7 +29,9 @@ namespace BackendApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _chatUserService.GetAll());
+            var Dto = await _paymentUser.GetAll();
+
+            return Ok(Dto.Adapt<List<GetPaymentUserRequest>>());
         }
 
 
@@ -42,7 +47,8 @@ namespace BackendApi.Controllers
         [HttpGet("{idPayment}/{idUser}")]
         public async Task<IActionResult> GetById(int idPayment, int idUser)
         {
-            return Ok(await _chatUserService.GetById(idPayment, idUser));
+            var Dto = await _paymentUser.GetById(idPayment, idUser);
+            return Ok(Dto.Adapt<GetPaymentUserRequest>());
         }
 
         /// <summary>
@@ -59,15 +65,16 @@ namespace BackendApi.Controllers
         ///     }
         ///
         /// </remarks>
-        /// <param name="chatUserService">Карты пользователя</param>
+        /// <param name="paymentUser">Карты пользователя</param>
         /// <returns></returns>
 
         // POST api/<PaymentUserController>
 
         [HttpPost]
-        public async Task<IActionResult> Add(PaymentUser chatUserService)
+        public async Task<IActionResult> Add(CreatePaymentUserRequest paymentUser)
         {
-            await _chatUserService.Create(chatUserService);
+            var Dto = paymentUser.Adapt<PaymentUser>();
+            await _paymentUser.Create(Dto);
             return Ok();
         }
 
@@ -86,15 +93,16 @@ namespace BackendApi.Controllers
         ///     }
         ///
         /// </remarks>
-        /// <param name="chatUserService">Карты пользователя</param>
+        /// <param name="paymentUser">Карты пользователя</param>
         /// <returns></returns>
 
         // PUT api/<PaymentUserController>
 
         [HttpPut]
-        public async Task<IActionResult> Update(PaymentUser chatUserService)
+        public async Task<IActionResult> Update(PaymentUser paymentUser)
         {
-            await _chatUserService.Update(chatUserService);
+            var Dto = paymentUser.Adapt<PaymentUser>();
+            await _paymentUser.Update(Dto);
             return Ok();
         }
 
@@ -110,7 +118,7 @@ namespace BackendApi.Controllers
         [HttpDelete]
         public async Task<IActionResult> Delete(int idPayment, int idUser)
         {
-            await _chatUserService.Delete(idPayment, idUser);
+            await _paymentUser.Delete(idPayment, idUser);
             return Ok();
         }
     }

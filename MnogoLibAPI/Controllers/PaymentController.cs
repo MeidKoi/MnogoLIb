@@ -1,6 +1,10 @@
-﻿using Domain.Interfaces;
+﻿using BusinessLogic.Services;
+using Domain.Interfaces;
 using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
+using MnogoLibAPI.Contracts.Payment;
+using Mapster;
+using MnogoLibAPI.Contracts.User;
 
 namespace BackendApi.Controllers
 {
@@ -25,7 +29,9 @@ namespace BackendApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _paymentService.GetAll());
+            var Dto = await _paymentService.GetAll();
+
+            return Ok(Dto.Adapt<List<GetPaymentRequest>>());
         }
 
 
@@ -40,7 +46,8 @@ namespace BackendApi.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _paymentService.GetById(id));
+            var Dto = await _paymentService.GetById(id);
+            return Ok(Dto.Adapt<GetPaymentRequest>());
         }
 
         /// <summary>
@@ -63,9 +70,10 @@ namespace BackendApi.Controllers
         // POST api/<PaymentController>
 
         [HttpPost]
-        public async Task<IActionResult> Add(Payment payment)
+        public async Task<IActionResult> Add(CreatePaymentRequest payment)
         {
-            await _paymentService.Create(payment);
+            var Dto = payment.Adapt<Payment>();
+            await _paymentService.Create(Dto);
             return Ok();
         }
 
@@ -90,9 +98,10 @@ namespace BackendApi.Controllers
         // PUT api/<PaymentController>
 
         [HttpPut]
-        public async Task<IActionResult> Update(Payment payment)
+        public async Task<IActionResult> Update(GetPaymentRequest payment)
         {
-            await _paymentService.Update(payment);
+            var Dto = payment.Adapt<Payment>();
+            await _paymentService.Update(Dto);
             return Ok();
         }
 

@@ -1,6 +1,10 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
+using Mapster;
+using MnogoLibAPI.Contracts.GroupMaterial;
+using BusinessLogic.Services;
+using MnogoLibAPI.Contracts.User;
 
 namespace BackendApi.Controllers
 {
@@ -24,7 +28,9 @@ namespace BackendApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _groupMaterialService.GetAll());
+            var Dto = await _groupMaterialService.GetAll();
+
+            return Ok(Dto.Adapt<List<GetGroupMaterialRequest>>());
         }
 
 
@@ -39,7 +45,8 @@ namespace BackendApi.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _groupMaterialService.GetById(id));
+            var Dto = await _groupMaterialService.GetById(id);
+            return Ok(Dto.Adapt<GetGroupMaterialRequest>());
         }
 
 
@@ -56,15 +63,16 @@ namespace BackendApi.Controllers
         ///     }
         ///
         /// </remarks>
-        /// <param name="material">Группа</param>
+        /// <param name="group">Группа</param>
         /// <returns></returns>
 
         // POST api/<GroupMaterialController>
 
         [HttpPost]
-        public async Task<IActionResult> Add(GroupMaterial material)
+        public async Task<IActionResult> Add(CreateGroupMaterialRequest group)
         {
-            await _groupMaterialService.Create(material);
+            var Dto = group.Adapt<GroupMaterial>();
+            await _groupMaterialService.Create(Dto);
             return Ok();
         }
 
@@ -82,15 +90,16 @@ namespace BackendApi.Controllers
         ///     }
         ///
         /// </remarks>
-        /// <param name="material">Группа</param>
+        /// <param name="group">Группа</param>
         /// <returns></returns>
 
         // PUT api/<GroupMaterialController>
 
         [HttpPut]
-        public async Task<IActionResult> Update(GroupMaterial material)
+        public async Task<IActionResult> Update(GetGroupMaterialRequest group)
         {
-            await _groupMaterialService.Update(material);
+            var Dto = group.Adapt<GroupMaterial>();
+            await _groupMaterialService.Update(Dto);
             return Ok();
         }
 

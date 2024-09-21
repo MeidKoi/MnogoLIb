@@ -3,6 +3,9 @@ using BusinessLogic.Services;
 using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using MnogoLibAPI.Contracts.Comment;
+using Mapster;
+using MnogoLibAPI.Contracts.User;
 
 namespace BackendApi.Controllers
 {
@@ -26,21 +29,24 @@ namespace BackendApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _comment.GetAll());
+            var Dto = await _comment.GetAll();
+
+            return Ok(Dto.Adapt<List<GetCommentRequest>>());
         }
 
         /// <summary>
         /// Получение информации о комментарии по id
         /// </summary>
-        /// <param name="idComment">ID</param>
+        /// <param name="id">ID</param>
         /// <returns></returns>
 
         // GET api/<CommentController>
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int idComment)
+        public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _comment.GetById(idComment));
+            var Dto = await _comment.GetById(id);
+            return Ok(Dto.Adapt<GetCommentRequest>());
         }
 
         /// <summary>
@@ -51,7 +57,6 @@ namespace BackendApi.Controllers
         ///
         ///     POST /Todo
         ///     {
-        ///         "idComment": 0,
         ///         "textComment": "string",
         ///         "idUser": 0
         ///     }
@@ -61,9 +66,10 @@ namespace BackendApi.Controllers
         /// <returns></returns>
 
         [HttpPost]
-        public async Task<IActionResult> Add(Comment comment)
+        public async Task<IActionResult> Add(CreateCommentRequest comment)
         {
-            await _comment.Create(comment);
+            var Dto = comment.Adapt<Comment>();
+            await _comment.Create(Dto);
             return Ok();
         }
 
@@ -90,9 +96,10 @@ namespace BackendApi.Controllers
         // PUT api/<CommentController>
 
         [HttpPut]
-        public async Task<IActionResult> Update(Comment comment)
+        public async Task<IActionResult> Update(GetCommentRequest comment)
         {
-            await _comment.Update(comment);
+            var Dto = comment.Adapt<Comment>();
+            await _comment.Update(Dto);
             return Ok();
         }
 
@@ -100,15 +107,15 @@ namespace BackendApi.Controllers
         /// <summary>
         /// Удаление комментария    
         /// </summary>
-        /// <param name="idComment">ID</param>
+        /// <param name="id">ID</param>
         /// <returns></returns>
 
         // DELETE api/<CommentController>
 
         [HttpDelete]
-        public async Task<IActionResult> Delete(int idComment)
+        public async Task<IActionResult> Delete(int id)
         {
-            await _comment.Delete(idComment);
+            await _comment.Delete(id);
             return Ok();
         }
     }

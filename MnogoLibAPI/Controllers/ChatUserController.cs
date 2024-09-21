@@ -3,6 +3,9 @@ using BusinessLogic.Services;
 using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using Mapster;
+using MnogoLibAPI.Contracts.ChatUser;
+using MnogoLibAPI.Contracts.User;
 
 namespace BackendApi.Controllers
 {
@@ -26,7 +29,9 @@ namespace BackendApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _chatUserService.GetAll());
+            var Dto = await _chatUserService.GetAll();
+
+            return Ok(Dto.Adapt<List<GetChatUserRequest>>());
         }
 
         /// <summary>
@@ -41,7 +46,8 @@ namespace BackendApi.Controllers
         [HttpGet("{idChat}/{idUser}")]
         public async Task<IActionResult> GetById(int idChat, int idUser)
         {
-            return Ok(await _chatUserService.GetById(idChat, idUser));
+            var Dto = await _chatUserService.GetById(idChat, idUser);
+            return Ok(Dto.Adapt<GetChatUserRequest>());
         }
 
         /// <summary>
@@ -63,9 +69,10 @@ namespace BackendApi.Controllers
         // POST api/<ChatUserController>
 
         [HttpPost]
-        public async Task<IActionResult> Add(ChatUser chatUser)
+        public async Task<IActionResult> Add(CreateChatUserRequest chatUser)
         {
-            await _chatUserService.Create(chatUser);
+            var Dto = chatUser.Adapt<ChatUser>();
+            await _chatUserService.Create(Dto);
             return Ok();
         }
 
@@ -92,16 +99,16 @@ namespace BackendApi.Controllers
         // PUT api/<ChatUserController>
 
         [HttpPut]
-        public async Task<IActionResult> Update(ChatUser chatUser)
+        public async Task<IActionResult> Update(GetChatUserRequest chatUser)
         {
-            await _chatUserService.Update(chatUser);
+            var Dto = chatUser.Adapt<ChatUser>();
+            await _chatUserService.Update(Dto);
             return Ok();
         }
 
         /// <summary>
         /// Удаление пользователя чата
         /// </summary>
-        /// <remarks>
         /// <param name="idChat">IDChat</param>
         /// <param name="idUser">IDUser</param>
         /// <returns></returns>

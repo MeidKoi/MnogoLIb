@@ -1,7 +1,11 @@
-﻿using Domain.Interfaces;
+﻿using BusinessLogic.Services;
+using Domain.Interfaces;
 using Domain.Models;
+using Mapster;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using MnogoLibAPI.Contracts.Chat;
+using MnogoLibAPI.Contracts.User;
 
 namespace BackendApi.Controllers
 {
@@ -25,7 +29,9 @@ namespace BackendApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _chatService.GetAll());
+            var Dto = await _chatService.GetAll();
+
+            return Ok(Dto.Adapt<List<GetChatRequest>>());
         }
 
         /// <summary>
@@ -39,7 +45,8 @@ namespace BackendApi.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _chatService.GetById(id));
+            var Dto = await _chatService.GetById(id);
+            return Ok(Dto.Adapt<GetChatRequest>());
         }
 
 
@@ -57,15 +64,16 @@ namespace BackendApi.Controllers
         ///     }
         ///
         /// </remarks>
-        /// <param name="author">Автор</param>
+        /// <param name="chatService">Автор</param>
         /// <returns></returns>
 
         // POST api/<ChatController>
 
         [HttpPost]
-        public async Task<IActionResult> Add(Chat chatService)
+        public async Task<IActionResult> Add(CreateChatRequest chat)
         {
-            await _chatService.Create(chatService);
+            var Dto = chat.Adapt<Chat>();
+            await _chatService.Create(Dto);
             return Ok();
         }
 
@@ -89,15 +97,16 @@ namespace BackendApi.Controllers
         ///     }
         ///
         /// </remarks>
-        /// <param name="author">Автор</param>
+        /// <param name="authorStatus">Автор</param>
         /// <returns></returns>
 
         // PUT api/<ChatController>
 
         [HttpPut]
-        public async Task<IActionResult> Update(Chat authorStatus)
+        public async Task<IActionResult> Update(GetChatRequest chat)
         {
-            await _chatService.Update(authorStatus);
+            var Dto = chat.Adapt<Chat>();
+            await _chatService.Update(Dto);
             return Ok();
         }
 

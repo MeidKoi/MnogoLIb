@@ -1,6 +1,10 @@
-﻿using Domain.Interfaces;
+﻿using BusinessLogic.Services;
+using Domain.Interfaces;
 using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
+using MnogoLibAPI.Contracts.MessageUser;
+using Mapster;
+using MnogoLibAPI.Contracts.User;
 
 namespace BackendApi.Controllers
 {
@@ -25,7 +29,9 @@ namespace BackendApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _materialService.GetAll());
+            var Dto = await _materialService.GetAll();
+
+            return Ok(Dto.Adapt<List<GetMessageUserRequest>>());
         }
 
 
@@ -40,7 +46,8 @@ namespace BackendApi.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _materialService.GetById(id));
+            var Dto = await _materialService.GetById(id);
+            return Ok(Dto.Adapt<GetMessageUserRequest>());
         }
 
         /// <summary>
@@ -53,19 +60,21 @@ namespace BackendApi.Controllers
         ///     {
         ///       "idUser": 0,
         ///       "idChat": 0,
-        ///       "idMessageStatus": 0
+        ///       "idMessageStatus": 0,
+        ///       "textMessage": "string"
         ///     }
         ///
         /// </remarks>
-        /// <param name="material">Пользователь</param>
+        /// <param name="message">Пользователь</param>
         /// <returns></returns>
 
         // POST api/<MessageUserController>
 
         [HttpPost]
-        public async Task<IActionResult> Add(MessagesUser material)
+        public async Task<IActionResult> Add(CreateMessageUserRequest message)
         {
-            await _materialService.Create(material);
+            var Dto = message.Adapt<MessagesUser>();
+            await _materialService.Create(Dto);
             return Ok();
         }
 
@@ -90,15 +99,16 @@ namespace BackendApi.Controllers
         ///     }
         ///
         /// </remarks>
-        /// <param name="material">Пользователь</param>
+        /// <param name="message">Пользователь</param>
         /// <returns></returns>
 
         // PUT api/<MessageUserController>
 
         [HttpPut]
-        public async Task<IActionResult> Update(MessagesUser material)
+        public async Task<IActionResult> Update(GetMessageUserRequest message)
         {
-            await _materialService.Update(material);
+            var Dto = message.Adapt<MessagesUser>();
+            await _materialService.Update(Dto);
             return Ok();
         }
 

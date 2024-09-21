@@ -1,6 +1,10 @@
-﻿using Domain.Interfaces;
+﻿using BusinessLogic.Services;
+using Domain.Interfaces;
 using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
+using MnogoLibAPI.Contracts.MaterialFile;
+using Mapster;
+using MnogoLibAPI.Contracts.User;
 
 namespace BackendApi.Controllers
 {
@@ -26,7 +30,9 @@ namespace BackendApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _materialFileService.GetAll());
+            var Dto = await _materialFileService.GetAll();
+
+            return Ok(Dto.Adapt<List<GetMaterialFileRequest>>());
         }
 
         /// <summary>
@@ -41,7 +47,8 @@ namespace BackendApi.Controllers
         [HttpGet("{idMaterial}/{idFile}")]
         public async Task<IActionResult> GetById(int idMaterial, int idFile)
         {
-            return Ok(await _materialFileService.GetById(idMaterial, idFile));
+            var Dto = await _materialFileService.GetById(idMaterial, idFile);
+            return Ok(Dto.Adapt<GetMaterialFileRequest>());
         }
 
         /// <summary>
@@ -66,9 +73,10 @@ namespace BackendApi.Controllers
         // POST api/<MaterialFileController>
 
         [HttpPost]
-        public async Task<IActionResult> Add(MaterialFile material)
+        public async Task<IActionResult> Add(CreateMaterialFileRequest material)
         {
-            await _materialFileService.Create(material);
+            var Dto = material.Adapt<MaterialFile>();
+            await _materialFileService.Create(Dto);
             return Ok();
         }
 
@@ -94,9 +102,10 @@ namespace BackendApi.Controllers
         // PUT api/<MaterialFileController>
 
         [HttpPut]
-        public async Task<IActionResult> Update(MaterialFile material)
+        public async Task<IActionResult> Update(GetMaterialFileRequest material)
         {
-            await _materialFileService.Update(material);
+            var Dto = material.Adapt<MaterialFile>();
+            await _materialFileService.Update(Dto);
             return Ok();
         }
 

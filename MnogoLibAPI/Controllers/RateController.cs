@@ -1,6 +1,10 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
+using Mapster;
+using MnogoLibAPI.Contracts.Rate;
+using BusinessLogic.Services;
+using MnogoLibAPI.Contracts.User;
 
 namespace BackendApi.Controllers
 {
@@ -25,7 +29,9 @@ namespace BackendApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _rateService.GetAll());
+            var Dto = await _rateService.GetAll();
+
+            return Ok(Dto.Adapt<List<GetRateRequest>>());
         }
 
         /// <summary>
@@ -39,7 +45,8 @@ namespace BackendApi.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _rateService.GetById(id));
+            var Dto = await _rateService.GetById(id);
+            return Ok(Dto.Adapt<GetUserRequest>());
         }
 
 
@@ -63,9 +70,10 @@ namespace BackendApi.Controllers
         // POST api/<RateController>
 
         [HttpPost]
-        public async Task<IActionResult> Add(Rate rate)
+        public async Task<IActionResult> Add(CreateRateRequest rate)
         {
-            await _rateService.Create(rate);
+            var Dto = rate.Adapt<Rate>();
+            await _rateService.Create(Dto);
             return Ok();
         }
 
@@ -94,9 +102,10 @@ namespace BackendApi.Controllers
         // PUT api/<RateController>
 
         [HttpPut]
-        public async Task<IActionResult> Update(Rate rate)
+        public async Task<IActionResult> Update(GetRateRequest rate)
         {
-            await _rateService.Update(rate);
+            var Dto = rate.Adapt<Rate>();
+            await _rateService.Update(Dto);
             return Ok();
         }
 

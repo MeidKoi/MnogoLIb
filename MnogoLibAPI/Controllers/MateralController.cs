@@ -1,6 +1,10 @@
-﻿using Domain.Interfaces;
+﻿using BusinessLogic.Services;
+using Domain.Interfaces;
 using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
+using MnogoLibAPI.Contracts.Material;
+using Mapster;
+using MnogoLibAPI.Contracts.User;
 
 namespace BackendApi.Controllers
 {
@@ -24,7 +28,9 @@ namespace BackendApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _materialService.GetAll());
+            var Dto = await _materialService.GetAll();
+
+            return Ok(Dto.Adapt<List<GetMaterialRequest>>());
         }
 
         /// <summary>
@@ -38,7 +44,8 @@ namespace BackendApi.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _materialService.GetById(id));
+            var Dto = await _materialService.GetById(id);
+            return Ok(Dto.Adapt<GetMaterialRequest>());
         }
 
         /// <summary>
@@ -49,11 +56,13 @@ namespace BackendApi.Controllers
         ///
         ///     POST /Todo
         ///     {
-        ///     "nameMaterial": "string",
-        ///     "descriptionMaterial": "string",
-        ///     "idCategory": 0,
-        ///     "idAuthorStatus": 0,
-        ///     "idAuthor": 0,
+        ///       "nameMaterial": "string",
+        ///       "descriptionMaterial": "string",
+        ///       "idCategory": 0,
+        ///       "idAuthorStatus": 0,
+        ///       "idAuthor": 0,
+        ///       "createdBy": 0,
+        ///       "fileIcon": 0
         ///     }
         ///
         /// </remarks>
@@ -63,9 +72,10 @@ namespace BackendApi.Controllers
         // POST api/<MaterialController>
 
         [HttpPost]
-        public async Task<IActionResult> Add(Material material)
+        public async Task<IActionResult> Add(CreateMaterialRequest material)
         {
-            await _materialService.Create(material);
+            var Dto = material.Adapt<Material>();
+            await _materialService.Create(Dto);
             return Ok();
         }
 
@@ -80,11 +90,16 @@ namespace BackendApi.Controllers
         ///       "idMaterial": 0,
         ///       "nameMaterial": "string",
         ///       "descriptionMaterial": "string",
+        ///       "idCategory": 0,
         ///       "idAuthorStatus": 0,
+        ///       "idAuthor": 0,
         ///       "createdBy": 0,
+        ///       "createdTime": "2024-09-21T12:18:21.215Z",
         ///       "lastUpdateBy": 0,
+        ///       "lastUpdateTime": "2024-09-21T12:18:21.215Z",
         ///       "deletedBy": 0,
-        ///       "fileIcon": 0,
+        ///       "deletedTime": "2024-09-21T12:18:21.215Z",
+        ///       "fileIcon": 0
         ///     }
         ///
         /// </remarks>
@@ -94,9 +109,10 @@ namespace BackendApi.Controllers
         // PUT api/<MaterialController>
 
         [HttpPut]
-        public async Task<IActionResult> Update(Material material)
+        public async Task<IActionResult> Update(GetMaterialRequest material)
         {
-            await _materialService.Update(material);
+            var Dto = material.Adapt<Material>();
+            await _materialService.Update(Dto);
             return Ok();
         }
 

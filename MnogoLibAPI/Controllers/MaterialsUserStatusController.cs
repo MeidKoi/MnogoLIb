@@ -3,6 +3,9 @@ using BusinessLogic.Services;
 using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using MnogoLibAPI.Contracts.MaterialUserStatus;
+using Mapster;
+using MnogoLibAPI.Contracts.User;
 
 namespace BackendApi.Controllers
 {
@@ -27,7 +30,9 @@ namespace BackendApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _materialsUserStatusService.GetAll());
+            var Dto = await _materialsUserStatusService.GetAll();
+
+            return Ok(Dto.Adapt<List<GetMaterialUserStatusRequest>>());
         }
 
         /// <summary>
@@ -43,7 +48,8 @@ namespace BackendApi.Controllers
         [HttpGet("{idMaterial}/{idUser}/{idUserStatus}")]
         public async Task<IActionResult> GetById(int idMaterial, int idUser, int idUserStatus)
         {
-            return Ok(await _materialsUserStatusService.GetById(idMaterial, idUser, idUserStatus));
+            var Dto = await _materialsUserStatusService.GetById(idMaterial, idUser, idUserStatus);
+            return Ok(Dto.Adapt<GetMaterialUserStatusRequest>());
         }
 
         /// <summary>
@@ -66,9 +72,10 @@ namespace BackendApi.Controllers
         // POST api/<MaterialsUserStatusController>
 
         [HttpPost]
-        public async Task<IActionResult> Add(MaterialsUserStatus materialsUserStatusService)
+        public async Task<IActionResult> Add(CreateMaterialUserStatusRequest materialsUserStatus)
         {
-            await _materialsUserStatusService.Create(materialsUserStatusService);
+            var Dto = materialsUserStatus.Adapt<MaterialsUserStatus>();
+            await _materialsUserStatusService.Create(Dto);
             return Ok();
         }
 
@@ -95,9 +102,10 @@ namespace BackendApi.Controllers
         // PUT api/<MaterialsUserStatusController>
 
         [HttpPut]
-        public async Task<IActionResult> Update(MaterialsUserStatus materialsUserStatusService)
+        public async Task<IActionResult> Update(GetMaterialUserStatusRequest materialsUserStatusService)
         {
-            await _materialsUserStatusService.Update(materialsUserStatusService);
+            var Dto = materialsUserStatusService.Adapt<MaterialsUserStatus>();
+            await _materialsUserStatusService.Update(Dto);
             return Ok();
         }
 
