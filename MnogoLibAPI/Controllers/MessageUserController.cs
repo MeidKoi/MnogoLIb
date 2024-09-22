@@ -1,9 +1,9 @@
 ﻿using BusinessLogic.Services;
 using Domain.Interfaces;
 using Domain.Models;
+using Mapster;
 using Microsoft.AspNetCore.Mvc;
 using MnogoLibAPI.Contracts.MessageUser;
-using Mapster;
 using MnogoLibAPI.Contracts.User;
 
 namespace BackendApi.Controllers

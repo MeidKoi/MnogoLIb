@@ -21,7 +21,7 @@ namespace Domain.Wrapper
         IMaterialFileRepository MaterialFile { get; }
         IMaterialsUserStatusRepository MaterialsUserStatus { get; }
         IMessageUserRepository MessageUser { get; }
-        IPaymentRepository Payment { get;  }
+        IPaymentRepository Payment { get; }
         IPaymentUserRepository PaymentUser { get; }
         IRateRepository Rate { get; }
         Task Save();

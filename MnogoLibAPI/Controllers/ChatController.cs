@@ -3,9 +3,9 @@ using Domain.Interfaces;
 using Domain.Models;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using MnogoLibAPI.Contracts.Chat;
 using MnogoLibAPI.Contracts.User;
+using System;
 
 namespace BackendApi.Controllers
 {
