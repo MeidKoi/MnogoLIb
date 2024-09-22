@@ -28,6 +28,22 @@ namespace BusinessLogic.Services
 
         public async Task Create(File model)
         {
+
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
+            if (string.IsNullOrEmpty(model.NameFile))
+            {
+                throw new ArgumentException(nameof(model.NameFile));
+            }
+
+            if (string.IsNullOrEmpty(model.PathFile))
+            {
+                throw new ArgumentException(nameof(model.PathFile));
+            }
+
             _repositoryWrapper.File.Create(model);
             _repositoryWrapper.Save();
         }

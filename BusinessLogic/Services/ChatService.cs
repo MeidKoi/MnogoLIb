@@ -27,6 +27,17 @@ namespace BusinessLogic.Services
 
         public async Task Create(Chat model)
         {
+
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
+            if (string.IsNullOrEmpty(model.NameChat))
+            {
+                throw new ArgumentException(nameof(model.NameChat));
+            }
+
             _repositoryWrapper.Chat.Create(model);
             _repositoryWrapper.Save();
         }

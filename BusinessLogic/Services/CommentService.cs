@@ -27,6 +27,21 @@ namespace BusinessLogic.Services
 
         public async Task Create(Comment model)
         {
+            if(model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
+            if (string.IsNullOrEmpty(model.TextComment))
+            {
+                throw new ArgumentException(nameof(model.TextComment));
+            }
+
+            if (model.IdUser < 1)
+            {
+                throw new ArgumentException(nameof(model.IdUser));
+            }
+
             _repositoryWrapper.Comment.Create(model);
             _repositoryWrapper.Save();
         }
