@@ -27,7 +27,7 @@ namespace BusinessLogic.Services
 
         public async Task Create(Comment model)
         {
-            if(model == null)
+            if (model == null)
             {
                 throw new ArgumentNullException(nameof(model));
             }
