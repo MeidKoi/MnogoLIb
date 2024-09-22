@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\groupmaterialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\groupmaterialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\buisnesslogic.tests\\rateservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|solutionrelative:buisnesslogic.tests\\rateservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\rateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\rateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\buisnesslogic.tests\\groupmaterialservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|solutionrelative:buisnesslogic.tests\\groupmaterialservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\buisnesslogic.tests\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,40 +37,44 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GroupMaterialServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\GroupMaterialServiceTest.cs",
-              "RelativeDocumentMoniker": "BuisnessLogic.Tests\\GroupMaterialServiceTest.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\GroupMaterialServiceTest.cs",
-              "RelativeToolTip": "BuisnessLogic.Tests\\GroupMaterialServiceTest.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwBwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T14:21:55.114Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GroupMaterialService.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\GroupMaterialService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\GroupMaterialService.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\GroupMaterialService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\GroupMaterialService.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAwwCIAAAAAAAAA",
+              "Title": "RateServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\RateServiceTest.cs",
+              "RelativeDocumentMoniker": "BuisnessLogic.Tests\\RateServiceTest.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\RateServiceTest.cs",
+              "RelativeToolTip": "BuisnessLogic.Tests\\RateServiceTest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T14:21:33.76Z",
+              "WhenOpened": "2024-09-22T18:11:26.795Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "RateService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\RateService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\RateService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\RateService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\RateService.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAA9wCQAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T18:11:07.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Services\\UserService.cs",
               "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\UserService.cs",
               "RelativeToolTip": "BusinessLogic\\Services\\UserService.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAwwB0AAAAAAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAA9wB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T12:20:12.574Z",
               "EditorCaption": ""
@@ -83,7 +87,7 @@
               "RelativeDocumentMoniker": "BuisnessLogic.Tests\\UserServiceTest.cs",
               "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\UserServiceTest.cs",
               "RelativeToolTip": "BuisnessLogic.Tests\\UserServiceTest.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAgwBsAAAA+AAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwE4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T12:14:44.786Z",
               "EditorCaption": ""

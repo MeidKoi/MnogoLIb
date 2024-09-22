@@ -63,9 +63,9 @@ namespace BuisnessLogic.Tests
 
         [Theory]
         [MemberData(nameof(GetIncorrectGroupMaterial))]
-        public async Task CreateAsync_NewGroupMaterial_ShouldNotCreateNewGroupMaterial(GroupMaterial user)
+        public async Task CreateAsync_NewGroupMaterial_ShouldNotCreateNewGroupMaterial(GroupMaterial model)
         {
-            var example = user;
+            var example = model;
 
 
             var ex = await Assert.ThrowsAnyAsync<ArgumentException>(() => service.Create(example));

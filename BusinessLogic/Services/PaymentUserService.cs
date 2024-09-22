@@ -27,6 +27,11 @@ namespace BusinessLogic.Services
 
         public async Task Create(PaymentUser model)
         {
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
             _repositoryWrapper.PaymentUser.Create(model);
             _repositoryWrapper.Save();
         }

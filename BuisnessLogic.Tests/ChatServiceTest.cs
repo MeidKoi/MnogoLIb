@@ -60,9 +60,9 @@ namespace BuisnessLogic.Tests
 
         [Theory]
         [MemberData(nameof(GetIncorrectChat))]
-        public async Task CreateAsync_NewChat_ShouldNotCreateNewChat(Chat user)
+        public async Task CreateAsync_NewChat_ShouldNotCreateNewChat(Chat model)
         {
-            var example = user;
+            var example = model;
 
 
             var ex = await Assert.ThrowsAnyAsync<ArgumentException>(() => service.Create(example));

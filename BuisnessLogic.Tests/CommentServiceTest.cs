@@ -62,9 +62,9 @@ namespace BuisnessLogic.Tests
 
         [Theory]
         [MemberData(nameof(GetIncorrectComment))]
-        public async Task CreateAsync_NewComment_ShouldNotCreateNewComment(Comment user)
+        public async Task CreateAsync_NewComment_ShouldNotCreateNewComment(Comment model)
         {
-            var example = user;
+            var example = model;
 
 
             var ex = await Assert.ThrowsAnyAsync<ArgumentException>(() => service.Create(example));

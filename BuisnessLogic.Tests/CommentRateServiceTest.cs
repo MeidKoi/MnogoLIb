@@ -66,9 +66,9 @@ namespace BuisnessLogic.Tests
 
         [Theory]
         [MemberData(nameof(GetIncorrectCommentRate))]
-        public async Task CreateAsync_NewCommentRate_ShouldNotCreateNewCommentRate(CommentRate user)
+        public async Task CreateAsync_NewCommentRate_ShouldNotCreateNewCommentRate(CommentRate model)
         {
-            var example = user;
+            var example = model;
 
 
             var ex = await Assert.ThrowsAnyAsync<ArgumentException>(() => service.Create(example));

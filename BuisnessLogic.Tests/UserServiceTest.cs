@@ -65,9 +65,9 @@ namespace BuisnessLogic.Tests
 
         [Theory]
         [MemberData(nameof(GetIncorrectUser))]
-        public async Task CreateAsync_NewUser_ShouldNotCreateNewUser(User user)
+        public async Task CreateAsync_NewUser_ShouldNotCreateNewUser(User model)
         {
-            var example = user;
+            var example = model;
 
 
             var ex = await Assert.ThrowsAnyAsync<ArgumentException>(() => service.Create(example));

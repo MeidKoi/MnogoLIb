@@ -27,6 +27,36 @@ namespace BusinessLogic.Services
 
         public async Task Create(MaterialFile model)
         {
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
+            if (model.IdFile < 1)
+            {
+                throw new ArgumentException(nameof(model.IdFile));
+            }
+
+            if (model.IdMaterial < 1)
+            {
+                throw new ArgumentException(nameof(model.IdMaterial));
+            }
+
+            if (model.FrameNumber < 1)
+            {
+                throw new ArgumentException(nameof(model.FrameNumber));
+            }
+
+            if (model.Volume < 1)
+            {
+                throw new ArgumentException(nameof(model.Volume));
+            }
+
+            if (model.Chapter < 1)
+            {
+                throw new ArgumentException(nameof(model.Chapter));
+            }
+
             _repositoryWrapper.MaterialFile.Create(model);
             _repositoryWrapper.Save();
         }

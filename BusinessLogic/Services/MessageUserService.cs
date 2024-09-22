@@ -27,6 +27,16 @@ namespace BusinessLogic.Services
 
         public async Task Create(MessagesUser model)
         {
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
+            if (string.IsNullOrEmpty(model.TextMessage))
+            {
+                throw new ArgumentException(nameof(model.TextMessage));
+            }
+
             _repositoryWrapper.MessageUser.Create(model);
             _repositoryWrapper.Save();
         }

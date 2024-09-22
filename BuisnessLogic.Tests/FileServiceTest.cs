@@ -64,9 +64,9 @@ namespace BuisnessLogic.Tests
 
         [Theory]
         [MemberData(nameof(GetIncorrectFile))]
-        public async Task CreateAsync_NewFile_ShouldNotCreateNewFile(File user)
+        public async Task CreateAsync_NewFile_ShouldNotCreateNewFile(File model)
         {
-            var example = user;
+            var example = model;
 
 
             var ex = await Assert.ThrowsAnyAsync<ArgumentException>(() => service.Create(example));
