@@ -29,13 +29,13 @@ namespace BuisnessLogic.Tests
         {
             return new List<object[]>
             {
-                new object[] {new Payment { CardNumber = "-123456789012345", ExpressionDate = DateTime.Parse("22-10-2027"), Cvv = "333"  } },
-                new object[] {new Payment { CardNumber = "", ExpressionDate = DateTime.Parse("22-10-2027"), Cvv = "333"  } },
-                new object[] {new Payment { CardNumber = "adssdadsa", ExpressionDate = DateTime.Parse("22-10-2027"), Cvv = "333"  } },
+                new object[] {new Payment { CardNumber = "-123456789012345", ExpressionDate = DateTime.ParseExact("22-10-2027", "dd-MM-yyyy", null), Cvv = "333"  } },
+                new object[] {new Payment { CardNumber = "", ExpressionDate = DateTime.ParseExact("22-10-2027", "dd-MM-yyyy", null), Cvv = "333"  } },
+                new object[] {new Payment { CardNumber = "adssdadsa", ExpressionDate = DateTime.ParseExact("22-10-2027", "dd-MM-yyyy", null), Cvv = "333"  } },
                 new object[] {new Payment { CardNumber = "1234567890123456", ExpressionDate = DateTime.MinValue, Cvv = "333"  } },
-                new object[] {new Payment { CardNumber = "1234567890123456", ExpressionDate = DateTime.Parse("22-10-2027"), Cvv = "-23"  } },
-                new object[] {new Payment { CardNumber = "1234567890123456", ExpressionDate = DateTime.Parse("22-10-2027"), Cvv = "ads"  } },
-                new object[] {new Payment { CardNumber = "1234567890123456", ExpressionDate = DateTime.Parse("22-10-2027"), Cvv = ""  } },
+                new object[] {new Payment { CardNumber = "1234567890123456", ExpressionDate = DateTime.ParseExact("22-10-2027", "dd-MM-yyyy", null), Cvv = "-23"  } },
+                new object[] {new Payment { CardNumber = "1234567890123456", ExpressionDate = DateTime.ParseExact("22-10-2027", "dd-MM-yyyy", null), Cvv = "ads"  } },
+                new object[] {new Payment { CardNumber = "1234567890123456", ExpressionDate = DateTime.ParseExact("22-10-2027", "dd-MM-yyyy", null), Cvv = ""  } },
 
             };
         }
