@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\buisnesslogic.tests\\paymentservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|solutionrelative:buisnesslogic.tests\\paymentservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\buisnesslogic.tests\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|solutionrelative:buisnesslogic.tests\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -31,6 +35,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PaymentServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\PaymentServiceTest.cs",
+              "RelativeDocumentMoniker": "BuisnessLogic.Tests\\PaymentServiceTest.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\PaymentServiceTest.cs",
+              "RelativeToolTip": "BuisnessLogic.Tests\\PaymentServiceTest.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwBoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T15:35:00.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UserServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\UserServiceTest.cs",
               "RelativeDocumentMoniker": "BuisnessLogic.Tests\\UserServiceTest.cs",
