@@ -78,5 +78,56 @@ namespace BuisnessLogic.Tests
             Assert.IsType<ArgumentException>(ex);
         }
 
+
+        public static IEnumerable<object[]> UpdateIncorrectUser()
+        {
+            return new List<object[]>
+            {
+                new object[] {new User { IdUser = 1, EmailUser = "", PasswordUser = "Password", NicknameUser = "Nick", IdRole = 1, CreatedTime = DateTime.Now, LastUpdateBy = 1, LastUpdateTime = DateTime.Now, DeletedBy = null, DeletedTime = null } },
+                new object[] {new User { IdUser = 1, EmailUser = "", PasswordUser = "", NicknameUser = "", IdRole = 1, CreatedTime = DateTime.Now, LastUpdateBy = 1, LastUpdateTime = DateTime.Now, DeletedBy = null, DeletedTime = null } },
+            };
+        }
+
+
+        [Fact]
+        public async void UpdateAsync_NullUser_ShullThrowNullArgumentExpression()
+        {
+            var ex = await Assert.ThrowsAnyAsync<ArgumentNullException>(() => service.Create(null));
+
+            Assert.IsType<ArgumentNullException>(ex);
+            repMoq.Verify(x => x.Create(It.IsAny<User>()), Times.Never);
+        }
+
+
+        [Fact]
+        public async void UpdateAsync_NewUser_ShouldCreateNewUser()
+        {
+            var example = new User()
+            {
+                EmailUser = "email@email.com",
+                PasswordUser = "12345pass",
+                NicknameUser = "Nick"
+            };
+
+            await service.Create(example);
+
+            repMoq.Verify(x => x.Create(It.IsAny<User>()), Times.Once);
+        }
+
+
+        [Theory]
+        [MemberData(nameof(UpdateIncorrectUser))]
+        public async Task UpdateAsync_NewUser_ShouldNotCreateNewUser(User model)
+        {
+            var example = model;
+
+            var ex = await Assert.ThrowsAnyAsync<ArgumentException>(() => service.Create(example));
+
+            Assert.IsType<ArgumentException>(ex);
+            repMoq.Verify(x => x.Create(It.IsAny<User>()), Times.Never);
+
+            Assert.IsType<ArgumentException>(ex);
+        }
+
     }
 }
