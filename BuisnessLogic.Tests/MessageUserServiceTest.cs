@@ -76,5 +76,59 @@ namespace BuisnessLogic.Tests
             Assert.IsType<ArgumentException>(ex);
         }
 
+
+        public static IEnumerable<object[]> GetIncorrectMessageUserUpdate()
+        {
+            return new List<object[]>
+            {
+                new object[] {new MessagesUser { IdChat = 1, TextMessage = "", IdUser = 1, DeliverDate = DateTime.Now, CreatedTime = DateTime.Now, LastUpdateTime = DateTime.Now } },
+                new object[] {new MessagesUser { IdChat = 1, TextMessage = "Text", IdUser = 1, DeliverDate = DateTime.Now, CreatedTime = DateTime.MaxValue, LastUpdateTime = DateTime.Now } },
+                new object[] {new MessagesUser { IdChat = 1, TextMessage = "Text", IdUser = 1, DeliverDate = DateTime.Now, CreatedTime = DateTime.Now, LastUpdateTime = DateTime.MaxValue } },
+                new object[] {new MessagesUser { IdChat = 1, TextMessage = "Text", IdUser = 1, DeliverDate = DateTime.Now, CreatedTime = DateTime.Now, LastUpdateTime = DateTime.Now, DeletedBy = 1, DeletedTime = null} },
+                new object[] {new MessagesUser { IdChat = 1, TextMessage = "Text", IdUser = 1, DeliverDate = DateTime.Now, CreatedTime = DateTime.Now, LastUpdateTime = DateTime.Now, DeletedBy = null, DeletedTime = DateTime.Now } },
+            };
+        }
+
+
+        [Fact]
+        public async void UpdateAsync_NullMessageUser_ShullThrowNullArgumentExpression()
+        {
+            var ex = await Assert.ThrowsAnyAsync<ArgumentNullException>(() => service.Update(null));
+
+            Assert.IsType<ArgumentNullException>(ex);
+            repMoq.Verify(x => x.Update(It.IsAny<MessagesUser>()), Times.Never);
+        }
+
+
+        [Fact]
+        public async void UpdateAsync_NewMessageUser_ShouldUpdateNewMessageUser()
+        {
+            var example = new MessagesUser()
+            {
+                IdUser = 1,
+                IdChat = 1,
+                TextMessage = "Text",
+                IdMessageStatus = 1
+            };
+
+            await service.Update(example);
+
+            repMoq.Verify(x => x.Update(It.IsAny<MessagesUser>()), Times.Once);
+        }
+
+
+        [Theory]
+        [MemberData(nameof(GetIncorrectMessageUserUpdate))]
+        public async Task UpdateAsync_NewMessageUser_ShouldNotUpdateNewMessageUser(MessagesUser model)
+        {
+            var example = model;
+
+            var ex = await Assert.ThrowsAnyAsync<ArgumentException>(() => service.Update(example));
+
+            Assert.IsType<ArgumentException>(ex);
+            repMoq.Verify(x => x.Update(It.IsAny<MessagesUser>()), Times.Never);
+
+            Assert.IsType<ArgumentException>(ex);
+        }
     }
 }

@@ -80,5 +80,63 @@ namespace BuisnessLogic.Tests
             Assert.IsType<ArgumentException>(ex);
         }
 
+        public static IEnumerable<object[]> GetIncorrectMaterialUpdate()
+        {
+            return new List<object[]>
+            {
+                new object[] {new Material { IdMaterial = 1, NameMaterial = "", DescriptionMaterial = "Description", IdCategory = 1, IdAuthor = 1, IdAuthorStatus = 1, CreatedBy = 1, FileIcon = 1, CreatedTime = DateTime.Now, LastUpdateBy = 1, LastUpdateTime = DateTime.Now  } },
+                new object[] {new Material { IdMaterial = 1, NameMaterial = "Name", DescriptionMaterial = "", IdCategory = 1, IdAuthor = 1, IdAuthorStatus = 1, CreatedBy = 1, FileIcon = 1, CreatedTime = DateTime.Now, LastUpdateBy = 1, LastUpdateTime = DateTime.Now  } },
+                new object[] {new Material { IdMaterial = 1, NameMaterial = "Name", DescriptionMaterial = "Description", IdCategory = 1, IdAuthor = 1, IdAuthorStatus = 1, CreatedBy = 1, FileIcon = 1, CreatedTime = DateTime.MaxValue, LastUpdateBy = 1, LastUpdateTime = DateTime.Now  } },
+                new object[] {new Material { IdMaterial = 1, NameMaterial = "Name", DescriptionMaterial = "Description", IdCategory = 1, IdAuthor = 1, IdAuthorStatus = 1, CreatedBy = 1, FileIcon = 1, CreatedTime = DateTime.Now, LastUpdateBy = 1, LastUpdateTime = DateTime.MaxValue  } },
+                new object[] {new Material { IdMaterial = 1, NameMaterial = "Name", DescriptionMaterial = "Description", IdCategory = 1, IdAuthor = 1, IdAuthorStatus = 1, CreatedBy = 1, FileIcon = 1, CreatedTime = DateTime.Now, LastUpdateBy = 1, LastUpdateTime = DateTime.Now, DeletedBy = 1, DeletedTime = null  } },
+                new object[] {new Material { IdMaterial = 1, NameMaterial = "Name", DescriptionMaterial = "Description", IdCategory = 1, IdAuthor = 1, IdAuthorStatus = 1, CreatedBy = 1, FileIcon = 1, CreatedTime = DateTime.Now, LastUpdateBy = 1, LastUpdateTime = DateTime.Now, DeletedBy = null, DeletedTime = DateTime.Now  } },
+            };
+        }
+
+
+        [Fact]
+        public async void UpdateAsync_NullMaterial_ShullThrowNullArgumentExpression()
+        {
+            var ex = await Assert.ThrowsAnyAsync<ArgumentNullException>(() => service.Update(null));
+
+            Assert.IsType<ArgumentNullException>(ex);
+            repMoq.Verify(x => x.Update(It.IsAny<Material>()), Times.Never);
+        }
+
+
+        [Fact]
+        public async void UpdateAsync_NewMaterial_ShouldUpdateNewMaterial()
+        {
+            var example = new Material()
+            {
+                NameMaterial = "Name",
+                DescriptionMaterial = "Description",
+                IdCategory = 1,
+                CreatedBy = 1,
+                IdAuthor = 1,
+                IdAuthorStatus = 1,
+                FileIcon = 1,
+            };
+
+            await service.Update(example);
+
+            repMoq.Verify(x => x.Update(It.IsAny<Material>()), Times.Once);
+        }
+
+
+        [Theory]
+        [MemberData(nameof(GetIncorrectMaterialUpdate))]
+        public async Task UpdateAsync_NewMaterial_ShouldNotUpdateNewMaterial(Material model)
+        {
+            var example = model;
+
+
+            var ex = await Assert.ThrowsAnyAsync<ArgumentException>(() => service.Update(example));
+
+            Assert.IsType<ArgumentException>(ex);
+            repMoq.Verify(x => x.Update(It.IsAny<Material>()), Times.Never);
+
+            Assert.IsType<ArgumentException>(ex);
+        }
     }
 }

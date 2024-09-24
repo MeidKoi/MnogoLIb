@@ -53,6 +53,21 @@ namespace BusinessLogic.Services
                 throw new ArgumentException(nameof(model.ValueRate));
             }
 
+            if (model.CreatedTime > DateTime.Now)
+            {
+                throw new ArgumentException(nameof(model.CreatedTime));
+            }
+
+            if (model.LastUpdateTime > DateTime.Now)
+            {
+                throw new ArgumentException(nameof(model.LastUpdateTime));
+            }
+
+            if (model.DeletedTime > DateTime.Now)
+            {
+                throw new ArgumentException(nameof(model.DeletedTime));
+            }
+
             _repositoryWrapper.Rate.Update(model);
             _repositoryWrapper.Save();
         }

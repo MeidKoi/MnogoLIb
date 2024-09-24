@@ -32,7 +32,7 @@ namespace BuisnessLogic.Tests
             {
                 new object[] {new File { NameFile = "Name", PathFile = "" } },
                 new object[] {new File {NameFile = "", PathFile = "Path" } },
-                 new object[] {new File {NameFile = "", PathFile = "" } },
+                new object[] {new File {NameFile = "", PathFile = "" } },
             };
         }
 
@@ -73,6 +73,64 @@ namespace BuisnessLogic.Tests
 
             Assert.IsType<ArgumentException>(ex);
             repMoq.Verify(x => x.Create(It.IsAny<File>()), Times.Never);
+
+            Assert.IsType<ArgumentException>(ex);
+        }
+
+        public static IEnumerable<object[]> GetIncorrectFileUpdate()
+        {
+            return new List<object[]>
+            {
+                new object[] {new File {IdFile = 1, NameFile = "Name", PathFile = "", CreatedBy = 1, CreatedTime = DateTime.Now, LastUpdateBy = 1, LastUpdateTime = DateTime.Now } },
+                new object[] {new File {IdFile = 1, NameFile = "Name", PathFile = "Path", CreatedBy = 1, CreatedTime = DateTime.MaxValue, LastUpdateBy = 1, LastUpdateTime = DateTime.Now } },
+                new object[] {new File {IdFile = 1, NameFile = "Name", PathFile = "Path", CreatedBy = 1, CreatedTime = DateTime.Now, LastUpdateBy = 1, LastUpdateTime = DateTime.MaxValue } },
+                new object[] {new File {IdFile = 1, NameFile = "Name", PathFile = "Path", CreatedBy = 1, CreatedTime = DateTime.Now, LastUpdateBy = 1, LastUpdateTime = DateTime.Now, DeletedBy = 1, DeletedTime = null } },
+                new object[] {new File {IdFile = 1, NameFile = "Name", PathFile = "Path", CreatedBy = 1, CreatedTime = DateTime.Now, LastUpdateBy = 1, LastUpdateTime = DateTime.Now, DeletedBy = null, DeletedTime = DateTime.Now } },
+            };
+        }
+
+
+        [Fact]
+        public async void UpdateAsync_NullFile_ShullThrowNullArgumentExpression()
+        {
+            var ex = await Assert.ThrowsAnyAsync<ArgumentNullException>(() => service.Update(null));
+
+            Assert.IsType<ArgumentNullException>(ex);
+            repMoq.Verify(x => x.Update(It.IsAny<File>()), Times.Never);
+        }
+
+
+        [Fact]
+        public async void UpdateAsync_NewFile_ShouldCreateNewFile()
+        {
+            var example = new File()
+            {
+                IdFile = 1,
+                NameFile = "Name",
+                PathFile = "Path",
+                CreatedBy = 1,
+                CreatedTime = DateTime.Now,
+                LastUpdateBy = 1,
+                LastUpdateTime = DateTime.Now,
+            };
+
+            await service.Update(example);
+
+            repMoq.Verify(x => x.Update(It.IsAny<File>()), Times.Once);
+        }
+
+
+        [Theory]
+        [MemberData(nameof(GetIncorrectFileUpdate))]
+        public async Task UpdateAsync_NewFile_ShouldNotCreateNewFile(File model)
+        {
+            var example = model;
+
+
+            var ex = await Assert.ThrowsAnyAsync<ArgumentException>(() => service.Update(example));
+
+            Assert.IsType<ArgumentException>(ex);
+            repMoq.Verify(x => x.Update(It.IsAny<File>()), Times.Never);
 
             Assert.IsType<ArgumentException>(ex);
         }

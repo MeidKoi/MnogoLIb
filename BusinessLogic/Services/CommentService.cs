@@ -48,6 +48,31 @@ namespace BusinessLogic.Services
 
         public async Task Update(Comment model)
         {
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
+            if (string.IsNullOrEmpty(model.TextComment))
+            {
+                throw new ArgumentException(nameof(model.TextComment));
+            }
+
+            if (model.CreatedTime > DateTime.Now)
+            {
+                throw new ArgumentException(nameof(model.CreatedTime));
+            }
+
+            if (model.LastUpdateTime > DateTime.Now)
+            {
+                throw new ArgumentException(nameof(model.LastUpdateTime));
+            }
+
+            if (model.DeletedTime > DateTime.Now)
+            {
+                throw new ArgumentException(nameof(model.DeletedTime));
+            }
+
             _repositoryWrapper.Comment.Update(model);
             _repositoryWrapper.Save();
         }

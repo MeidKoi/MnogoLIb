@@ -60,6 +60,17 @@ namespace BuisnessLogic.Tests
             repMoq.Verify(x => x.Create(It.IsAny<Rate>()), Times.Once);
         }
 
+        public static IEnumerable<object[]> GetIncorrectRateUpdate()
+        {
+            return new List<object[]>
+            {
+                new object[] {new Rate { IdUser = 1, IdMaterial = 1, ValueRate = 0, CreatedTime = DateTime.Now, LastUpdateTime = DateTime.Now, DeletedTime = DateTime.Now} },
+                new object[] {new Rate { IdUser = 1, IdMaterial = 1, ValueRate = 11, CreatedTime = DateTime.Now, LastUpdateTime = DateTime.Now, DeletedTime = DateTime.Now} },
+                new object[] {new Rate { IdUser = 1, IdMaterial = 1, ValueRate = 5, CreatedTime = DateTime.MaxValue, LastUpdateTime = DateTime.Now, DeletedTime = DateTime.Now } },
+                new object[] {new Rate { IdUser = 1, IdMaterial = 1, ValueRate = 5, CreatedTime = DateTime.Now, LastUpdateTime = DateTime.MaxValue, DeletedTime = DateTime.Now } },
+                new object[] {new Rate { IdUser = 1, IdMaterial = 1, ValueRate = 5, CreatedTime = DateTime.MaxValue, LastUpdateTime = DateTime.Now, DeletedTime = DateTime.MaxValue } },
+            };
+        }
 
         [Theory]
         [MemberData(nameof(GetIncorrectRate))]
@@ -94,6 +105,9 @@ namespace BuisnessLogic.Tests
                 IdUser = 1,
                 IdMaterial = 1,
                 ValueRate = 9,
+                CreatedTime = DateTime.Now,
+                LastUpdateTime = DateTime.Now,
+                DeletedTime = null,
             };
 
             await service.Update(example);
@@ -103,7 +117,7 @@ namespace BuisnessLogic.Tests
 
 
         [Theory]
-        [MemberData(nameof(GetIncorrectRate))]
+        [MemberData(nameof(GetIncorrectRateUpdate))]
         public async Task UpdateAsync_NewRate_ShouldNotCreateNewRate(Rate model)
         {
             var example = model;

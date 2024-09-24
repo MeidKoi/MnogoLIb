@@ -75,5 +75,57 @@ namespace BuisnessLogic.Tests
             Assert.IsType<ArgumentException>(ex);
         }
 
+        public static IEnumerable<object[]> GetIncorrectCommentUpdate()
+        {
+            return new List<object[]>
+            {
+                new object[] {new Comment { IdComment = 1, IdUser = 1, TextComment = "", CreatedTime = DateTime.Now, LastUpdateTime = DateTime.Now, DeletedTime = DateTime.Now} },
+                new object[] {new Comment { IdComment = 1, IdUser = 1, TextComment = "Name", CreatedTime = DateTime.MaxValue, LastUpdateTime = DateTime.Now, DeletedTime = DateTime.Now} },
+                new object[] {new Comment { IdComment = 1, IdUser = 1, TextComment = "Name", CreatedTime = DateTime.Now, LastUpdateTime = DateTime.MaxValue, DeletedTime = DateTime.MaxValue} },
+            };
+        }
+
+
+        [Fact]
+        public async void UpdateAsync_NullComment_ShullThrowNullArgumentExpression()
+        {
+            var ex = await Assert.ThrowsAnyAsync<ArgumentNullException>(() => service.Update(null));
+
+            Assert.IsType<ArgumentNullException>(ex);
+            repMoq.Verify(x => x.Update(It.IsAny<Comment>()), Times.Never);
+        }
+
+
+        [Fact]
+        public async void UpdateAsync_NewComment_ShouldUpdateNewComment()
+        {
+            var example = new Comment()
+            {
+                IdUser = 1,
+                TextComment = "Comment"
+            };
+
+            await service.Update(example);
+
+            repMoq.Verify(x => x.Update(It.IsAny<Comment>()), Times.Once);
+        }
+
+
+        [Theory]
+        [MemberData(nameof(GetIncorrectCommentUpdate))]
+        public async Task UpdateAsync_NewComment_ShouldNotCreateNewComment(Comment model)
+        {
+            var example = model;
+
+
+            var ex = await Assert.ThrowsAnyAsync<ArgumentException>(() => service.Update(example));
+
+            Assert.IsType<ArgumentException>(ex);
+            repMoq.Verify(x => x.Update(It.IsAny<Comment>()), Times.Never);
+
+            Assert.IsType<ArgumentException>(ex);
+        }
+
+
     }
 }

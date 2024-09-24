@@ -44,6 +44,36 @@ namespace BusinessLogic.Services
 
         public async Task Update(Chat model)
         {
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
+            if (string.IsNullOrEmpty(model.NameChat))
+            {
+                throw new ArgumentException(nameof(model.NameChat));
+            }
+
+            if (model.CreatedTime > DateTime.Now)
+            {
+                throw new ArgumentException(nameof(model.CreatedTime));
+            }
+
+            if (model.LastUpdateTime > DateTime.Now)
+            {
+                throw new ArgumentException(nameof(model.LastUpdateTime));
+            }
+
+            if (model.DeletedBy is not null && model.DeletedTime is null || model.DeletedTime > DateTime.Now)
+            {
+                throw new ArgumentException(nameof(model.DeletedTime));
+            }
+
+            if (model.DeletedBy is null && model.DeletedTime is not null)
+            {
+                throw new ArgumentException(nameof(model.DeletedBy));
+            }
+
             _repositoryWrapper.Chat.Update(model);
             _repositoryWrapper.Save();
         }

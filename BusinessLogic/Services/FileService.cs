@@ -50,6 +50,41 @@ namespace BusinessLogic.Services
 
         public async Task Update(File model)
         {
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
+            if (string.IsNullOrEmpty(model.NameFile))
+            {
+                throw new ArgumentException(nameof(model.NameFile));
+            }
+
+            if (string.IsNullOrEmpty(model.PathFile))
+            {
+                throw new ArgumentException(nameof(model.PathFile));
+            }
+
+            if (model.CreatedTime > DateTime.Now)
+            {
+                throw new ArgumentException(nameof(model.CreatedTime));
+            }
+
+            if (model.LastUpdateTime > DateTime.Now)
+            {
+                throw new ArgumentException(nameof(model.LastUpdateTime));
+            }
+
+            if (model.DeletedBy is not null && model.DeletedTime is null || model.DeletedTime > DateTime.Now)
+            {
+                throw new ArgumentException(nameof(model.DeletedTime));
+            }
+
+            if (model.DeletedBy is null && model.DeletedTime is not null)
+            {
+                throw new ArgumentException(nameof(model.DeletedBy));
+            }
+
             _repositoryWrapper.File.Update(model);
             _repositoryWrapper.Save();
         }
