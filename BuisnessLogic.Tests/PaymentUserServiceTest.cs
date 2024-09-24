@@ -51,5 +51,29 @@ namespace BuisnessLogic.Tests
             repMoq.Verify(x => x.Create(It.IsAny<PaymentUser>()), Times.Once);
         }
 
+        [Fact]
+        public async void UpdateAsync_NullPaymentUser_ShullThrowNullArgumentExpression()
+        {
+            var ex = await Assert.ThrowsAnyAsync<ArgumentNullException>(() => service.Update(null));
+
+            Assert.IsType<ArgumentNullException>(ex);
+            repMoq.Verify(x => x.Update(It.IsAny<PaymentUser>()), Times.Never);
+        }
+
+
+        [Fact]
+        public async void UpdateAsync_NewPaymentUser_ShouldUpdateNewPaymentUser()
+        {
+            var example = new PaymentUser()
+            {
+                IdPayment = 1,
+                IdUser = 1,
+                IsActive = true
+            };
+
+            await service.Update(example);
+
+            repMoq.Verify(x => x.Update(It.IsAny<PaymentUser>()), Times.Once);
+        }
     }
 }

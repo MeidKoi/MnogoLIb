@@ -76,5 +76,46 @@ namespace BuisnessLogic.Tests
             Assert.IsType<ArgumentException>(ex);
         }
 
+
+        [Fact]
+        public async void UpdateAsync_NullGroupMaterial_ShullThrowNullArgumentExpression()
+        {
+            var ex = await Assert.ThrowsAnyAsync<ArgumentNullException>(() => service.Update(null));
+
+            Assert.IsType<ArgumentNullException>(ex);
+            repMoq.Verify(x => x.Update(It.IsAny<GroupMaterial>()), Times.Never);
+        }
+
+
+        [Fact]
+        public async void UpdateAsync_NewGroupMaterial_ShouldUpdateNewGroupMaterial()
+        {
+            var example = new GroupMaterial()
+            {
+                NameGroup = "Name",
+                DescriptionGroup = "Description",
+            };
+
+            await service.Update(example);
+
+            repMoq.Verify(x => x.Update(It.IsAny<GroupMaterial>()), Times.Once);
+        }
+
+
+        [Theory]
+        [MemberData(nameof(GetIncorrectGroupMaterial))]
+        public async Task UpdateAsync_NewGroupMaterial_ShouldNotUpdateNewGroupMaterial(GroupMaterial model)
+        {
+            var example = model;
+
+
+            var ex = await Assert.ThrowsAnyAsync<ArgumentException>(() => service.Update(example));
+
+            Assert.IsType<ArgumentException>(ex);
+            repMoq.Verify(x => x.Update(It.IsAny<GroupMaterial>()), Times.Never);
+
+            Assert.IsType<ArgumentException>(ex);
+        }
+
     }
 }

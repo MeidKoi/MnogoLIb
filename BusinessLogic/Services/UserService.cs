@@ -1,6 +1,7 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
 using Domain.Wrapper;
+using System;
 
 namespace BusinessLogic.Services
 {
@@ -53,6 +54,48 @@ namespace BusinessLogic.Services
 
         public async Task Update(User model)
         {
+
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
+            if (string.IsNullOrEmpty(model.EmailUser))
+            {
+                throw new ArgumentException(nameof(model.EmailUser));
+            }
+
+            if (string.IsNullOrEmpty(model.PasswordUser))
+            {
+                throw new ArgumentException(nameof(model.PasswordUser));
+            }
+
+            if (string.IsNullOrEmpty(model.NicknameUser))
+            {
+                throw new ArgumentException(nameof(model.NicknameUser));
+            }
+
+            if (model.CreatedTime > DateTime.Now)
+            {
+                throw new ArgumentException(nameof(model.CreatedTime));
+            }
+
+            if (model.LastUpdateTime > DateTime.Now)
+            {
+                throw new ArgumentException(nameof(model.LastUpdateTime));
+            }
+
+            if (model.DeletedBy is not null && model.DeletedTime is null || model.DeletedTime > DateTime.Now)
+            {
+                throw new ArgumentException(nameof(model.DeletedTime));
+            }
+
+            if (model.DeletedBy is null && model.DeletedTime is not null)
+            {
+                throw new ArgumentException(nameof(model.DeletedBy));
+            }
+
+
             _repositoryWrapper.User.Update(model);
             _repositoryWrapper.Save();
         }

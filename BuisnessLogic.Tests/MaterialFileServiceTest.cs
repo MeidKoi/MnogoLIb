@@ -29,8 +29,6 @@ namespace BuisnessLogic.Tests
         {
             return new List<object[]>
             {
-                new object[] {new MaterialFile { IdFile = -1, IdMaterial = 1, Volume = 1, Chapter = 1, FrameNumber = 1 } },
-                new object[] {new MaterialFile { IdFile = 1, IdMaterial = -1, Volume = 1, Chapter = 1, FrameNumber = 1 } },
                 new object[] {new MaterialFile { IdFile = 1, IdMaterial = 1, Volume = -1, Chapter = 1, FrameNumber = 1 } },
                 new object[] {new MaterialFile { IdFile = 1, IdMaterial = 1, Volume = 1, Chapter = -1, FrameNumber = 1 } },
                 new object[] {new MaterialFile { IdFile = 1, IdMaterial = 1, Volume = 1, Chapter = 1, FrameNumber = -1 } },
@@ -77,6 +75,49 @@ namespace BuisnessLogic.Tests
 
             Assert.IsType<ArgumentException>(ex);
             repMoq.Verify(x => x.Create(It.IsAny<MaterialFile>()), Times.Never);
+
+            Assert.IsType<ArgumentException>(ex);
+        }
+
+        [Fact]
+        public async void UpdateAsync_NullMaterialFile_ShullThrowNullArgumentExpression()
+        {
+            var ex = await Assert.ThrowsAnyAsync<ArgumentNullException>(() => service.Update(null));
+
+            Assert.IsType<ArgumentNullException>(ex);
+            repMoq.Verify(x => x.Update(It.IsAny<MaterialFile>()), Times.Never);
+        }
+
+
+        [Fact]
+        public async void UpdateAsync_NewMaterialFile_ShouldUpdateNewMaterialFile()
+        {
+            var example = new MaterialFile()
+            {
+                IdMaterial = 1,
+                IdFile = 1,
+                Volume = 1,
+                Chapter = 1,
+                FrameNumber = 1
+            };
+
+            await service.Update(example);
+
+            repMoq.Verify(x => x.Update(It.IsAny<MaterialFile>()), Times.Once);
+        }
+
+
+        [Theory]
+        [MemberData(nameof(GetIncorrectMaterialFile))]
+        public async Task UpdateAsync_NewMaterialFile_ShouldNotUpdateNewMaterialFile(MaterialFile model)
+        {
+            var example = model;
+
+
+            var ex = await Assert.ThrowsAnyAsync<ArgumentException>(() => service.Update(example));
+
+            Assert.IsType<ArgumentException>(ex);
+            repMoq.Verify(x => x.Update(It.IsAny<MaterialFile>()), Times.Never);
 
             Assert.IsType<ArgumentException>(ex);
         }

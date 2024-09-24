@@ -76,5 +76,47 @@ namespace BuisnessLogic.Tests
             Assert.IsType<ArgumentException>(ex);
         }
 
+        [Fact]
+        public async void UpdateAsync_NullRate_ShullThrowNullArgumentExpression()
+        {
+            var ex = await Assert.ThrowsAnyAsync<ArgumentNullException>(() => service.Update(null));
+
+            Assert.IsType<ArgumentNullException>(ex);
+            repMoq.Verify(x => x.Update(It.IsAny<Rate>()), Times.Never);
+        }
+
+
+        [Fact]
+        public async void UpdateAsync_NewRate_ShouldUpdateNewRate()
+        {
+            var example = new Rate()
+            {
+                IdUser = 1,
+                IdMaterial = 1,
+                ValueRate = 9,
+            };
+
+            await service.Update(example);
+
+            repMoq.Verify(x => x.Update(It.IsAny<Rate>()), Times.Once);
+        }
+
+
+        [Theory]
+        [MemberData(nameof(GetIncorrectRate))]
+        public async Task UpdateAsync_NewRate_ShouldNotCreateNewRate(Rate model)
+        {
+            var example = model;
+
+
+            var ex = await Assert.ThrowsAnyAsync<ArgumentException>(() => service.Update(example));
+
+            Assert.IsType<ArgumentException>(ex);
+            repMoq.Verify(x => x.Update(It.IsAny<Rate>()), Times.Never);
+
+            Assert.IsType<ArgumentException>(ex);
+        }
+
+
     }
 }

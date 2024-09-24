@@ -72,6 +72,10 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> Add(CreateUserRequest user)
         {
             var Dto = user.Adapt<User>();
+            Dto.IdRole = 1;
+            Dto.LastUpdateBy = Dto.IdUser;
+            Dto.CreatedTime = DateTime.Now;
+            Dto.LastUpdateTime = DateTime.Now;
             await _userService.Create(Dto);
             return Ok();
         }

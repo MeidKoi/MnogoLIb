@@ -39,6 +39,11 @@ namespace BusinessLogic.Services
 
         public async Task Update(MaterialsUserStatus model)
         {
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
             _repositoryWrapper.MaterialsUserStatus.Update(model);
             _repositoryWrapper.Save();
         }

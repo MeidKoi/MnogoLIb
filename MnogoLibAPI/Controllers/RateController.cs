@@ -73,6 +73,8 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> Add(CreateRateRequest rate)
         {
             var Dto = rate.Adapt<Rate>();
+            Dto.CreatedTime = DateTime.Now;
+            Dto.LastUpdateTime = DateTime.Now;
             await _rateService.Create(Dto);
             return Ok();
         }

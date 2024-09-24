@@ -25,15 +25,6 @@ namespace BuisnessLogic.Tests
         }
 
 
-        public static IEnumerable<object[]> GetIncorrectChatUser()
-        {
-            return new List<object[]>
-            {
-                new object[] {new ChatUser { IdChat = -1, IdUser = -1 } },
-                new object[] {new ChatUser { IdChat = 0, IdUser = 0} }
-            };
-        }
-
 
         [Fact]
         public async void CreateAsync_NullChatUser_ShullThrowNullArgumentExpression()
@@ -54,25 +45,33 @@ namespace BuisnessLogic.Tests
                 IdChat = 1
             };
 
-            await service.Create(example);
+            await service.Update(example);
 
-            repMoq.Verify(x => x.Create(It.IsAny<ChatUser>()), Times.Once);
+            repMoq.Verify(x => x.Update(It.IsAny<ChatUser>()), Times.Once);
+        }
+
+        [Fact]
+        public async void UpdateAsync_NullChatUser_ShullThrowNullArgumentExpression()
+        {
+            var ex = await Assert.ThrowsAnyAsync<ArgumentNullException>(() => service.Update(null));
+
+            Assert.IsType<ArgumentNullException>(ex);
+            repMoq.Verify(x => x.Update(It.IsAny<ChatUser>()), Times.Never);
         }
 
 
-        [Theory]
-        [MemberData(nameof(GetIncorrectChatUser))]
-        public async Task CreateAsync_NewChatUser_ShouldNotCreateNewChatUser(ChatUser model)
+        [Fact]
+        public async void UpdateAsync_NewChatUser_ShouldUpdateNewChatUser()
         {
-            var example = model;
+            var example = new ChatUser()
+            {
+                IdUser = 1,
+                IdChat = 1
+            };
 
+            await service.Update(example);
 
-            var ex = await Assert.ThrowsAnyAsync<ArgumentException>(() => service.Create(example));
-
-            Assert.IsType<ArgumentException>(ex);
-            repMoq.Verify(x => x.Create(It.IsAny<ChatUser>()), Times.Never);
-
-            Assert.IsType<ArgumentException>(ex);
+            repMoq.Verify(x => x.Update(It.IsAny<ChatUser>()), Times.Once);
         }
 
     }

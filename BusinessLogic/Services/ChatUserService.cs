@@ -33,22 +33,17 @@ namespace BusinessLogic.Services
                 throw new ArgumentNullException(nameof(model));
             }
 
-            if (model.IdUser < 1)
-            {
-                throw new ArgumentException(nameof(model.IdUser));
-            }
-
-            if (model.IdChat < 1)
-            {
-                throw new ArgumentException(nameof(model.IdChat));
-            }
-
             _repositoryWrapper.ChatUser.Create(model);
             _repositoryWrapper.Save();
         }
 
         public async Task Update(ChatUser model)
         {
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
             _repositoryWrapper.ChatUser.Update(model);
             _repositoryWrapper.Save();
         }

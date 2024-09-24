@@ -43,6 +43,16 @@ namespace BusinessLogic.Services
 
         public async Task Update(Rate model)
         {
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
+            if (model.ValueRate < 1 || model.ValueRate > 10)
+            {
+                throw new ArgumentException(nameof(model.ValueRate));
+            }
+
             _repositoryWrapper.Rate.Update(model);
             _repositoryWrapper.Save();
         }

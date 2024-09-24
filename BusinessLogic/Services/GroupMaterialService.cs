@@ -49,6 +49,21 @@ namespace BusinessLogic.Services
 
         public async Task Update(GroupMaterial model)
         {
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
+            if (string.IsNullOrEmpty(model.NameGroup))
+            {
+                throw new ArgumentException(nameof(model.NameGroup));
+            }
+
+            if (string.IsNullOrEmpty(model.DescriptionGroup))
+            {
+                throw new ArgumentException(nameof(model.DescriptionGroup));
+            }
+
             _repositoryWrapper.GroupMaterial.Update(model);
             _repositoryWrapper.Save();
         }

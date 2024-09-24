@@ -3,12 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\buisnesslogic.tests\\paymentservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|solutionrelative:buisnesslogic.tests\\paymentservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\chatuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\chatuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\buisnesslogic.tests\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|solutionrelative:buisnesslogic.tests\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\buisnesslogic.tests\\chatuserservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|solutionrelative:buisnesslogic.tests\\chatuserservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\buisnesslogic.tests\\commentrateservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|solutionrelative:buisnesslogic.tests\\commentrateservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\commentrateservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\commentrateservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\buisnesslogic.tests\\groupmaterialservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|solutionrelative:buisnesslogic.tests\\groupmaterialservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\groupmaterialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\groupmaterialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\buisnesslogic.tests\\materialfileservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|solutionrelative:buisnesslogic.tests\\materialfileservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\materialfileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\materialfileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\materialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\materialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\materialsuserstatusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\materialsuserstatusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\buisnesslogic.tests\\materialuserstatusservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|solutionrelative:buisnesslogic.tests\\materialuserstatusservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\buisnesslogic.tests\\messageuserservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|solutionrelative:buisnesslogic.tests\\messageuserservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,28 +78,172 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PaymentServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\PaymentServiceTest.cs",
-              "RelativeDocumentMoniker": "BuisnessLogic.Tests\\PaymentServiceTest.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\PaymentServiceTest.cs",
-              "RelativeToolTip": "BuisnessLogic.Tests\\PaymentServiceTest.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwCAAAACDAAAA",
+              "DocumentIndex": 1,
+              "Title": "ChatUserServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\ChatUserServiceTest.cs",
+              "RelativeDocumentMoniker": "BuisnessLogic.Tests\\ChatUserServiceTest.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\ChatUserServiceTest.cs",
+              "RelativeToolTip": "BuisnessLogic.Tests\\ChatUserServiceTest.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAqwC4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T15:35:00.237Z",
+              "WhenOpened": "2024-09-24T08:55:57.222Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\UserServiceTest.cs",
-              "RelativeDocumentMoniker": "BuisnessLogic.Tests\\UserServiceTest.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\UserServiceTest.cs",
-              "RelativeToolTip": "BuisnessLogic.Tests\\UserServiceTest.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAgwFUAAAB0AAAA",
+              "DocumentIndex": 0,
+              "Title": "ChatUserService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\ChatUserService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\ChatUserService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\ChatUserService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\ChatUserService.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAUwBQAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T12:53:45.574Z"
+              "WhenOpened": "2024-09-24T08:55:46.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CommentRateServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\CommentRateServiceTest.cs",
+              "RelativeDocumentMoniker": "BuisnessLogic.Tests\\CommentRateServiceTest.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\CommentRateServiceTest.cs",
+              "RelativeToolTip": "BuisnessLogic.Tests\\CommentRateServiceTest.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAkwGgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T08:51:07.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CommentRateServices.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\CommentRateServices.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\CommentRateServices.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\CommentRateServices.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\CommentRateServices.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAqwDcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T08:50:20.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GroupMaterialService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\GroupMaterialService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\GroupMaterialService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\GroupMaterialService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\GroupMaterialService.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAqwEEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T08:48:35.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GroupMaterialServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\GroupMaterialServiceTest.cs",
+              "RelativeDocumentMoniker": "BuisnessLogic.Tests\\GroupMaterialServiceTest.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\GroupMaterialServiceTest.cs",
+              "RelativeToolTip": "BuisnessLogic.Tests\\GroupMaterialServiceTest.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAASwE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T08:47:12.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MaterialFileServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\MaterialFileServiceTest.cs",
+              "RelativeDocumentMoniker": "BuisnessLogic.Tests\\MaterialFileServiceTest.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\MaterialFileServiceTest.cs",
+              "RelativeToolTip": "BuisnessLogic.Tests\\MaterialFileServiceTest.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAAAHMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T08:45:24.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MaterialFileService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\MaterialFileService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\MaterialFileService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\MaterialFileService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\MaterialFileService.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAqwEoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T08:44:49.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MaterialService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\MaterialService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\MaterialService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\MaterialService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\MaterialService.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T08:44:29.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MaterialsUserStatusService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\MaterialsUserStatusService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\MaterialsUserStatusService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\MaterialsUserStatusService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\MaterialsUserStatusService.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAiwC0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T08:44:06.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MaterialUserStatusServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\MaterialUserStatusServiceTest.cs",
+              "RelativeDocumentMoniker": "BuisnessLogic.Tests\\MaterialUserStatusServiceTest.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\MaterialUserStatusServiceTest.cs",
+              "RelativeToolTip": "BuisnessLogic.Tests\\MaterialUserStatusServiceTest.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAAAEYAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T08:42:09.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MessageUserServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\MessageUserServiceTest.cs",
+              "RelativeDocumentMoniker": "BuisnessLogic.Tests\\MessageUserServiceTest.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\MessageUserServiceTest.cs",
+              "RelativeToolTip": "BuisnessLogic.Tests\\MessageUserServiceTest.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAowE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T08:41:44.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\UserService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\UserService.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAqwF8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T08:35:12.591Z",
+              "EditorCaption": ""
             }
           ]
         }

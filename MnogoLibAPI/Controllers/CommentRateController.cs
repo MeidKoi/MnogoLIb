@@ -74,6 +74,8 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> Add(CreateCommentRateRequest commentRate)
         {
             var Dto = commentRate.Adapt<CommentRate>();
+            Dto.CreatedTime = DateTime.Now;
+            Dto.LastUpdateTime = DateTime.Now;
             await _commentRateService.Create(Dto);
             return Ok();
         }

@@ -71,6 +71,8 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> Add(CreateChatRequest chat)
         {
             var Dto = chat.Adapt<Chat>();
+            Dto.CreatedTime = DateTime.Now;
+            Dto.LastUpdateTime = DateTime.Now;
             await _chatService.Create(Dto);
             return Ok();
         }

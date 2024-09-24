@@ -4,6 +4,7 @@ using Domain.Models;
 using Domain.Wrapper;
 using Moq;
 using System;
+using System.Numerics;
 
 namespace BuisnessLogic.Tests
 {
@@ -84,7 +85,9 @@ namespace BuisnessLogic.Tests
             return new List<object[]>
             {
                 new object[] {new User { IdUser = 1, EmailUser = "", PasswordUser = "Password", NicknameUser = "Nick", IdRole = 1, CreatedTime = DateTime.Now, LastUpdateBy = 1, LastUpdateTime = DateTime.Now, DeletedBy = null, DeletedTime = null } },
-                new object[] {new User { IdUser = 1, EmailUser = "", PasswordUser = "", NicknameUser = "", IdRole = 1, CreatedTime = DateTime.Now, LastUpdateBy = 1, LastUpdateTime = DateTime.Now, DeletedBy = null, DeletedTime = null } },
+                new object[] {new User { IdUser = 1, EmailUser = "email", PasswordUser = "Password", NicknameUser = "", IdRole = 1, CreatedTime = DateTime.Now, LastUpdateBy = 1, LastUpdateTime = DateTime.Now, DeletedBy = null, DeletedTime = null } },
+                new object[] {new User { IdUser = 1, EmailUser = "email", PasswordUser = "Password", NicknameUser = "Nick", IdRole = 1, CreatedTime = DateTime.Now, LastUpdateBy = 1, LastUpdateTime = DateTime.Now, DeletedBy = 1, DeletedTime = null } },
+                new object[] {new User { IdUser = 1, EmailUser = "email", PasswordUser = "Password", NicknameUser = "Nick", IdRole = 1, CreatedTime = DateTime.Now, LastUpdateBy = 1, LastUpdateTime = DateTime.Now, DeletedBy = null, DeletedTime = DateTime.Now } },
             };
         }
 
@@ -92,10 +95,10 @@ namespace BuisnessLogic.Tests
         [Fact]
         public async void UpdateAsync_NullUser_ShullThrowNullArgumentExpression()
         {
-            var ex = await Assert.ThrowsAnyAsync<ArgumentNullException>(() => service.Create(null));
+            var ex = await Assert.ThrowsAnyAsync<ArgumentNullException>(() => service.Update(null));
 
             Assert.IsType<ArgumentNullException>(ex);
-            repMoq.Verify(x => x.Create(It.IsAny<User>()), Times.Never);
+            repMoq.Verify(x => x.Update(It.IsAny<User>()), Times.Never);
         }
 
 
@@ -104,14 +107,21 @@ namespace BuisnessLogic.Tests
         {
             var example = new User()
             {
+                IdUser = 1,
                 EmailUser = "email@email.com",
                 PasswordUser = "12345pass",
-                NicknameUser = "Nick"
+                NicknameUser = "Nick",
+                IdRole = 1,
+                CreatedTime = DateTime.ParseExact("22-09-2022", "dd-MM-yyyy", null),
+                LastUpdateBy = 1,
+                LastUpdateTime = DateTime.Now,
+                DeletedBy = null,
+                DeletedTime = null
             };
 
-            await service.Create(example);
+            await service.Update(example);
 
-            repMoq.Verify(x => x.Create(It.IsAny<User>()), Times.Once);
+            repMoq.Verify(x => x.Update(It.IsAny<User>()), Times.Once);
         }
 
 
@@ -121,10 +131,10 @@ namespace BuisnessLogic.Tests
         {
             var example = model;
 
-            var ex = await Assert.ThrowsAnyAsync<ArgumentException>(() => service.Create(example));
+            var ex = await Assert.ThrowsAnyAsync<ArgumentException>(() => service.Update(example));
 
             Assert.IsType<ArgumentException>(ex);
-            repMoq.Verify(x => x.Create(It.IsAny<User>()), Times.Never);
+            repMoq.Verify(x => x.Update(It.IsAny<User>()), Times.Never);
 
             Assert.IsType<ArgumentException>(ex);
         }

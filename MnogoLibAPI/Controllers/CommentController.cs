@@ -69,6 +69,8 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> Add(CreateCommentRequest comment)
         {
             var Dto = comment.Adapt<Comment>();
+            Dto.CreatedTime = DateTime.Now;
+            Dto.LastUpdateTime = DateTime.Now;
             await _comment.Create(Dto);
             return Ok();
         }

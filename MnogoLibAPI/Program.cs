@@ -41,15 +41,15 @@ namespace MnogoLibAPI
                 {
                     Version = "v1",
                     Title = "MnogoLib API",
-                    Description = "������ API ��������� ����������������� � ��������� � ������ ����� ������������� ����������",
+                    Description = "       API                                                                                ",
                     Contact = new OpenApiContact
                     {
-                        Name = "������ ��������",
+                        Name = "               ",
                         Url = new Uri("https://example.com/contact")
                     },
                     License = new OpenApiLicense
                     {
-                        Name = "������ ��������",
+                        Name = "               ",
                         Url = new Uri("https://example.com/license")
                     }
                 });

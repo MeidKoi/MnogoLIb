@@ -33,16 +33,6 @@ namespace BusinessLogic.Services
                 throw new ArgumentNullException(nameof(model));
             }
 
-            if (model.IdUser < 1)
-            {
-                throw new ArgumentException(nameof(model.IdUser));
-            }
-
-            if (model.IdComment < 1)
-            {
-                throw new ArgumentException(nameof(model.IdComment));
-            }
-
             if (model.Value > 1 || model.Value < -1 || model.Value == 0)
             {
                 throw new ArgumentException(nameof(model.Value));
@@ -54,6 +44,15 @@ namespace BusinessLogic.Services
 
         public async Task Update(CommentRate model)
         {
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
+            if (model.Value > 1 || model.Value < -1 || model.Value == 0)
+            {
+                throw new ArgumentException(nameof(model.Value));
+            }
 
             _repositoryWrapper.CommentRate.Update(model);
             _repositoryWrapper.Save();
