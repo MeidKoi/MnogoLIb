@@ -43,7 +43,7 @@ namespace BusinessLogic.Services
 
         public async Task Update(Author model)
         {
-                        if (model == null)
+            if (model == null)
             {
                 throw new ArgumentNullException(nameof(model));
             }
