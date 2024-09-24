@@ -62,8 +62,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -86,8 +90,7 @@
               "RelativeToolTip": "BuisnessLogic.Tests\\ChatUserServiceTest.cs",
               "ViewState": "AQIAACAAAAAAAAAAAAAqwC4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:55:57.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T08:55:57.222Z"
             },
             {
               "$type": "Document",
@@ -97,7 +100,7 @@
               "RelativeDocumentMoniker": "BusinessLogic\\Services\\ChatUserService.cs",
               "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\ChatUserService.cs",
               "RelativeToolTip": "BusinessLogic\\Services\\ChatUserService.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAUwBQAAABDAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAUwBkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T08:55:46.182Z",
               "EditorCaption": ""
@@ -112,8 +115,7 @@
               "RelativeToolTip": "BuisnessLogic.Tests\\CommentRateServiceTest.cs",
               "ViewState": "AQIAABoAAAAAAAAAAAAkwGgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:51:07.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T08:51:07.049Z"
             },
             {
               "$type": "Document",
@@ -125,8 +127,7 @@
               "RelativeToolTip": "BusinessLogic\\Services\\CommentRateServices.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAAAqwDcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:50:20.319Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T08:50:20.319Z"
             },
             {
               "$type": "Document",
@@ -138,8 +139,7 @@
               "RelativeToolTip": "BusinessLogic\\Services\\GroupMaterialService.cs",
               "ViewState": "AQIAACkAAAAAAAAAAAAqwEEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:48:35.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T08:48:35.015Z"
             },
             {
               "$type": "Document",
@@ -151,8 +151,7 @@
               "RelativeToolTip": "BuisnessLogic.Tests\\GroupMaterialServiceTest.cs",
               "ViewState": "AQIAAE4AAAAAAAAAAAASwE0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:47:12.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T08:47:12.714Z"
             },
             {
               "$type": "Document",
@@ -164,8 +163,7 @@
               "RelativeToolTip": "BuisnessLogic.Tests\\MaterialFileServiceTest.cs",
               "ViewState": "AQIAAGcAAAAAAAAAAAAAAHMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:45:24.67Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T08:45:24.67Z"
             },
             {
               "$type": "Document",
@@ -177,8 +175,7 @@
               "RelativeToolTip": "BusinessLogic\\Services\\MaterialFileService.cs",
               "ViewState": "AQIAADQAAAAAAAAAAAAqwEoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:44:49.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T08:44:49.08Z"
             },
             {
               "$type": "Document",
@@ -190,8 +187,7 @@
               "RelativeToolTip": "BusinessLogic\\Services\\MaterialService.cs",
               "ViewState": "AQIAAB0AAAAAAAAAAAAIwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:44:29.753Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T08:44:29.753Z"
             },
             {
               "$type": "Document",
@@ -203,8 +199,7 @@
               "RelativeToolTip": "BusinessLogic\\Services\\MaterialsUserStatusService.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAiwC0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:44:06.708Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T08:44:06.708Z"
             },
             {
               "$type": "Document",
@@ -216,8 +211,7 @@
               "RelativeToolTip": "BuisnessLogic.Tests\\MaterialUserStatusServiceTest.cs",
               "ViewState": "AQIAADgAAAAAAAAAAAAAAEYAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:42:09.206Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T08:42:09.206Z"
             },
             {
               "$type": "Document",
@@ -229,8 +223,7 @@
               "RelativeToolTip": "BuisnessLogic.Tests\\MessageUserServiceTest.cs",
               "ViewState": "AQIAADsAAAAAAAAAAAAowE0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:41:44.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T08:41:44.255Z"
             },
             {
               "$type": "Document",
@@ -242,8 +235,7 @@
               "RelativeToolTip": "BusinessLogic\\Services\\UserService.cs",
               "ViewState": "AQIAAE4AAAAAAAAAAAAqwF8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:35:12.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T08:35:12.591Z"
             }
           ]
         }
