@@ -3,6 +3,7 @@ using Domain.Models;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
 using MnogoLibAPI.Contracts.User;
+using System.Xml;
 
 namespace BackendApi.Controllers
 {
@@ -28,6 +29,7 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> GetAll()
         {
             var Dto = await _userService.GetAll();
+
 
             return Ok(Dto.Adapt<List<GetUserRequest>>());
         }

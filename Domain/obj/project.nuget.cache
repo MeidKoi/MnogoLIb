@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xoRViaoMlJ8=",
+  "dgSpecHash": "XbuAY1Pkx/hMubQKrNhZ+cBJbfdD+PV8Bqbe8e/+BLeIE4zWF7AbJurc2s/9mA5H6irJQUyBeS5pvm7jV3ryLA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dshin\\OneDrive\\Рабочий стол\\MnogoLibAPI\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/meidkoi/Projects/MnogoLIb/Domain/Domain.csproj",
+  "expectedPackageFiles": [
+    "/home/meidkoi/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.33/microsoft.aspnetcore.app.ref.6.0.33.nupkg.sha512"
+  ],
   "logs": []
 }
