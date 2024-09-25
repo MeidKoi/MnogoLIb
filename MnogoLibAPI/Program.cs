@@ -5,6 +5,7 @@ using Domain.Wrapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
+using DataAccess.Wrapper;
 
 namespace MnogoLibAPI
 {

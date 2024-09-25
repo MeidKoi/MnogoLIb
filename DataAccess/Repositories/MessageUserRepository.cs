@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Repositories
+namespace DataAcess.Repositories
 {
     public class MessageUserRepository : RepositoryBase<MessagesUser>, IMessageUserRepository
     {

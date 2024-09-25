@@ -1,33 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "/home/meidkoi/Projects/MnogoLIb/BuisnessLogic.Tests/BuisnessLogic.Tests.csproj": {}
+    "C:\\Users\\dshin\\OneDrive\\Рабочий стол\\MnogoLibAPI\\BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj": {}
   },
   "projects": {
-    "/home/meidkoi/Projects/MnogoLIb/BuisnessLogic.Tests/BuisnessLogic.Tests.csproj": {
+    "C:\\Users\\dshin\\OneDrive\\Рабочий стол\\MnogoLibAPI\\BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/meidkoi/Projects/MnogoLIb/BuisnessLogic.Tests/BuisnessLogic.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\dshin\\OneDrive\\Рабочий стол\\MnogoLibAPI\\BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj",
         "projectName": "BuisnessLogic.Tests",
-        "projectPath": "/home/meidkoi/Projects/MnogoLIb/BuisnessLogic.Tests/BuisnessLogic.Tests.csproj",
-        "packagesPath": "/home/meidkoi/.nuget/packages/",
-        "outputPath": "/home/meidkoi/Projects/MnogoLIb/BuisnessLogic.Tests/obj/",
+        "projectPath": "C:\\Users\\dshin\\OneDrive\\Рабочий стол\\MnogoLibAPI\\BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj",
+        "packagesPath": "C:\\Users\\dshin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dshin\\OneDrive\\Рабочий стол\\MnogoLibAPI\\BuisnessLogic.Tests\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/meidkoi/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\dshin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/meidkoi/Projects/MnogoLIb/BusinessLogic/BusinessLogic.csproj": {
-                "projectPath": "/home/meidkoi/Projects/MnogoLIb/BusinessLogic/BusinessLogic.csproj"
+              "C:\\Users\\dshin\\OneDrive\\Рабочий стол\\MnogoLibAPI\\BusinessLogic\\BusinessLogic.csproj": {
+                "projectPath": "C:\\Users\\dshin\\OneDrive\\Рабочий стол\\MnogoLibAPI\\BusinessLogic\\BusinessLogic.csproj"
               }
             }
           }
@@ -36,6 +43,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -69,49 +81,51 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.133/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/meidkoi/Projects/MnogoLIb/BusinessLogic/BusinessLogic.csproj": {
+    "C:\\Users\\dshin\\OneDrive\\Рабочий стол\\MnogoLibAPI\\BusinessLogic\\BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/meidkoi/Projects/MnogoLIb/BusinessLogic/BusinessLogic.csproj",
+        "projectUniqueName": "C:\\Users\\dshin\\OneDrive\\Рабочий стол\\MnogoLibAPI\\BusinessLogic\\BusinessLogic.csproj",
         "projectName": "BusinessLogic",
-        "projectPath": "/home/meidkoi/Projects/MnogoLIb/BusinessLogic/BusinessLogic.csproj",
-        "packagesPath": "/home/meidkoi/.nuget/packages/",
-        "outputPath": "/home/meidkoi/Projects/MnogoLIb/BusinessLogic/obj/",
+        "projectPath": "C:\\Users\\dshin\\OneDrive\\Рабочий стол\\MnogoLibAPI\\BusinessLogic\\BusinessLogic.csproj",
+        "packagesPath": "C:\\Users\\dshin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dshin\\OneDrive\\Рабочий стол\\MnogoLibAPI\\BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/meidkoi/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\dshin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/meidkoi/Projects/MnogoLIb/Domain/Domain.csproj": {
-                "projectPath": "/home/meidkoi/Projects/MnogoLIb/Domain/Domain.csproj"
+              "C:\\Users\\dshin\\OneDrive\\Рабочий стол\\MnogoLibAPI\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\dshin\\OneDrive\\Рабочий стол\\MnogoLibAPI\\Domain\\Domain.csproj"
               }
             }
           }
@@ -120,6 +134,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -143,41 +162,43 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.133/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/meidkoi/Projects/MnogoLIb/Domain/Domain.csproj": {
+    "C:\\Users\\dshin\\OneDrive\\Рабочий стол\\MnogoLibAPI\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/meidkoi/Projects/MnogoLIb/Domain/Domain.csproj",
+        "projectUniqueName": "C:\\Users\\dshin\\OneDrive\\Рабочий стол\\MnogoLibAPI\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/home/meidkoi/Projects/MnogoLIb/Domain/Domain.csproj",
-        "packagesPath": "/home/meidkoi/.nuget/packages/",
-        "outputPath": "/home/meidkoi/Projects/MnogoLIb/Domain/obj/",
+        "projectPath": "C:\\Users\\dshin\\OneDrive\\Рабочий стол\\MnogoLibAPI\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\dshin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dshin\\OneDrive\\Рабочий стол\\MnogoLibAPI\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/meidkoi/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\dshin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -190,6 +211,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -201,22 +227,17 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.133/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
