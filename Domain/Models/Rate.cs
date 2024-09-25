@@ -9,8 +9,8 @@ namespace Domain.Models
         public int IdUser { get; set; }
         public int IdMaterial { get; set; }
         public byte ValueRate { get; set; }
-        public DateTime CreatedTime { get; set; }
-        public DateTime LastUpdateTime { get; set; }
+        public DateTime CreatedTime { get; set; } = DateTime.Now;
+        public DateTime LastUpdateTime { get; set; } = DateTime.Now;
         public DateTime? DeletedTime { get; set; }
 
         public virtual Material IdMaterialNavigation { get; set; } = null!;

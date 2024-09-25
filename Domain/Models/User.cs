@@ -32,10 +32,10 @@ namespace Domain.Models
         public string EmailUser { get; set; } = null!;
         public string PasswordUser { get; set; } = null!;
         public string NicknameUser { get; set; } = null!;
-        public int IdRole { get; set; }
-        public DateTime CreatedTime { get; set; }
+        public int IdRole { get; set; } = 1;
+        public DateTime CreatedTime { get; set; } = DateTime.Now;
         public int LastUpdateBy { get; set; }
-        public DateTime LastUpdateTime { get; set; }
+        public DateTime LastUpdateTime { get; set; } = DateTime.Now;
         public int? DeletedBy { get; set; }
         public DateTime? DeletedTime { get; set; }
 

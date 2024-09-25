@@ -22,9 +22,9 @@ namespace Domain.Models
         public int IdAuthorStatus { get; set; }
         public int IdAuthor { get; set; }
         public int CreatedBy { get; set; }
-        public DateTime CreatedTime { get; set; }
+        public DateTime CreatedTime { get; set; } = DateTime.Now;
         public int LastUpdateBy { get; set; }
-        public DateTime LastUpdateTime { get; set; }
+        public DateTime LastUpdateTime { get; set; } = DateTime.Now;
         public int? DeletedBy { get; set; }
         public DateTime? DeletedTime { get; set; }
         public int FileIcon { get; set; }
