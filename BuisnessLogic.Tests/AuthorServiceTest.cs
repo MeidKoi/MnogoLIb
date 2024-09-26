@@ -64,7 +64,6 @@ namespace BuisnessLogic.Tests
         {
             var example = model;
 
-
             var ex = await Assert.ThrowsAnyAsync<ArgumentException>(() => service.Create(example));
 
             Assert.IsType<ArgumentException>(ex);

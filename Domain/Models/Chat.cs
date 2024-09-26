@@ -7,6 +7,7 @@ namespace Domain.Models
     {
         public Chat()
         {
+            LastUpdateBy = IdOwner;
             ChatUsers = new HashSet<ChatUser>();
             MessagesUsers = new HashSet<MessagesUser>();
         }

@@ -58,11 +58,12 @@ namespace BackendApi.Controllers
         ///
         ///     POST /Todo
         ///     {
+        ///        "idOwner": 0,
         ///        "nameChat": "string"
         ///     }
         ///
         /// </remarks>
-        /// <param name="chat">Автор</param>
+        /// <param name="chat">Чат</param>
         /// <returns></returns>
 
         // POST api/<ChatController>
@@ -95,7 +96,7 @@ namespace BackendApi.Controllers
         ///     }
         ///
         /// </remarks>
-        /// <param name="chat">Автор</param>
+        /// <param name="chat">Чат</param>
         /// <returns></returns>
 
         // PUT api/<ChatController>
