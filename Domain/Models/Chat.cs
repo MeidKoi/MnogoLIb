@@ -6,7 +6,7 @@ namespace Domain.Models
     public partial class Chat
     {
         public Chat()
-        {   
+        {
             ChatUsers = new HashSet<ChatUser>();
             MessagesUsers = new HashSet<MessagesUser>();
         }
