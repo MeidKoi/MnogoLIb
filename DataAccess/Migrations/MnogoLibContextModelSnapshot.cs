@@ -352,6 +352,7 @@ namespace DataAccess.Migrations
             modelBuilder.Entity("Domain.Models.GroupMaterial", b =>
                 {
                     b.Property<int>("IdGroup")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasColumnName("id_group");
 
@@ -610,6 +611,7 @@ namespace DataAccess.Migrations
             modelBuilder.Entity("Domain.Models.Payment", b =>
                 {
                     b.Property<int>("IdPayment")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasColumnName("id_payment");
 

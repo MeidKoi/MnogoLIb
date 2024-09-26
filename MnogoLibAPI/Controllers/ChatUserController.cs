@@ -59,7 +59,8 @@ namespace BackendApi.Controllers
         ///     POST /Todo
         ///     {
         ///        "idUser": 0,
-        ///        "idChat": 0
+        ///        "idChat": 0,
+        ///        "createdBy": 0
         ///     }
         ///
         /// </remarks>

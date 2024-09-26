@@ -80,11 +80,13 @@
             
                  POST /Todo
                  {
-                    "nameChat": "string"
+                    "idOwner": 0,
+                    "nameChat": "string",
+                    "lastUpdatedBy": 0
                  }
             
              </remarks>
-             <param name="chat">Автор</param>
+             <param name="chat">Чат</param>
              <returns></returns>
         </member>
         <member name="M:BackendApi.Controllers.ChatController.Update(MnogoLibAPI.Contracts.Chat.GetChatRequest)">
@@ -107,7 +109,7 @@
                  }
             
              </remarks>
-             <param name="chat">Автор</param>
+             <param name="chat">Чат</param>
              <returns></returns>
         </member>
         <member name="M:BackendApi.Controllers.ChatController.Delete(System.Int32)">
@@ -142,7 +144,8 @@
                  POST /Todo
                  {
                     "idUser": 0,
-                    "idChat": 0
+                    "idChat": 0,
+                    "createdBy": 0
                  }
             
              </remarks>
@@ -200,8 +203,8 @@
             
                  POST /Todo
                  {
-                     "textComment": "string",
-                     "idUser": 0
+                     "idUser": 0,
+                     "textComment": "string"
                  }
             
              </remarks>

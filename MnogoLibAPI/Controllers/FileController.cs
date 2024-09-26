@@ -75,6 +75,7 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> Add(CreateFileRequest file)
         {
             var Dto = file.Adapt<File>();
+            Dto.LastUpdateBy = Dto.CreatedBy;
             await _fileService.Create(Dto);
             return Ok();
         }

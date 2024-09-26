@@ -2,7 +2,7 @@
 {
     public class CreateCommentRequest
     {
-        public string TextComment { get; set; } = null!;
         public int IdUser { get; set; }
+        public string TextComment { get; set; } = null!;
     }
 }

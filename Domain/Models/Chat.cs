@@ -6,7 +6,7 @@ namespace Domain.Models
     public partial class Chat
     {
         public Chat()
-        {
+        {   
             ChatUsers = new HashSet<ChatUser>();
             MessagesUsers = new HashSet<MessagesUser>();
         }
@@ -21,9 +21,9 @@ namespace Domain.Models
         public DateTime? DeletedTime { get; set; }
 
         public virtual User? DeletedByNavigation { get; set; }
-        public virtual User IdOwnerNavigation { get; set; } = null!;
-        public virtual User LastUpdateByNavigation { get; set; } = null!;
-        public virtual ICollection<ChatUser> ChatUsers { get; set; }
-        public virtual ICollection<MessagesUser> MessagesUsers { get; set; }
+        public virtual User? IdOwnerNavigation { get; set; } = null!;
+        public virtual User? LastUpdateByNavigation { get; set; } = null!;
+        public virtual ICollection<ChatUser>? ChatUsers { get; set; }
+        public virtual ICollection<MessagesUser>? MessagesUsers { get; set; }
     }
 }

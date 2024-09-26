@@ -8,7 +8,7 @@ namespace Domain.Models
         public int IdMessage { get; set; }
         public int IdUser { get; set; }
         public int IdChat { get; set; }
-        public DateTime DeliverDate { get; set; }
+        public DateTime DeliverDate { get; set; } = DateTime.Now;
         public int IdMessageStatus { get; set; }
         public string TextMessage { get; set; } = null!;
         public DateTime CreatedTime { get; set; } = DateTime.Now;

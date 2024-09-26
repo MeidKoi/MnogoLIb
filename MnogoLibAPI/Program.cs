@@ -19,6 +19,10 @@ namespace MnogoLibAPI
                 options => options.UseSqlServer(
                                 "Server=LAPTOP-ISLFEJ9E;Database=MnogoLib;Trusted_Connection=True;"));
 
+            //builder.Services.AddDbContext<MnogoLibContext>(
+            //options => options.UseSqlServer(
+            //                "Server=laptop;User Id=SA;Password=AbsYrd123;Database=MnogoLib;"));
+
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<IMaterialService, MaterialService>();

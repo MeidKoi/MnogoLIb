@@ -49,6 +49,7 @@ namespace BuisnessLogic.Tests
         {
             var example = new Chat()
             {
+                IdOwner = 1,
                 NameChat = "Name"
             };
 

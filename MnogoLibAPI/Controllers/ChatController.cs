@@ -58,11 +58,13 @@ namespace BackendApi.Controllers
         ///
         ///     POST /Todo
         ///     {
-        ///        "nameChat": "string"
+        ///        "idOwner": 0,
+        ///        "nameChat": "string",
+        ///        "lastUpdatedBy": 0
         ///     }
         ///
         /// </remarks>
-        /// <param name="chat">Автор</param>
+        /// <param name="chat">Чат</param>
         /// <returns></returns>
 
         // POST api/<ChatController>
@@ -71,6 +73,7 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> Add(CreateChatRequest chat)
         {
             var Dto = chat.Adapt<Chat>();
+            Dto.LastUpdateBy = Dto.IdOwner;
             await _chatService.Create(Dto);
             return Ok();
         }
@@ -95,7 +98,7 @@ namespace BackendApi.Controllers
         ///     }
         ///
         /// </remarks>
-        /// <param name="chat">Автор</param>
+        /// <param name="chat">Чат</param>
         /// <returns></returns>
 
         // PUT api/<ChatController>
