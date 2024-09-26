@@ -1,11 +1,11 @@
 using BusinessLogic.Services;
+using DataAccess.Wrapper;
 using Domain.Interfaces;
 using Domain.Models;
 using Domain.Wrapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
-using DataAccess.Wrapper;
 
 namespace MnogoLibAPI
 {

@@ -74,8 +74,6 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> Add(CreateMessageUserRequest message)
         {
             var Dto = message.Adapt<MessagesUser>();
-            Dto.CreatedTime = DateTime.Now;
-            Dto.LastUpdateTime = DateTime.Now;
             await _materialService.Create(Dto);
             return Ok();
         }

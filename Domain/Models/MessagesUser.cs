@@ -11,8 +11,8 @@ namespace Domain.Models
         public DateTime DeliverDate { get; set; }
         public int IdMessageStatus { get; set; }
         public string TextMessage { get; set; } = null!;
-        public DateTime CreatedTime { get; set; }
-        public DateTime LastUpdateTime { get; set; }
+        public DateTime CreatedTime { get; set; } = DateTime.Now;
+        public DateTime LastUpdateTime { get; set; } = DateTime.Now;
         public int? DeletedBy { get; set; }
         public DateTime? DeletedTime { get; set; }
 

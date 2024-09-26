@@ -75,8 +75,6 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> Add(CreateMaterialRequest material)
         {
             var Dto = material.Adapt<Material>();
-            Dto.CreatedTime = DateTime.Now;
-            Dto.LastUpdateTime = DateTime.Now;
             await _materialService.Create(Dto);
             return Ok();
         }

@@ -3,92 +3,100 @@
   "WorkspaceRootPath": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DAE977B9-BC7C-4DA4-AFE5-DD787B340161}|Domain\\Domain.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\domain\\models\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAE977B9-BC7C-4DA4-AFE5-DD787B340161}|Domain\\Domain.csproj|solutionrelative:domain\\models\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\ratecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\ratecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\ratecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\ratecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAE977B9-BC7C-4DA4-AFE5-DD787B340161}|Domain\\Domain.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\domain\\models\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAE977B9-BC7C-4DA4-AFE5-DD787B340161}|Domain\\Domain.csproj|solutionrelative:domain\\models\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAE977B9-BC7C-4DA4-AFE5-DD787B340161}|Domain\\Domain.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\domain\\models\\chatuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAE977B9-BC7C-4DA4-AFE5-DD787B340161}|Domain\\Domain.csproj|solutionrelative:domain\\models\\chatuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\chatusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\chatusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAE977B9-BC7C-4DA4-AFE5-DD787B340161}|Domain\\Domain.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\domain\\models\\commentrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAE977B9-BC7C-4DA4-AFE5-DD787B340161}|Domain\\Domain.csproj|solutionrelative:domain\\models\\commentrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\commentratecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\commentratecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAE977B9-BC7C-4DA4-AFE5-DD787B340161}|Domain\\Domain.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\domain\\models\\file.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAE977B9-BC7C-4DA4-AFE5-DD787B340161}|Domain\\Domain.csproj|solutionrelative:domain\\models\\file.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\groupmaterialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\groupmaterialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAE977B9-BC7C-4DA4-AFE5-DD787B340161}|Domain\\Domain.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\domain\\models\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAE977B9-BC7C-4DA4-AFE5-DD787B340161}|Domain\\Domain.csproj|solutionrelative:domain\\models\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\materalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\materalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\materialfilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\materialfilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAE977B9-BC7C-4DA4-AFE5-DD787B340161}|Domain\\Domain.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\domain\\models\\materialsuserstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAE977B9-BC7C-4DA4-AFE5-DD787B340161}|Domain\\Domain.csproj|solutionrelative:domain\\models\\materialsuserstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\materialsuserstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\materialsuserstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAE977B9-BC7C-4DA4-AFE5-DD787B340161}|Domain\\Domain.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\domain\\models\\messagesuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAE977B9-BC7C-4DA4-AFE5-DD787B340161}|Domain\\Domain.csproj|solutionrelative:domain\\models\\messagesuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\messageusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\messageusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\paymentusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\paymentusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAE977B9-BC7C-4DA4-AFE5-DD787B340161}|Domain\\Domain.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\domain\\models\\rate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAE977B9-BC7C-4DA4-AFE5-DD787B340161}|Domain\\Domain.csproj|solutionrelative:domain\\models\\rate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\mnogolibapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926D6B45-E0AF-4EF7-9336-60390018A700}|MnogoLibAPI\\MnogoLibAPI.csproj|solutionrelative:mnogolibapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAE977B9-BC7C-4DA4-AFE5-DD787B340161}|Domain\\Domain.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\domain\\interfaces\\irepositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAE977B9-BC7C-4DA4-AFE5-DD787B340161}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\irepositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\wrapper\\repositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\wrapper\\repositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\chatuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\chatuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\dataaccess\\repositories\\chatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{918B13B4-67F8-4613-9AF8-88BF06260F51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repositories\\chatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\buisnesslogic.tests\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|solutionrelative:buisnesslogic.tests\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\buisnesslogic.tests\\chatuserservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|solutionrelative:buisnesslogic.tests\\chatuserservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\buisnesslogic.tests\\commentrateservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|solutionrelative:buisnesslogic.tests\\commentrateservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\commentrateservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\commentrateservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\buisnesslogic.tests\\groupmaterialservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|solutionrelative:buisnesslogic.tests\\groupmaterialservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\groupmaterialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\groupmaterialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\buisnesslogic.tests\\materialfileservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|solutionrelative:buisnesslogic.tests\\materialfileservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\materialfileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\materialfileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\materialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\materialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\materialsuserstatusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\materialsuserstatusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\buisnesslogic.tests\\materialuserstatusservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|solutionrelative:buisnesslogic.tests\\materialuserstatusservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\buisnesslogic.tests\\messageuserservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{460E3A44-0FDC-4FC1-B277-E39AC437B719}|BuisnessLogic.Tests\\BuisnessLogic.Tests.csproj|solutionrelative:buisnesslogic.tests\\messageuserservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC1A95B1-5816-4E3C-9E85-0BB7C4BB8D14}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAE977B9-BC7C-4DA4-AFE5-DD787B340161}|Domain\\Domain.csproj|c:\\users\\dshin\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mnogolibapi\\domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAE977B9-BC7C-4DA4-AFE5-DD787B340161}|Domain\\Domain.csproj|solutionrelative:domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,19 +106,305 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 21,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "AuthorController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\AuthorController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\AuthorController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\AuthorController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\AuthorController.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:19:51.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Chat.cs",
               "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\Domain\\Models\\Chat.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\Chat.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\Domain\\Models\\Chat.cs*",
-              "RelativeToolTip": "Domain\\Models\\Chat.cs*",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAoAAAA",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\Domain\\Models\\Chat.cs",
+              "RelativeToolTip": "Domain\\Models\\Chat.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBEAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T12:31:59.34Z",
+              "WhenOpened": "2024-09-25T13:19:42.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\ChatController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\ChatController.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAwwE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:19:36.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ChatUser.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\Domain\\Models\\ChatUser.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\ChatUser.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\Domain\\Models\\ChatUser.cs",
+              "RelativeToolTip": "Domain\\Models\\ChatUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:19:31.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChatUserController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\ChatUserController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\ChatUserController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\ChatUserController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\ChatUserController.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAwwEkAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:19:19.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CommentController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\CommentController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\CommentController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\CommentController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\CommentController.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:19:13.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CommentRate.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\Domain\\Models\\CommentRate.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\CommentRate.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\Domain\\Models\\CommentRate.cs",
+              "RelativeToolTip": "Domain\\Models\\CommentRate.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:19:07.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CommentRateController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\CommentRateController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\CommentRateController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\CommentRateController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\CommentRateController.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAwwEsAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:18:59.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "File.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\Domain\\Models\\File.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\File.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\Domain\\Models\\File.cs",
+              "RelativeToolTip": "Domain\\Models\\File.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAA9wBMAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:18:50.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FileController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\FileController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\FileController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\FileController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\FileController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:18:37.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GroupMaterialController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\GroupMaterialController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\GroupMaterialController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\GroupMaterialController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\GroupMaterialController.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:18:28.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Material.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\Domain\\Models\\Material.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Material.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\Domain\\Models\\Material.cs",
+              "RelativeToolTip": "Domain\\Models\\Material.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAYwBcAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:18:10.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MateralController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\MateralController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\MateralController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\MateralController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\MateralController.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAwwEwAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:18:01.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MaterialFileController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\MaterialFileController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\MaterialFileController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\MaterialFileController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\MaterialFileController.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:17:29.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MaterialsUserStatus.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\Domain\\Models\\MaterialsUserStatus.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\MaterialsUserStatus.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\Domain\\Models\\MaterialsUserStatus.cs",
+              "RelativeToolTip": "Domain\\Models\\MaterialsUserStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:17:24.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MaterialsUserStatusController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\MaterialsUserStatusController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\MaterialsUserStatusController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\MaterialsUserStatusController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\MaterialsUserStatusController.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAwwEwAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:17:17.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MessagesUser.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\Domain\\Models\\MessagesUser.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\MessagesUser.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\Domain\\Models\\MessagesUser.cs",
+              "RelativeToolTip": "Domain\\Models\\MessagesUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:17:04.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MessageUserController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\MessageUserController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\MessageUserController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\MessageUserController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\MessageUserController.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAEwEsAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:16:52.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\PaymentController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\PaymentController.cs",
+              "ViewState": "AQIAAGQAAAAAAAAAAAA0wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:16:47.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PaymentUserController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\PaymentUserController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\PaymentUserController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\PaymentUserController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\PaymentUserController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:16:39.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Rate.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\Domain\\Models\\Rate.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Rate.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\Domain\\Models\\Rate.cs",
+              "RelativeToolTip": "Domain\\Models\\Rate.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAwAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:16:15.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RateController.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\RateController.cs",
+              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\RateController.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\RateController.cs",
+              "RelativeToolTip": "MnogoLibAPI\\Controllers\\RateController.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAuwEoAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:16:06.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\Domain\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\Domain\\Models\\User.cs",
+              "RelativeToolTip": "Domain\\Models\\User.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwCYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:14:33.095Z",
               "EditorCaption": ""
             },
             {
@@ -127,264 +421,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ChatController.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\ChatController.cs",
-              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\ChatController.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\ChatController.cs",
-              "RelativeToolTip": "MnogoLibAPI\\Controllers\\ChatController.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAwwEgAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T11:55:45.225Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RateController.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\RateController.cs",
-              "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\RateController.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\RateController.cs",
-              "RelativeToolTip": "MnogoLibAPI\\Controllers\\RateController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T11:55:41.194Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 22,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "MnogoLibAPI\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Controllers\\UserController.cs",
               "RelativeToolTip": "MnogoLibAPI\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAwwAAAAAAAAAAA",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAIwEkAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T11:55:20.097Z",
+              "WhenOpened": "2024-09-25T13:14:10.117Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Program.cs",
-              "RelativeDocumentMoniker": "MnogoLibAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\MnogoLibAPI\\Program.cs",
-              "RelativeToolTip": "MnogoLibAPI\\Program.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAA1wAoAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T11:25:09.158Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IRepositoryWrapper.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\Domain\\Interfaces\\IRepositoryWrapper.cs",
-              "RelativeDocumentMoniker": "Domain\\Interfaces\\IRepositoryWrapper.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\Domain\\Interfaces\\IRepositoryWrapper.cs",
-              "RelativeToolTip": "Domain\\Interfaces\\IRepositoryWrapper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T11:23:56.464Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ChatRepository.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\ChatRepository.cs",
-              "RelativeDocumentMoniker": "DataAccess\\Repositories\\ChatRepository.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Repositories\\ChatRepository.cs",
-              "RelativeToolTip": "DataAccess\\Repositories\\ChatRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T11:22:02.634Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RepositoryWrapper.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Wrapper\\RepositoryWrapper.cs",
-              "RelativeDocumentMoniker": "DataAccess\\Wrapper\\RepositoryWrapper.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\DataAccess\\Wrapper\\RepositoryWrapper.cs",
-              "RelativeToolTip": "DataAccess\\Wrapper\\RepositoryWrapper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T11:21:58.337Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\UserServiceTest.cs",
-              "RelativeDocumentMoniker": "BuisnessLogic.Tests\\UserServiceTest.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\UserServiceTest.cs",
-              "RelativeToolTip": "BuisnessLogic.Tests\\UserServiceTest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T09:55:08.93Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ChatUserServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\ChatUserServiceTest.cs",
-              "RelativeDocumentMoniker": "BuisnessLogic.Tests\\ChatUserServiceTest.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\ChatUserServiceTest.cs",
-              "RelativeToolTip": "BuisnessLogic.Tests\\ChatUserServiceTest.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAqwC4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:55:57.222Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ChatUserService.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\ChatUserService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\ChatUserService.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\ChatUserService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\ChatUserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:55:46.182Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CommentRateServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\CommentRateServiceTest.cs",
-              "RelativeDocumentMoniker": "BuisnessLogic.Tests\\CommentRateServiceTest.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\CommentRateServiceTest.cs",
-              "RelativeToolTip": "BuisnessLogic.Tests\\CommentRateServiceTest.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAkwGgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:51:07.049Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CommentRateServices.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\CommentRateServices.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\CommentRateServices.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\CommentRateServices.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\CommentRateServices.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAqwDcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:50:20.319Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "GroupMaterialService.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\GroupMaterialService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\GroupMaterialService.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\GroupMaterialService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\GroupMaterialService.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAqwEEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:48:35.015Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "GroupMaterialServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\GroupMaterialServiceTest.cs",
-              "RelativeDocumentMoniker": "BuisnessLogic.Tests\\GroupMaterialServiceTest.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\GroupMaterialServiceTest.cs",
-              "RelativeToolTip": "BuisnessLogic.Tests\\GroupMaterialServiceTest.cs",
-              "ViewState": "AQIAAE4AAAAAAAAAAAASwE0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:47:12.714Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "MaterialFileServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\MaterialFileServiceTest.cs",
-              "RelativeDocumentMoniker": "BuisnessLogic.Tests\\MaterialFileServiceTest.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\MaterialFileServiceTest.cs",
-              "RelativeToolTip": "BuisnessLogic.Tests\\MaterialFileServiceTest.cs",
-              "ViewState": "AQIAAGcAAAAAAAAAAAAAAHMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:45:24.67Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "MaterialFileService.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\MaterialFileService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\MaterialFileService.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\MaterialFileService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\MaterialFileService.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAqwEoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:44:49.08Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "MaterialService.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\MaterialService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\MaterialService.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\MaterialService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\MaterialService.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAIwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:44:29.753Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "MaterialsUserStatusService.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\MaterialsUserStatusService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\MaterialsUserStatusService.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\MaterialsUserStatusService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\MaterialsUserStatusService.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAiwC0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:44:06.708Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "MaterialUserStatusServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\MaterialUserStatusServiceTest.cs",
-              "RelativeDocumentMoniker": "BuisnessLogic.Tests\\MaterialUserStatusServiceTest.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\MaterialUserStatusServiceTest.cs",
-              "RelativeToolTip": "BuisnessLogic.Tests\\MaterialUserStatusServiceTest.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAAAEYAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:42:09.206Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "MessageUserServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\MessageUserServiceTest.cs",
-              "RelativeDocumentMoniker": "BuisnessLogic.Tests\\MessageUserServiceTest.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BuisnessLogic.Tests\\MessageUserServiceTest.cs",
-              "RelativeToolTip": "BuisnessLogic.Tests\\MessageUserServiceTest.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAowE0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:41:44.255Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\dshin\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MnogoLibAPI\\BusinessLogic\\Services\\UserService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\UserService.cs",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAqwF8AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:35:12.591Z"
             }
           ]
         }

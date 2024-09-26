@@ -15,9 +15,9 @@ namespace Domain.Models
         public string NameFile { get; set; } = null!;
         public string PathFile { get; set; } = null!;
         public int CreatedBy { get; set; }
-        public DateTime CreatedTime { get; set; }
+        public DateTime CreatedTime { get; set; } = DateTime.Now;
         public int LastUpdateBy { get; set; }
-        public DateTime LastUpdateTime { get; set; }
+        public DateTime LastUpdateTime { get; set; } = DateTime.Now;
         public int? DeletedBy { get; set; }
         public DateTime? DeletedTime { get; set; }
 
