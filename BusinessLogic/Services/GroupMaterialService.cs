@@ -20,9 +20,14 @@ namespace BusinessLogic.Services
 
         public async Task<GroupMaterial> GetById(int id)
         {
-            var user = await _repositoryWrapper.GroupMaterial
+            var model = await _repositoryWrapper.GroupMaterial
                 .FindByCondition(x => x.IdGroup == id);
-            return user.First();
+            if (model is null || model.Count == 0)
+            {
+                throw new ArgumentNullException("Not found");
+            }
+
+            return model.First();
         }
 
         public async Task Create(GroupMaterial model)
@@ -70,10 +75,14 @@ namespace BusinessLogic.Services
 
         public async Task Delete(int id)
         {
-            var user = await _repositoryWrapper.GroupMaterial
+            var model = await _repositoryWrapper.GroupMaterial
                 .FindByCondition(x => x.IdGroup == id);
+            if (model is null || model.Count == 0)
+            {
+                throw new ArgumentNullException("Not found");
+            }
 
-            _repositoryWrapper.GroupMaterial.Delete(user.First());
+            _repositoryWrapper.GroupMaterial.Delete(model.First());
             _repositoryWrapper.Save();
         }
     }

@@ -20,9 +20,14 @@ namespace BusinessLogic.Services
 
         public async Task<MaterialsUserStatus> GetById(int idMaterial, int idUserStatus, int idUser)
         {
-            var user = await _repositoryWrapper.MaterialsUserStatus
+            var model = await _repositoryWrapper.MaterialsUserStatus
                 .FindByCondition(x => x.IdMaterial == idMaterial && x.IdUserStatus == idUserStatus && x.IdUser == idUser);
-            return user.First();
+            if (model is null || model.Count == 0)
+            {
+                throw new ArgumentNullException("Not found");
+            }
+
+            return model.First();
         }
 
         public async Task Create(MaterialsUserStatus model)
@@ -50,14 +55,15 @@ namespace BusinessLogic.Services
 
         public async Task Delete(int idMaterial, int idUserStatus, int idUser)
         {
-            var user = await _repositoryWrapper.MaterialsUserStatus
+            var model = await _repositoryWrapper.MaterialsUserStatus
                 .FindByCondition(x => x.IdMaterial == idMaterial && x.IdUserStatus == idUserStatus && x.IdUser == idUser);
+            if (model is null || model.Count == 0)
+            {
+                throw new ArgumentNullException("Not found");
+            }
 
-            _repositoryWrapper.MaterialsUserStatus.Delete(user.First());
+            _repositoryWrapper.MaterialsUserStatus.Delete(model.First());
             _repositoryWrapper.Save();
         }
     }
 }
-
-//(int idMaterial, int idMaterialsUserStatus, int idMaterialsUserStatusStatus)
-//(x => x.IdMaterial == idMaterial && x.IdMaterialsUserStatus == idMaterialsUserStatus && x.IdMaterialsUserStatusStatus == idMaterialsUserStatusStatus).First();

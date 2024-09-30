@@ -5,6 +5,7 @@ using Domain.Models;
 using Domain.Wrapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using MnogoLibAPI.MiddleWare;
 using System.Reflection;
 
 namespace MnogoLibAPI
@@ -82,6 +83,7 @@ namespace MnogoLibAPI
 
             app.UseAuthorization();
 
+            app.UseMiddleware<ExceptionHandlingMiddleware>();
 
             app.MapControllers();
 

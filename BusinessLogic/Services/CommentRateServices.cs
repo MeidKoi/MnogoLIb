@@ -20,9 +20,14 @@ namespace BusinessLogic.Services
 
         public async Task<CommentRate> GetById(int idComment, int idUser)
         {
-            var user = await _repositoryWrapper.CommentRate
+            var model = await _repositoryWrapper.CommentRate
                 .FindByCondition(x => x.IdComment == idComment && x.IdUser == idUser);
-            return user.First();
+            if (model is null || model.Count == 0)
+            {
+                throw new ArgumentNullException("Not found");
+            }
+
+            return model.First();
         }
 
         public async Task Create(CommentRate model)
@@ -60,10 +65,14 @@ namespace BusinessLogic.Services
 
         public async Task Delete(int idComment, int idUser)
         {
-            var user = await _repositoryWrapper.CommentRate
+            var model = await _repositoryWrapper.CommentRate
                 .FindByCondition(x => x.IdComment == idComment && x.IdUser == idUser);
+            if (model is null || model.Count == 0)
+            {
+                throw new ArgumentNullException("Not found");
+            }
 
-            _repositoryWrapper.CommentRate.Delete(user.First());
+            _repositoryWrapper.CommentRate.Delete(model.First());
             _repositoryWrapper.Save();
         }
     }

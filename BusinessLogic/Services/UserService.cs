@@ -21,9 +21,15 @@ namespace BusinessLogic.Services
 
         public async Task<User> GetById(int id)
         {
-            var user = await _repositoryWrapper.User
+            var model = await _repositoryWrapper.User
                 .FindByCondition(x => x.IdUser == id);
-            return user.First();
+
+            if (model is null || model.Count == 0)
+            {
+                throw new ArgumentNullException("Not found");
+            }
+
+            return model.First();
         }
 
         public async Task Create(User model)
@@ -102,10 +108,15 @@ namespace BusinessLogic.Services
 
         public async Task Delete(int id)
         {
-            var user = await _repositoryWrapper.User
+            var model = await _repositoryWrapper.User
                 .FindByCondition(x => x.IdUser == id);
 
-            _repositoryWrapper.User.Delete(user.First());
+            if (model is null || model.Count == 0)
+            {
+                throw new ArgumentNullException("Not found");
+            }
+            
+            _repositoryWrapper.User.Delete(model.First());
             _repositoryWrapper.Save();
         }
     }

@@ -4,6 +4,7 @@ using Domain.Models;
 using Domain.Wrapper;
 using Moq;
 using System;
+using System.Linq.Expressions;
 
 namespace BuisnessLogic.Tests
 {
@@ -29,8 +30,8 @@ namespace BuisnessLogic.Tests
         {
             return new List<object[]>
             {
-                new object[] {new Rate { IdUser = 1, IdMaterial = 1, ValueRate = 0, } },
-                new object[] {new Rate { IdUser = 1, IdMaterial = 1, ValueRate = 11, } },
+                new object[] {new Rate { IdRate = 1, IdMaterial = 1, ValueRate = 0, } },
+                new object[] {new Rate { IdRate = 1, IdMaterial = 1, ValueRate = 11, } },
             };
         }
 
@@ -50,7 +51,7 @@ namespace BuisnessLogic.Tests
         {
             var example = new Rate()
             {
-                IdUser = 1,
+                IdRate = 1,
                 IdMaterial = 1,
                 ValueRate = 9,
             };
@@ -64,11 +65,11 @@ namespace BuisnessLogic.Tests
         {
             return new List<object[]>
             {
-                new object[] {new Rate { IdUser = 1, IdMaterial = 1, ValueRate = 0, CreatedTime = DateTime.Now, LastUpdateTime = DateTime.Now, DeletedTime = DateTime.Now} },
-                new object[] {new Rate { IdUser = 1, IdMaterial = 1, ValueRate = 11, CreatedTime = DateTime.Now, LastUpdateTime = DateTime.Now, DeletedTime = DateTime.Now} },
-                new object[] {new Rate { IdUser = 1, IdMaterial = 1, ValueRate = 5, CreatedTime = DateTime.MaxValue, LastUpdateTime = DateTime.Now, DeletedTime = DateTime.Now } },
-                new object[] {new Rate { IdUser = 1, IdMaterial = 1, ValueRate = 5, CreatedTime = DateTime.Now, LastUpdateTime = DateTime.MaxValue, DeletedTime = DateTime.Now } },
-                new object[] {new Rate { IdUser = 1, IdMaterial = 1, ValueRate = 5, CreatedTime = DateTime.MaxValue, LastUpdateTime = DateTime.Now, DeletedTime = DateTime.MaxValue } },
+                new object[] {new Rate { IdRate = 1, IdMaterial = 1, ValueRate = 0, CreatedTime = DateTime.Now, LastUpdateTime = DateTime.Now, DeletedTime = DateTime.Now} },
+                new object[] {new Rate { IdRate = 1, IdMaterial = 1, ValueRate = 11, CreatedTime = DateTime.Now, LastUpdateTime = DateTime.Now, DeletedTime = DateTime.Now} },
+                new object[] {new Rate { IdRate = 1, IdMaterial = 1, ValueRate = 5, CreatedTime = DateTime.MaxValue, LastUpdateTime = DateTime.Now, DeletedTime = DateTime.Now } },
+                new object[] {new Rate { IdRate = 1, IdMaterial = 1, ValueRate = 5, CreatedTime = DateTime.Now, LastUpdateTime = DateTime.MaxValue, DeletedTime = DateTime.Now } },
+                new object[] {new Rate { IdRate = 1, IdMaterial = 1, ValueRate = 5, CreatedTime = DateTime.MaxValue, LastUpdateTime = DateTime.Now, DeletedTime = DateTime.MaxValue } },
             };
         }
 
@@ -102,7 +103,7 @@ namespace BuisnessLogic.Tests
         {
             var example = new Rate()
             {
-                IdUser = 1,
+                IdRate = 1,
                 IdMaterial = 1,
                 ValueRate = 9,
                 CreatedTime = DateTime.Now,
@@ -131,6 +132,24 @@ namespace BuisnessLogic.Tests
             Assert.IsType<ArgumentException>(ex);
         }
 
+        [Fact]
+        public async void GetByIdAsync_NullRate_ShullThrowArgumentExpression()
+        {
+            var ex = await Assert.ThrowsAnyAsync<ArgumentNullException>(() => service.GetById(-1));
+
+            Assert.IsType<ArgumentNullException>(ex);
+            repMoq.Verify(x => x.FindByCondition(It.IsAny<Expression<Func<Rate, bool>>>()), Times.Once);
+        }
+
+
+        [Fact]
+        public async void DeleteAsync_NullRate_ShullThrowArgumentExpression()
+        {
+            var ex = await Assert.ThrowsAnyAsync<ArgumentNullException>(() => service.Delete(-1));
+
+            Assert.IsType<ArgumentNullException>(ex);
+            repMoq.Verify(x => x.Delete(It.IsAny<Rate>()), Times.Never);
+        }
 
     }
 }

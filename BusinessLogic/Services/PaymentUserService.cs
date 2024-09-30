@@ -20,9 +20,16 @@ namespace BusinessLogic.Services
 
         public async Task<PaymentUser> GetById(int idPayment, int idUser)
         {
-            var user = await _repositoryWrapper.PaymentUser
+            var model = await _repositoryWrapper.PaymentUser
                 .FindByCondition(x => x.IdPayment == idPayment && x.IdUser == idUser);
-            return user.First();
+
+            if (model is null || model.Count == 0)
+            {
+                throw new ArgumentNullException("Not found");
+            }
+
+
+            return model.First();
         }
 
         public async Task Create(PaymentUser model)
@@ -49,10 +56,14 @@ namespace BusinessLogic.Services
 
         public async Task Delete(int idPayment, int idUser)
         {
-            var user = await _repositoryWrapper.PaymentUser
+            var model = await _repositoryWrapper.PaymentUser
                 .FindByCondition(x => x.IdPayment == idPayment && x.IdUser == idUser);
+            if (model is null || model.Count == 0)
+            {
+                throw new ArgumentNullException("Not found");
+            }
 
-            _repositoryWrapper.PaymentUser.Delete(user.First());
+            _repositoryWrapper.PaymentUser.Delete(model.First());
             _repositoryWrapper.Save();
         }
     }

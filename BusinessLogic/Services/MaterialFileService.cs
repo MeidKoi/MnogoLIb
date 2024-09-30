@@ -20,9 +20,14 @@ namespace BusinessLogic.Services
 
         public async Task<MaterialFile> GetById(int idMaterial, int idFile)
         {
-            var user = await _repositoryWrapper.MaterialFile
+            var model = await _repositoryWrapper.MaterialFile
                 .FindByCondition(x => x.IdMaterial == idMaterial && x.IdFile == idFile);
-            return user.First();
+            if (model is null || model.Count == 0)
+            {
+                throw new ArgumentNullException("Not found");
+            }
+
+            return model.First();
         }
 
         public async Task Create(MaterialFile model)
@@ -79,10 +84,14 @@ namespace BusinessLogic.Services
 
         public async Task Delete(int idMaterial, int idFile)
         {
-            var user = await _repositoryWrapper.MaterialFile
+            var model = await _repositoryWrapper.MaterialFile
                 .FindByCondition(x => x.IdMaterial == idMaterial && x.IdFile == idFile);
+            if (model is null || model.Count == 0)
+            {
+                throw new ArgumentNullException("Not found");
+            }
 
-            _repositoryWrapper.MaterialFile.Delete(user.First());
+            _repositoryWrapper.MaterialFile.Delete(model.First());
             _repositoryWrapper.Save();
         }
     }

@@ -1,0 +1,15 @@
+name: dotnet test
+
+on:
+  push:
+    paths:
+      - "**.cs"
+      - ".editorconfig"
+
+jobs:
+  check-format:
+    runs-on: windows-latest
+
+    steps:
+      - name: Run all test
+        run: dotnet test

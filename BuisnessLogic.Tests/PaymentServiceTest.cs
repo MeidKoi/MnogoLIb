@@ -4,6 +4,7 @@ using Domain.Models;
 using Domain.Wrapper;
 using Moq;
 using System;
+using System.Linq.Expressions;
 
 namespace BuisnessLogic.Tests
 {
@@ -138,6 +139,25 @@ namespace BuisnessLogic.Tests
             repMoq.Verify(x => x.Update(It.IsAny<Payment>()), Times.Never);
 
             Assert.IsType<ArgumentException>(ex);
+        }
+
+        [Fact]
+        public async void GetByIdAsync_NullPayment_ShullThrowArgumentExpression()
+        {
+            var ex = await Assert.ThrowsAnyAsync<ArgumentNullException>(() => service.GetById(-1));
+
+            Assert.IsType<ArgumentNullException>(ex);
+            repMoq.Verify(x => x.FindByCondition(It.IsAny<Expression<Func<Payment, bool>>>()), Times.Once);
+        }
+
+
+        [Fact]
+        public async void DeleteAsync_NullPayment_ShullThrowArgumentExpression()
+        {
+            var ex = await Assert.ThrowsAnyAsync<ArgumentNullException>(() => service.Delete(-1));
+
+            Assert.IsType<ArgumentNullException>(ex);
+            repMoq.Verify(x => x.Delete(It.IsAny<Payment>()), Times.Never);
         }
     }
 }
