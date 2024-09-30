@@ -115,7 +115,7 @@ namespace BusinessLogic.Services
             {
                 throw new ArgumentNullException("Not found");
             }
-            
+
             _repositoryWrapper.User.Delete(model.First());
             _repositoryWrapper.Save();
         }
