@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MnogoLibAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79c2a977b38cc6a1250e34a30374ced328f94055")]
 [assembly: System.Reflection.AssemblyProductAttribute("MnogoLibAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MnogoLibAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -16,13 +16,21 @@ namespace MnogoLibAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // builder.Services.AddDbContext<MnogoLibContext>(
-            //     options => options.UseSqlServer(
-            //                     "Server=LAPTOP-ISLFEJ9E;Database=MnogoLib;Trusted_Connection=True;"));
+            var platform = Environment.OSVersion.Platform.ToString();
 
-            builder.Services.AddDbContext<MnogoLibContext>(
-            options => options.UseSqlServer(
-                           "Server=laptop;User Id=SA;Password=AbsYrd123;Database=MnogoLib;"));
+            if (platform == "LINUX")
+            {
+                builder.Services.AddDbContext<MnogoLibContext>(
+                     options => options.UseSqlServer(
+                                        "Server=laptop;User Id=SA;Password=AbsYrd123;Database=MnogoLib;"));
+
+            }
+            else if (platform == "Win32NT")
+            {
+                builder.Services.AddDbContext<MnogoLibContext>(
+                    options => options.UseSqlServer(
+                                    "Server=LAPTOP-ISLFEJ9E;Database=MnogoLib;Trusted_Connection=True;"));
+            }
 
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             builder.Services.AddScoped<IUserService, UserService>();
