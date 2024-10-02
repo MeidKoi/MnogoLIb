@@ -1,4 +1,5 @@
 .vs/
+.vscode/
 BusinessLogic/bin/
 BusinessLogic/obj/
 BuisnessLogic.Tests/bin/

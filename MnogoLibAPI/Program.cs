@@ -18,7 +18,7 @@ namespace MnogoLibAPI
 
             var platform = Environment.OSVersion.Platform.ToString();
 
-            if (platform == "LINUX")
+            if (platform == "Unix")
             {
                 builder.Services.AddDbContext<MnogoLibContext>(
                      options => options.UseSqlServer(
