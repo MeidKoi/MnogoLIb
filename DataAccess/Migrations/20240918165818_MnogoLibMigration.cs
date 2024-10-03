@@ -65,7 +65,8 @@ namespace DataAccess.Migrations
                 name: "Group_Materials",
                 columns: table => new
                 {
-                    id_group = table.Column<int>(type: "int", nullable: false),
+                    id_group = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     name_group = table.Column<string>(type: "varchar(115)", unicode: false, maxLength: 115, nullable: false),
                     description_group = table.Column<string>(type: "varchar(1000)", unicode: false, maxLength: 1000, nullable: false)
                 },
@@ -91,7 +92,8 @@ namespace DataAccess.Migrations
                 name: "Payment",
                 columns: table => new
                 {
-                    id_payment = table.Column<int>(type: "int", nullable: false),
+                    id_payment = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     card_number = table.Column<string>(type: "varchar(16)", unicode: false, maxLength: 16, nullable: false),
                     cvv = table.Column<string>(type: "char(3)", unicode: false, fixedLength: true, maxLength: 3, nullable: false),
                     expression_date = table.Column<DateTime>(type: "date", nullable: false)

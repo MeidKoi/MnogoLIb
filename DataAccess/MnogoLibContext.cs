@@ -340,7 +340,6 @@ namespace Domain.Models
                 entity.ToTable("Group_Materials");
 
                 entity.Property(e => e.IdGroup)
-                    .ValueGeneratedNever()
                     .HasColumnName("id_group");
 
                 entity.Property(e => e.DescriptionGroup)
@@ -633,7 +632,6 @@ namespace Domain.Models
                 entity.ToTable("Payment");
 
                 entity.Property(e => e.IdPayment)
-                    .ValueGeneratedNever()
                     .HasColumnName("id_payment");
 
                 entity.Property(e => e.CardNumber)
