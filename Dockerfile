@@ -1,14 +1,14 @@
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 
 EXPOSE 80
-ENV ASPNETCORE_URLS http://+:80
-ENV ASPNETCORE_ENVIROMENT Development
+ENV ASPNETCORE_URLS=http://+:80
+ENV ASPNETCORE_ENVIROMENT=Development
 
 WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 
-WORKDIR /src
+WORKDIR /MnogoLibAPI
 
 COPY ["MnogoLibAPI/MnogoLibAPI.csproj", "MnogoLibAPI/"]
 COPY ["BusinessLogic/BusinessLogic.csproj", "BusinessLogic/"]
@@ -18,7 +18,7 @@ RUN dotnet restore "MnogoLibAPI/MnogoLibAPI.csproj"
 
 COPY . .
 FROM build as publish
-RUN dotnet publish "MnogoLibAPI/MnogoLibAPI.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "MnogoLibAPI/MnogoLibAPI.csproj" -c Release -o /app/publish /p:UserAppHost=false
 
 FROM base as final
 WORKDIR /app

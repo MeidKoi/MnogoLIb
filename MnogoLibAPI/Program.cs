@@ -22,8 +22,7 @@ namespace MnogoLibAPI
             {
                 builder.Services.AddDbContext<MnogoLibContext>(
                      options => options.UseSqlServer(
-                                        "Server=laptop;User Id=SA;Password=AbsYrd123;Database=MnogoLib;"));
-
+                                        builder.Configuration["ConnectionString"]));
             }
             else if (platform == "Win32NT")
             {
@@ -80,8 +79,17 @@ namespace MnogoLibAPI
 
             var app = builder.Build();
 
+            using (var scope = app.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+
+                var context = services.GetRequiredService<MnogoLibContext>();
+                context.Database.Migrate();
+            }
+
+
             // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
+            //if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
