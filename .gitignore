@@ -10,3 +10,5 @@ Domain/bin/
 Domain/obj/
 MnogoLibAPI/bin/
 MnogoLibAPI/obj/
+MnogoLibClient/bin/
+MnogoLibClient/obj/
