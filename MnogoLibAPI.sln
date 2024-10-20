@@ -22,7 +22,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{126098B0-9F5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{227F8644-A043-4F00-B82C-7A105CF36304}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MnogoLibClient", "MnogoLibClient\MnogoLibClient.csproj", "{EDF0DBC2-9D3F-4155-98BF-0F087CBFF509}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MnogoLibClient", "MnogoLibClient\MnogoLibClient.csproj", "{EDF0DBC2-9D3F-4155-98BF-0F087CBFF509}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
