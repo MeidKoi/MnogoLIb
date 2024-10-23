@@ -48,8 +48,8 @@ namespace BusinessLogic.Services
                 throw new ArgumentException(nameof(model.DescriptionGroup));
             }
 
-            _repositoryWrapper.GroupMaterial.Create(model);
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.GroupMaterial.Create(model);
+            await _repositoryWrapper.Save();
         }
 
         public async Task Update(GroupMaterial model)
@@ -69,8 +69,8 @@ namespace BusinessLogic.Services
                 throw new ArgumentException(nameof(model.DescriptionGroup));
             }
 
-            _repositoryWrapper.GroupMaterial.Update(model);
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.GroupMaterial.Update(model);
+            await _repositoryWrapper.Save();
         }
 
         public async Task Delete(int id)
@@ -82,8 +82,8 @@ namespace BusinessLogic.Services
                 throw new ArgumentNullException("Not found");
             }
 
-            _repositoryWrapper.GroupMaterial.Delete(model.First());
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.GroupMaterial.Delete(model.First());
+            await _repositoryWrapper.Save();
         }
     }
 }

@@ -12,8 +12,8 @@ namespace Domain.Interfaces
         Task<List<T>> FindAll();
         Task<List<T>> FindByCondition(Expression<Func<T, bool>> expression);
 
-        void Create(T entity);
-        void Update(T entity);
-        void Delete(T entity);
+        Task Create(T entity);
+        Task Update(T entity);
+        Task Delete(T entity);
     }
 }

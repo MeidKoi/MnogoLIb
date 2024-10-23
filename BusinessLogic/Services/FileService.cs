@@ -49,8 +49,8 @@ namespace BusinessLogic.Services
                 throw new ArgumentException(nameof(model.PathFile));
             }
 
-            _repositoryWrapper.File.Create(model);
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.File.Create(model);
+            await _repositoryWrapper.Save();
         }
 
         public async Task Update(File model)
@@ -90,8 +90,8 @@ namespace BusinessLogic.Services
                 throw new ArgumentException(nameof(model.DeletedBy));
             }
 
-            _repositoryWrapper.File.Update(model);
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.File.Update(model);
+            await _repositoryWrapper.Save();
         }
 
         public async Task Delete(int id)
@@ -103,8 +103,8 @@ namespace BusinessLogic.Services
                 throw new ArgumentNullException("Not found");
             }
 
-            _repositoryWrapper.File.Delete(model.First());
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.File.Delete(model.First());
+            await _repositoryWrapper.Save();
         }
     }
 }

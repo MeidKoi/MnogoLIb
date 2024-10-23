@@ -38,8 +38,8 @@ namespace BusinessLogic.Services
                 throw new ArgumentNullException(nameof(model));
             }
 
-            _repositoryWrapper.MaterialsUserStatus.Create(model);
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.MaterialsUserStatus.Create(model);
+            await _repositoryWrapper.Save();
         }
 
         public async Task Update(MaterialsUserStatus model)
@@ -49,8 +49,8 @@ namespace BusinessLogic.Services
                 throw new ArgumentNullException(nameof(model));
             }
 
-            _repositoryWrapper.MaterialsUserStatus.Update(model);
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.MaterialsUserStatus.Update(model);
+            await _repositoryWrapper.Save();
         }
 
         public async Task Delete(int idMaterial, int idUserStatus, int idUser)
@@ -62,8 +62,8 @@ namespace BusinessLogic.Services
                 throw new ArgumentNullException("Not found");
             }
 
-            _repositoryWrapper.MaterialsUserStatus.Delete(model.First());
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.MaterialsUserStatus.Delete(model.First());
+            await _repositoryWrapper.Save();
         }
     }
 }

@@ -43,8 +43,8 @@ namespace BusinessLogic.Services
                 throw new ArgumentException(nameof(model.Value));
             }
 
-            _repositoryWrapper.CommentRate.Create(model);
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.CommentRate.Create(model);
+            await _repositoryWrapper.Save();
         }
 
         public async Task Update(CommentRate model)
@@ -59,8 +59,8 @@ namespace BusinessLogic.Services
                 throw new ArgumentException(nameof(model.Value));
             }
 
-            _repositoryWrapper.CommentRate.Update(model);
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.CommentRate.Update(model);
+            await _repositoryWrapper.Save();
         }
 
         public async Task Delete(int idComment, int idUser)
@@ -72,8 +72,8 @@ namespace BusinessLogic.Services
                 throw new ArgumentNullException("Not found");
             }
 
-            _repositoryWrapper.CommentRate.Delete(model.First());
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.CommentRate.Delete(model.First());
+            await _repositoryWrapper.Save();
         }
     }
 }

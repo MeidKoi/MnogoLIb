@@ -43,8 +43,8 @@ namespace BusinessLogic.Services
                 throw new ArgumentException(nameof(model.ValueRate));
             }
 
-            _repositoryWrapper.Rate.Create(model);
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.Rate.Create(model);
+            await _repositoryWrapper.Save();
         }
 
         public async Task Update(Rate model)
@@ -74,8 +74,8 @@ namespace BusinessLogic.Services
                 throw new ArgumentException(nameof(model.DeletedTime));
             }
 
-            _repositoryWrapper.Rate.Update(model);
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.Rate.Update(model);
+            await _repositoryWrapper.Save();
         }
 
         public async Task Delete(int id)
@@ -89,8 +89,8 @@ namespace BusinessLogic.Services
             }
 
 
-            _repositoryWrapper.Rate.Delete(model.First());
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.Rate.Delete(model.First());
+            await _repositoryWrapper.Save();
         }
     }
 }

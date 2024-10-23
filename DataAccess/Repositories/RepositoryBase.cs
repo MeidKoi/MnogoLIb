@@ -22,8 +22,8 @@ namespace DataAcess.Repositories
         public async Task<List<T>> FindAll() => await RepositoryContext.Set<T>().AsNoTracking().ToListAsync();
         public async Task<List<T>> FindByCondition(Expression<Func<T, bool>> expression) =>
                await RepositoryContext.Set<T>().Where(expression).AsNoTracking().ToListAsync();
-        public async void Create(T entity) => await RepositoryContext.Set<T>().AddAsync(entity);
-        public async void Update(T entity) => RepositoryContext.Set<T>().Update(entity);
-        public async void Delete(T entity) => RepositoryContext.Set<T>().Remove(entity);
+        public async Task Create(T entity) => await RepositoryContext.Set<T>().AddAsync(entity);
+        public async Task Update(T entity) => RepositoryContext.Set<T>().Update(entity);
+        public async Task Delete(T entity) => RepositoryContext.Set<T>().Remove(entity);
     }
 }

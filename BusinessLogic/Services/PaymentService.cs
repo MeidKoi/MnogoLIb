@@ -52,8 +52,8 @@ namespace BusinessLogic.Services
                 throw new ArgumentException(nameof(model.ExpressionDate));
             }
 
-            _repositoryWrapper.Payment.Create(model);
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.Payment.Create(model);
+            await _repositoryWrapper.Save();
         }
 
         public async Task Update(Payment model)
@@ -78,8 +78,8 @@ namespace BusinessLogic.Services
                 throw new ArgumentException(nameof(model.ExpressionDate));
             }
 
-            _repositoryWrapper.Payment.Update(model);
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.Payment.Update(model);
+            await _repositoryWrapper.Save();
         }
 
         public async Task Delete(int id)
@@ -91,8 +91,8 @@ namespace BusinessLogic.Services
                 throw new ArgumentNullException("Not found");
             }
 
-            _repositoryWrapper.Payment.Delete(model.First());
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.Payment.Delete(model.First());
+            await _repositoryWrapper.Save();
         }
     }
 }

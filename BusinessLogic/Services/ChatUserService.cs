@@ -38,8 +38,8 @@ namespace BusinessLogic.Services
                 throw new ArgumentNullException(nameof(model));
             }
 
-            _repositoryWrapper.ChatUser.Create(model);
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.ChatUser.Create(model);
+            await _repositoryWrapper.Save();
         }
 
         public async Task Update(ChatUser model)
@@ -49,8 +49,8 @@ namespace BusinessLogic.Services
                 throw new ArgumentNullException(nameof(model));
             }
 
-            _repositoryWrapper.ChatUser.Update(model);
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.ChatUser.Update(model);
+            await _repositoryWrapper.Save();
         }
 
         public async Task Delete(int idChat, int idUser)
@@ -62,8 +62,8 @@ namespace BusinessLogic.Services
                 throw new ArgumentNullException("Not found");
             }
 
-            _repositoryWrapper.ChatUser.Delete(model.First());
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.ChatUser.Delete(model.First());
+            await _repositoryWrapper.Save();
         }
     }
 }
