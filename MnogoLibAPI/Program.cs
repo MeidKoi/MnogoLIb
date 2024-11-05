@@ -89,17 +89,17 @@ namespace MnogoLibAPI
                 context.Database.EnsureCreated();
 
                 context.AuthorStatuses.AddRange(
-                    new AuthorStatus{NameAuthorStatus = "Ongoing"},
-                    new AuthorStatus{NameAuthorStatus = "Completed"},
-                    new AuthorStatus{NameAuthorStatus = "Stopped"},
-                    new AuthorStatus{NameAuthorStatus = "Discontinued"}
+                    new AuthorStatus { NameAuthorStatus = "Ongoing" },
+                    new AuthorStatus { NameAuthorStatus = "Completed" },
+                    new AuthorStatus { NameAuthorStatus = "Stopped" },
+                    new AuthorStatus { NameAuthorStatus = "Discontinued" }
                 );
 
                 context.Categories.AddRange(
-                    new Category{NameCategory = "Manga"},
-                    new Category{NameCategory = "Manhua"},
-                    new Category{NameCategory = "Manhwa"},
-                    new Category{NameCategory = "Comics"}
+                    new Category { NameCategory = "Manga" },
+                    new Category { NameCategory = "Manhua" },
+                    new Category { NameCategory = "Manhwa" },
+                    new Category { NameCategory = "Comics" }
                 );
                 context.Genres.AddRange(
                     new Genre { NameGenre = "Cyberpunk" },
@@ -125,10 +125,10 @@ namespace MnogoLibAPI
                 );
 
                 context.UserStatuses.AddRange(
-                    new UserStatus {NameUserStatus = "Reading"},
-                    new UserStatus {NameUserStatus = "In the plans"},
-                    new UserStatus {NameUserStatus = "Abandoned"},
-                    new UserStatus {NameUserStatus = "Favorite"}
+                    new UserStatus { NameUserStatus = "Reading" },
+                    new UserStatus { NameUserStatus = "In the plans" },
+                    new UserStatus { NameUserStatus = "Abandoned" },
+                    new UserStatus { NameUserStatus = "Favorite" }
                 );
 
                 context.SaveChanges();
