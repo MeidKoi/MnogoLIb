@@ -54,15 +54,15 @@ namespace MnogoLibAPI
                 {
                     Version = "v1",
                     Title = "MnogoLib API",
-                    Description = "       API                                                                                ",
+                    Description = "Äàííîå API ïîçâîëÿåò âçàèìîäåéñòâîâàòü ñ îñíîâíûìè è ñàìûìè ÷àñòî èñïîëüçóåìûìè ñóùíîñòÿìè",
                     Contact = new OpenApiContact
                     {
-                        Name = "               ",
+                        Name = "Ïðèìåð êîíòàêòà",
                         Url = new Uri("https://example.com/contact")
                     },
                     License = new OpenApiLicense
                     {
-                        Name = "               ",
+                        Name = "Ïðèìåð ëèöåíçèè",
                         Url = new Uri("https://example.com/license")
                     }
                 });
@@ -85,6 +85,53 @@ namespace MnogoLibAPI
 
                 var context = services.GetRequiredService<MnogoLibContext>();
                 context.Database.Migrate();
+
+                context.Database.EnsureCreated();
+
+                context.AuthorStatuses.AddRange(
+                    new AuthorStatus{NameAuthorStatus = "Ongoing"},
+                    new AuthorStatus{NameAuthorStatus = "Completed"},
+                    new AuthorStatus{NameAuthorStatus = "Stopped"},
+                    new AuthorStatus{NameAuthorStatus = "Discontinued"}
+                );
+
+                context.Categories.AddRange(
+                    new Category{NameCategory = "Manga"},
+                    new Category{NameCategory = "Manhua"},
+                    new Category{NameCategory = "Manhwa"},
+                    new Category{NameCategory = "Comics"}
+                );
+                context.Genres.AddRange(
+                    new Genre { NameGenre = "Cyberpunk" },
+                    new Genre { NameGenre = "Isekai" },
+                    new Genre { NameGenre = "Shonen" },
+                    new Genre { NameGenre = "Shojo" },
+                    new Genre { NameGenre = "Seinen" },
+                    new Genre { NameGenre = "Josei" },
+                    new Genre { NameGenre = "Fantasy" },
+                    new Genre { NameGenre = "Horror" },
+                    new Genre { NameGenre = "Romance" },
+                    new Genre { NameGenre = "Comedy" },
+                    new Genre { NameGenre = "Drama" },
+                    new Genre { NameGenre = "Mystery" },
+                    new Genre { NameGenre = "Thriller" },
+                    new Genre { NameGenre = "Slice of Life" },
+                    new Genre { NameGenre = "Sports" },
+                    new Genre { NameGenre = "Historical" },
+                    new Genre { NameGenre = "Supernatural" },
+                    new Genre { NameGenre = "Psychological" },
+                    new Genre { NameGenre = "Mecha" },
+                    new Genre { NameGenre = "Post-Apocalyptic" }
+                );
+
+                context.UserStatuses.AddRange(
+                    new UserStatus {NameUserStatus = "Reading"},
+                    new UserStatus {NameUserStatus = "In the plans"},
+                    new UserStatus {NameUserStatus = "Abandoned"},
+                    new UserStatus {NameUserStatus = "Favorite"}
+                );
+
+                context.SaveChanges();
             }
 
 

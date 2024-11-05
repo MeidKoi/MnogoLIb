@@ -50,7 +50,7 @@ namespace Domain.Models
 
                 entity.Property(e => e.NameAuthor)
                     .HasMaxLength(100)
-                    .IsUnicode(false)
+                    .IsUnicode(true)
                     .HasColumnName("name_author");
             });
 
@@ -65,7 +65,7 @@ namespace Domain.Models
 
                 entity.Property(e => e.NameAuthorStatus)
                     .HasMaxLength(30)
-                    .IsUnicode(false)
+                    .IsUnicode(true)
                     .HasColumnName("name_author_status");
             });
 
@@ -78,7 +78,7 @@ namespace Domain.Models
 
                 entity.Property(e => e.NameCategory)
                     .HasMaxLength(50)
-                    .IsUnicode(false)
+                    .IsUnicode(true)
                     .HasColumnName("name_category");
             });
 
@@ -111,7 +111,7 @@ namespace Domain.Models
 
                 entity.Property(e => e.NameChat)
                     .HasMaxLength(50)
-                    .IsUnicode(false)
+                    .IsUnicode(true)
                     .HasColumnName("name_chat");
 
                 entity.HasOne(d => d.DeletedByNavigation)
@@ -203,7 +203,7 @@ namespace Domain.Models
 
                 entity.Property(e => e.TextComment)
                     .HasMaxLength(250)
-                    .IsUnicode(false)
+                    .IsUnicode(true)
                     .HasColumnName("text_comment");
 
                 entity.HasOne(d => d.IdUserNavigation)
@@ -294,12 +294,12 @@ namespace Domain.Models
 
                 entity.Property(e => e.NameFile)
                     .HasMaxLength(50)
-                    .IsUnicode(false)
+                    .IsUnicode(true)
                     .HasColumnName("name_file");
 
                 entity.Property(e => e.PathFile)
                     .HasMaxLength(300)
-                    .IsUnicode(false)
+                    .IsUnicode(true)
                     .HasColumnName("path_file");
 
                 entity.HasOne(d => d.CreatedByNavigation)
@@ -329,7 +329,7 @@ namespace Domain.Models
 
                 entity.Property(e => e.NameGenre)
                     .HasMaxLength(30)
-                    .IsUnicode(false)
+                    .IsUnicode(true)
                     .HasColumnName("name_genre");
             });
 
@@ -344,12 +344,12 @@ namespace Domain.Models
 
                 entity.Property(e => e.DescriptionGroup)
                     .HasMaxLength(1000)
-                    .IsUnicode(false)
+                    .IsUnicode(true)
                     .HasColumnName("description_group");
 
                 entity.Property(e => e.NameGroup)
                     .HasMaxLength(115)
-                    .IsUnicode(false)
+                    .IsUnicode(true)
                     .HasColumnName("name_group");
 
                 entity.HasMany(d => d.IdMaterials)
@@ -393,7 +393,7 @@ namespace Domain.Models
 
                 entity.Property(e => e.DescriptionMaterial)
                     .HasMaxLength(1000)
-                    .IsUnicode(false)
+                    .IsUnicode(true)
                     .HasColumnName("description_material");
 
                 entity.Property(e => e.FileIcon).HasColumnName("file_icon");
@@ -412,7 +412,7 @@ namespace Domain.Models
 
                 entity.Property(e => e.NameMaterial)
                     .HasMaxLength(250)
-                    .IsUnicode(false)
+                    .IsUnicode(true)
                     .HasColumnName("name_material");
 
                 entity.HasOne(d => d.CreatedByNavigation)
@@ -559,7 +559,7 @@ namespace Domain.Models
 
                 entity.Property(e => e.NameMessageStatus)
                     .HasMaxLength(50)
-                    .IsUnicode(false)
+                    .IsUnicode(true)
                     .HasColumnName("name_message_status");
             });
 
@@ -598,7 +598,7 @@ namespace Domain.Models
 
                 entity.Property(e => e.TextMessage)
                     .HasMaxLength(500)
-                    .IsUnicode(false)
+                    .IsUnicode(true)
                     .HasColumnName("text_message");
 
                 entity.HasOne(d => d.DeletedByNavigation)
@@ -636,12 +636,12 @@ namespace Domain.Models
 
                 entity.Property(e => e.CardNumber)
                     .HasMaxLength(16)
-                    .IsUnicode(false)
+                    .IsUnicode(true)
                     .HasColumnName("card_number");
 
                 entity.Property(e => e.Cvv)
                     .HasMaxLength(3)
-                    .IsUnicode(false)
+                    .IsUnicode(true)
                     .HasColumnName("cvv")
                     .IsFixedLength();
 
@@ -722,7 +722,7 @@ namespace Domain.Models
 
                 entity.Property(e => e.NameRole)
                     .HasMaxLength(15)
-                    .IsUnicode(false)
+                    .IsUnicode(true)
                     .HasColumnName("name_role");
             });
 
@@ -745,7 +745,7 @@ namespace Domain.Models
 
                 entity.Property(e => e.EmailUser)
                     .HasMaxLength(50)
-                    .IsUnicode(false)
+                    .IsUnicode(true)
                     .HasColumnName("email_user");
 
                 entity.Property(e => e.IdRole).HasColumnName("id_role");
@@ -758,12 +758,12 @@ namespace Domain.Models
 
                 entity.Property(e => e.NicknameUser)
                     .HasMaxLength(50)
-                    .IsUnicode(false)
+                    .IsUnicode(true)
                     .HasColumnName("nickname_user");
 
                 entity.Property(e => e.PasswordUser)
                     .HasMaxLength(50)
-                    .IsUnicode(false)
+                    .IsUnicode(true)
                     .HasColumnName("password_user");
 
                 entity.HasOne(d => d.IdRoleNavigation)
@@ -784,7 +784,7 @@ namespace Domain.Models
 
                 entity.Property(e => e.NameUserStatus)
                     .HasMaxLength(30)
-                    .IsUnicode(false)
+                    .IsUnicode(true)
                     .HasColumnName("name_user_status");
             });
 
