@@ -148,6 +148,11 @@ namespace MnogoLibAPI
                 app.UseSwaggerUI();
             }
 
+            app.UseCors(builder => builder.WithOrigins(new[] { "https://mnogolibapi-f7vitvir.b4a.run/", })
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowAnyOrigin());
+
             //app.UseHttpsRedirection();
 
             app.UseAuthorization();
