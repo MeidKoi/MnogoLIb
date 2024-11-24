@@ -96,9 +96,9 @@ namespace MnogoLibAPI
                 );
 
                 context.Roles.AddRange(
-                    new Role { RoleName = "User" },
-                    new Role { RoleName = "Moder" },
-                    new Role { RoleName = "Admin" }
+                    new Role { NameRole = "User" },
+                    new Role { NameRole = "Moder" },
+                    new Role { NameRole = "Admin" }
                 );
 
                 context.Categories.AddRange(
