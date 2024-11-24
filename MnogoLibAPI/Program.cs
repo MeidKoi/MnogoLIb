@@ -95,6 +95,12 @@ namespace MnogoLibAPI
                     new AuthorStatus { NameAuthorStatus = "Discontinued" }
                 );
 
+                context.Roles.AddRange(
+                    new Role { RoleName = "User" },
+                    new Role { RoleName = "Moder" },
+                    new Role { RoleName = "Admin" }
+                );
+
                 context.Categories.AddRange(
                     new Category { NameCategory = "Manga" },
                     new Category { NameCategory = "Manhua" },
