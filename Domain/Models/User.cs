@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Domain.Entites;
 
 namespace Domain.Models
 {
@@ -38,6 +39,24 @@ namespace Domain.Models
         public DateTime LastUpdateTime { get; set; } = DateTime.Now;
         public int? DeletedBy { get; set; }
         public DateTime? DeletedTime { get; set; }
+
+
+        //Поля для JWT
+
+        public bool AcceptTerms {get; set;}
+        //public Role Role {get; set;}
+        public string? VerificationToken {get;set;}
+        public DateTime? Verified {get; set;}
+        public bool IsVerified => Verified.HasValue || PasswordReset.HasValue;
+        public DateTime? ResetTokenExpires {get; set;}
+        public DateTime? PasswordReset {get; set;}
+        public DateTime Created {get; set;}
+        public DateTime? Updated {get; set;}
+        public List<RefreshToken> RefreshTokens {get; set;}
+
+        public bool OwnsToken(string token){
+            return this.RefreshTokens?.Find(x => x.Token == token) != null;
+        }
 
         public virtual Role? IdRoleNavigation { get; set; } = null!;
         public virtual ICollection<Chat>? ChatDeletedByNavigations { get; set; }
