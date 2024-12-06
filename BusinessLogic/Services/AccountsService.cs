@@ -1,13 +1,13 @@
-using MapsterMapper;
-using Microsoft.Extensions.Options;
 using BusinessLogic.Authorization;
 using BusinessLogic.Helpers;
-using Domain.Interfaces;
-using Domain.Wrapper;
 using BusinessLogic.Models.Accounts;
-using Domain.Models;
-using Mapster;
 using Domain.Entites;
+using Domain.Interfaces;
+using Domain.Models;
+using Domain.Wrapper;
+using Mapster;
+using MapsterMapper;
+using Microsoft.Extensions.Options;
 using Org.BouncyCastle.Math.EC.Rfc7748;
 using System.Security.Cryptography;
 
@@ -37,7 +37,7 @@ namespace BusinessLogic.Services
 
         private void reamoveOldRefreshTokens(User account)
         {
-            account.RefreshTokens.RemoveAll(x => 
+            account.RefreshTokens.RemoveAll(x =>
             !x.isActive &&
             x.Created.AddDays(_appSettings.RefreshTokenTTL) <= DateTime.UtcNow);
         }
@@ -47,7 +47,7 @@ namespace BusinessLogic.Services
 
             if (account == null || !account.IsVerified || !BCrypt.Net.BCrypt.Verify(model.Password, account.PasswordUser))
                 throw new AppException("Email or password is incorrect");
-            
+
             var jwtToken = _jwtUtils.GenerateJwtToken(account);
             var refreshToken = await _jwtUtils.GenerateRefreshToken(ipAddress);
             account.RefreshTokens.Add(refreshToken);
@@ -95,7 +95,7 @@ namespace BusinessLogic.Services
                 return await generateResetToken();
             return token;
         }
-        
+
 
         public async Task ForgotPassword(ForgotPasswordRequest model, string origin)
         {
@@ -137,7 +137,7 @@ namespace BusinessLogic.Services
             token.ReplacedByToken = replacedByToken;
         }
 
-        private  async Task<RefreshToken> rotateRefreshToken(RefreshToken refreshToken, string ipAddress)
+        private async Task<RefreshToken> rotateRefreshToken(RefreshToken refreshToken, string ipAddress)
         {
             var newRefreshToken = await _jwtUtils.GenerateRefreshToken(ipAddress);
             revokeRefreshToken(refreshToken, ipAddress, "Replaced by new token", newRefreshToken.Token);
@@ -202,12 +202,12 @@ namespace BusinessLogic.Services
         {
             if ((await _repositoryWrapper.User.FindByCondition(x => x.EmailUser == model.Email)).Count > 0)
                 return;
-            
+
             var account = _mapper.Map<User>(model);
 
             var isFitstAccount = (await _repositoryWrapper.User.FindAll()).Count == 0;
             // 1 - User, 2 - Moder, 3 - Admin
-            account.IdRole = isFitstAccount ? 2 : 1; 
+            account.IdRole = isFitstAccount ? 2 : 1;
             account.CreatedTime = DateTime.UtcNow;
             account.Verified = DateTime.UtcNow;
             account.VerificationToken = await generateVerificationToken();
@@ -246,7 +246,7 @@ namespace BusinessLogic.Services
 
             if (!refreshToken.isActive)
                 throw new AppException("Invalid token");
-            
+
             revokeRefreshToken(refreshToken, ipAddress, "Revoked without replacement");
             await _repositoryWrapper.User.Update(account);
             await _repositoryWrapper.Save();
@@ -264,7 +264,7 @@ namespace BusinessLogic.Services
 
             if (account.EmailUser != model.Email && (await _repositoryWrapper.User.FindByCondition(x => x.EmailUser == model.Email)).Count > 0)
                 throw new AppException($"Email '{model.Email}' is already registred");
-            
+
             if (!string.IsNullOrEmpty(model.Password))
                 account.PasswordUser = BCrypt.Net.BCrypt.HashPassword(model.Password);
 

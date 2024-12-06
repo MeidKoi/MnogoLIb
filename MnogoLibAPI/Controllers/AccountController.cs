@@ -1,9 +1,9 @@
-using MnogoLibAPI.Authorization;
 using BusinessLogic.Authorization;
 using BusinessLogic.Models.Accounts;
 using Domain.Entites;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using MnogoLibAPI.Authorization;
 
 namespace MnogoLibAPI.Controllers
 {
@@ -22,7 +22,7 @@ namespace MnogoLibAPI.Controllers
         {
             var cookieOptions = new CookieOptions
             {
-                HttpOnly = true;
+                HttpOnly = true,
                 Expires = DateTime.UtcNow.AddDays(7)
             };
             Response.Cookies.Append("refreshToken", token, cookieOptions);
@@ -54,22 +54,110 @@ namespace MnogoLibAPI.Controllers
             setTokenCoockie(resposne.RefreshToken);
             return Ok(resposne);
         }
-        
+
         [Authorization.AllowAnonymous]
-        [HttpPost("refresh-token")]
+        [HttpPost("revoke-token")]
         public async Task<ActionResult<AuthenticateResponse>> RevokeToken(RevokeTokenRequest model)
         {
             var token = model.Token ?? Request.Cookies["refreshToken"];
 
             if (string.IsNullOrEmpty(token))
-                return BadRequest(new {message = "Token is required"});
+                return BadRequest(new { message = "Token is required" });
 
             if (!User.OwnsToken(token) && User.IdRole != 3)
-                return Unauthorized(new {message = "Unauthorized"});
+                return Unauthorized(new { message = "Unauthorized" });
 
             await _accountService.RevokeToken(token, ipAddress());
-            return Ok(new {message = "Token revoked"});
+            return Ok(new { message = "Token revoked" });
         }
 
+        [Authorization.AllowAnonymous]
+        [HttpPost("register")]
+        public async Task<ActionResult<AuthenticateResponse>> Register(RegisterRequest model)
+        {
+            await _accountService.Register(model, Request.Headers["origin"]);
+            return Ok(new { message = "Registration successful, please check your email" });
+        }
+
+        [Authorization.AllowAnonymous]
+        [HttpPost("verify-email")]
+        public async Task<ActionResult<AuthenticateResponse>> VerifyEmail(VerifyEmailRequest model)
+        {
+            await _accountService.VerifyEmail(model.Token);
+            return Ok(new { message = "Verification successful, you can now login" });
+        }
+
+        [Authorization.AllowAnonymous]
+        [HttpPost("forgot-password")]
+        public async Task<ActionResult<AuthenticateResponse>> ForgotPassword(ForgotPasswordRequest model)
+        {
+            await _accountService.ForgotPassword(model, Request.Headers["origin"]);
+            return Ok(new { message = "Please check your email for password reset instuctions" });
+        }
+
+        [Authorization.AllowAnonymous]
+        [HttpPost("validate-reset-token")]
+        public async Task<ActionResult<AuthenticateResponse>> ValidateResetToken(ValidateResetTokenRequest model)
+        {
+            await _accountService.ValidateResetToken(model);
+            return Ok(new { message = "Token is valid" });
+        }
+
+        [Authorization.AllowAnonymous]
+        [HttpPost("reset-password")]
+        public async Task<ActionResult<AuthenticateResponse>> ResetPassword(ResetPasswordRequest model)
+        {
+            await _accountService.ResetPassword(model);
+            return Ok(new { message = "Password reset successful, you can now login" });
+        }
+
+        [BusinessLogic.Authorization.Authorization(roles: 3)]
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<AccountResponse>>> GetAll()
+        {
+            var accounts = await _accountService.GetAll();
+            return Ok(accounts);
+        }
+
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<IEnumerable<AccountResponse>>> GetById(int id)
+        {
+            if (id != User.IdRole && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
+
+            var accounts = await _accountService.GetById(id);
+            return Ok(accounts);
+        }
+
+        [BusinessLogic.Authorization.Authorization(roles: 3)]
+        [HttpPost]
+        public async Task<ActionResult<IEnumerable<AccountResponse>>> Create(CreateRequest model)
+        {
+            var accounts = await _accountService.Create(model);
+            return Ok(accounts);
+        }
+
+        [HttpPut("{id:int}")]
+        public async Task<ActionResult<AccountResponse>> Update(int id, UpdateRequest model)
+        {
+            if (id != User.IdUser && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
+
+            if (User.IdRole != 3)
+                model.Role = 0;
+
+            var accounts = await _accountService.Update(id, model);
+            return Ok(accounts);
+        }
+
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult<AccountResponse>> Delete(int id)
+        {
+            if (id != User.IdUser && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
+
+            await _accountService.Delete(id);
+            return Ok(new { message = "Account deleted successfully" });
+        }
     }
 }

@@ -1,15 +1,15 @@
-using BusinessLogic.Helpers;
-using Domain.Interfaces;
-using Microsoft.Extensions.Options;
 using BusinessLogic.Authorization;
-using Domain.Wrapper;
-using Domain.Models;
+using BusinessLogic.Helpers;
 using Domain.Entites;
-using System.IdentityModel.Tokens.Jwt;
-using System.Text;
+using Domain.Interfaces;
+using Domain.Models;
+using Domain.Wrapper;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
+using System.Text;
 
 namespace MnogoLibAPI.Authorization
 {
@@ -30,8 +30,9 @@ namespace MnogoLibAPI.Authorization
         {
             var tokenHangler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
-            var tokenDescription = new SecurityTokenDescriptor{
-                Subject = new ClaimsIdentity(new[] {new Claim("id", account.IdUser.ToString())}),
+            var tokenDescription = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new[] { new Claim("id", account.IdUser.ToString()) }),
                 Expires = DateTime.UtcNow.AddMinutes(15),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
@@ -61,7 +62,7 @@ namespace MnogoLibAPI.Authorization
         {
             if (token == null)
                 return null;
-            
+
             var tokenHangler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
             try
@@ -73,7 +74,7 @@ namespace MnogoLibAPI.Authorization
                     ValidateIssuer = false,
                     ValidateAudience = false,
                     ClockSkew = TimeSpan.Zero
-                    
+
                 }, out SecurityToken validatedToken);
 
                 var jwtToken = (JwtSecurityToken)validatedToken;

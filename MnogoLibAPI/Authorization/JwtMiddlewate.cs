@@ -1,7 +1,7 @@
-using Microsoft.Extensions.Options;
 using BusinessLogic.Helpers;
 using Domain.Interfaces;
 using Domain.Wrapper;
+using Microsoft.Extensions.Options;
 
 namespace BusinessLogic.Authorization
 {

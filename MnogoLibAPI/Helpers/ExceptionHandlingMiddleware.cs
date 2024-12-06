@@ -9,9 +9,9 @@ namespace MnogoLibAPI.MiddleWare
         public record ExceptionResponse(HttpStatusCode StatusCode, string Description);
 
         private readonly RequestDelegate _next;
-        private readonly ILogger _logger;
+        private readonly ILogger<ExceptionHandlingMiddleware> _logger;
 
-        public ExceptionHandlingMiddleware(RequestDelegate next, ILogger logger)
+        public ExceptionHandlingMiddleware(RequestDelegate next, ILogger<ExceptionHandlingMiddleware> logger)
         {
             _next = next;
             _logger = logger;
@@ -42,7 +42,7 @@ namespace MnogoLibAPI.MiddleWare
                         break;
                 }
 
-                var result = JsonSerializer.Serialize(new {message = error?.Message});
+                var result = JsonSerializer.Serialize(new { message = error?.Message });
                 await response.WriteAsync(result);
             }
         }

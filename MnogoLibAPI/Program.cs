@@ -1,10 +1,15 @@
+using BusinessLogic.Authorization;
 using BusinessLogic.Services;
 using DataAccess.Wrapper;
 using Domain.Interfaces;
 using Domain.Models;
 using Domain.Wrapper;
+using Mapster;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using MnogoLibAPI.Authorization;
 using MnogoLibAPI.MiddleWare;
 using System.Reflection;
 
@@ -48,22 +53,65 @@ namespace MnogoLibAPI
             builder.Services.AddScoped<IPaymentUserService, PaymentUserService>();
             builder.Services.AddScoped<IRateService, RateService>();
 
+            builder.Services.AddScoped<IJwtUtils, jwtUtils>();
+            builder.Services.AddScoped<IAccountService, AccountService>();
+            builder.Services.AddScoped<IEmailService, EmailService>();
+
+            builder.Services.AddControllers();
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddMapster();
+            builder.Services.AddLogging();
+
+            builder.Services.AddAuthentication(options =>
+            {
+                options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme; //if you dont use Jwt i think you can just delete this line
+            }).AddCookie(/*cookie=> you can add some options here*/);
+
             builder.Services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
                     Title = "MnogoLib API",
-                    Description = "Äàííîå API ïîçâîëÿåò âçàèìîäåéñòâîâàòü ñ îñíîâíûìè è ñàìûìè ÷àñòî èñïîëüçóåìûìè ñóùíîñòÿìè",
+                    Description = "Site for reading manga",
                     Contact = new OpenApiContact
                     {
-                        Name = "Ïðèìåð êîíòàêòà",
+                        Name = "Contacts",
                         Url = new Uri("https://example.com/contact")
                     },
                     License = new OpenApiLicense
                     {
-                        Name = "Ïðèìåð ëèöåíçèè",
+                        Name = "License",
                         Url = new Uri("https://example.com/license")
+                    }
+                });
+                options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    Description = @"JWT Authorization header using the Bearer scheme. \r\n\r\n 
+                                    Enter 'Bearer' [space] and then your token in the text input below.
+                                    \r\n\r\nExample: 'Bearer 12345abcdef'",
+                    Name = "Authorization",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer"
+                });
+                options.AddSecurityRequirement(new OpenApiSecurityRequirement()
+                {
+                {
+                    new OpenApiSecurityScheme
+                    {
+                    Reference = new OpenApiReference
+                        {
+                            Type = ReferenceType.SecurityScheme,
+                            Id = "Bearer"
+                        },
+                        Scheme = "oauth2",
+                        Name = "Bearer",
+                        In = ParameterLocation.Header,
+
+                    },
+                    new List<string>()
                     }
                 });
                 var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
@@ -72,10 +120,6 @@ namespace MnogoLibAPI
 
             // Add services to the container.
 
-            builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
 
@@ -110,7 +154,7 @@ namespace MnogoLibAPI
                         new Category { NameCategory = "Manhwa" },
                         new Category { NameCategory = "Comics" }
                     );
-                    
+
                 if (context.Genres.Count() < 4)
                     context.Genres.AddRange(
                         new Genre { NameGenre = "Cyberpunk" },
@@ -159,11 +203,13 @@ namespace MnogoLibAPI
                     .AllowAnyMethod()
                     .AllowAnyOrigin());
 
-            //app.UseHttpsRedirection();
-
-            app.UseAuthorization();
+            app.UseHttpsRedirection();
 
             app.UseMiddleware<ExceptionHandlingMiddleware>();
+
+            app.UseMiddleware<JwtMiddleware>();
+
+            app.UseAuthorization();
 
             app.MapControllers();
 

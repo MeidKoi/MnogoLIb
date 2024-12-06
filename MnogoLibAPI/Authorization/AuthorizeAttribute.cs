@@ -1,7 +1,7 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Filters;
 using Domain.Entites;
 using Domain.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 using MnogoLibAPI.Authorization;
 
 namespace BusinessLogic.Authorization
@@ -22,10 +22,10 @@ namespace BusinessLogic.Authorization
             var allowAnonymous = context.ActionDescriptor.EndpointMetadata.OfType<AllowAnonymousAttribute>().Any();
             if (allowAnonymous)
                 return;
-            
+
             var account = (User)context.HttpContext.Items["User"];
             if (account == null || (_roles.Any() && !_roles.Contains(account.IdRole)))
-                context.Result = new JsonResult(new {message = "Unauthorized"}) {StatusCode = StatusCodes.Status401Unauthorized};
+                context.Result = new JsonResult(new { message = "Unauthorized" }) { StatusCode = StatusCodes.Status401Unauthorized };
         }
     }
 }
