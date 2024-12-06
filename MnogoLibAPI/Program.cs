@@ -88,54 +88,60 @@ namespace MnogoLibAPI
 
                 context.Database.EnsureCreated();
 
-                context.AuthorStatuses.AddRange(
-                    new AuthorStatus { NameAuthorStatus = "Ongoing" },
-                    new AuthorStatus { NameAuthorStatus = "Completed" },
-                    new AuthorStatus { NameAuthorStatus = "Stopped" },
-                    new AuthorStatus { NameAuthorStatus = "Discontinued" }
-                );
+                if (context.AuthorStatuses.Count() < 4)
+                    context.AuthorStatuses.AddRange(
+                        new AuthorStatus { NameAuthorStatus = "Ongoing" },
+                        new AuthorStatus { NameAuthorStatus = "Completed" },
+                        new AuthorStatus { NameAuthorStatus = "Stopped" },
+                        new AuthorStatus { NameAuthorStatus = "Discontinued" }
+                    );
 
-                context.Roles.AddRange(
-                    new Role { NameRole = "User" },
-                    new Role { NameRole = "Moder" },
-                    new Role { NameRole = "Admin" }
-                );
+                if (context.Roles.Count() < 3)
+                    context.Roles.AddRange(
+                        new Role { NameRole = "User" },
+                        new Role { NameRole = "Moder" },
+                        new Role { NameRole = "Admin" }
+                    );
 
-                context.Categories.AddRange(
-                    new Category { NameCategory = "Manga" },
-                    new Category { NameCategory = "Manhua" },
-                    new Category { NameCategory = "Manhwa" },
-                    new Category { NameCategory = "Comics" }
-                );
-                context.Genres.AddRange(
-                    new Genre { NameGenre = "Cyberpunk" },
-                    new Genre { NameGenre = "Isekai" },
-                    new Genre { NameGenre = "Shonen" },
-                    new Genre { NameGenre = "Shojo" },
-                    new Genre { NameGenre = "Seinen" },
-                    new Genre { NameGenre = "Josei" },
-                    new Genre { NameGenre = "Fantasy" },
-                    new Genre { NameGenre = "Horror" },
-                    new Genre { NameGenre = "Romance" },
-                    new Genre { NameGenre = "Comedy" },
-                    new Genre { NameGenre = "Drama" },
-                    new Genre { NameGenre = "Mystery" },
-                    new Genre { NameGenre = "Thriller" },
-                    new Genre { NameGenre = "Slice of Life" },
-                    new Genre { NameGenre = "Sports" },
-                    new Genre { NameGenre = "Historical" },
-                    new Genre { NameGenre = "Supernatural" },
-                    new Genre { NameGenre = "Psychological" },
-                    new Genre { NameGenre = "Mecha" },
-                    new Genre { NameGenre = "Post-Apocalyptic" }
-                );
+                if (context.Categories.Count() < 4)
+                    context.Categories.AddRange(
+                        new Category { NameCategory = "Manga" },
+                        new Category { NameCategory = "Manhua" },
+                        new Category { NameCategory = "Manhwa" },
+                        new Category { NameCategory = "Comics" }
+                    );
+                    
+                if (context.Genres.Count() < 4)
+                    context.Genres.AddRange(
+                        new Genre { NameGenre = "Cyberpunk" },
+                        new Genre { NameGenre = "Isekai" },
+                        new Genre { NameGenre = "Shonen" },
+                        new Genre { NameGenre = "Shojo" },
+                        new Genre { NameGenre = "Seinen" },
+                        new Genre { NameGenre = "Josei" },
+                        new Genre { NameGenre = "Fantasy" },
+                        new Genre { NameGenre = "Horror" },
+                        new Genre { NameGenre = "Romance" },
+                        new Genre { NameGenre = "Comedy" },
+                        new Genre { NameGenre = "Drama" },
+                        new Genre { NameGenre = "Mystery" },
+                        new Genre { NameGenre = "Thriller" },
+                        new Genre { NameGenre = "Slice of Life" },
+                        new Genre { NameGenre = "Sports" },
+                        new Genre { NameGenre = "Historical" },
+                        new Genre { NameGenre = "Supernatural" },
+                        new Genre { NameGenre = "Psychological" },
+                        new Genre { NameGenre = "Mecha" },
+                        new Genre { NameGenre = "Post-Apocalyptic" }
+                    );
 
-                context.UserStatuses.AddRange(
-                    new UserStatus { NameUserStatus = "Reading" },
-                    new UserStatus { NameUserStatus = "In the plans" },
-                    new UserStatus { NameUserStatus = "Abandoned" },
-                    new UserStatus { NameUserStatus = "Favorite" }
-                );
+                if (context.UserStatuses.Count() < 4)
+                    context.UserStatuses.AddRange(
+                        new UserStatus { NameUserStatus = "Reading" },
+                        new UserStatus { NameUserStatus = "In the plans" },
+                        new UserStatus { NameUserStatus = "Abandoned" },
+                        new UserStatus { NameUserStatus = "Favorite" }
+                    );
 
                 context.SaveChanges();
             }
