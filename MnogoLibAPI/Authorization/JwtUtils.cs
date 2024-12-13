@@ -34,7 +34,7 @@ namespace MnogoLibAPI.Authorization
             {
                 Subject = new ClaimsIdentity(new[] { new Claim("id", account.IdUser.ToString()) }),
                 Expires = DateTime.UtcNow.AddMinutes(15),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256)
             };
             var token = tokenHangler.CreateToken(tokenDescription);
             return tokenHangler.WriteToken(token);
@@ -64,7 +64,7 @@ namespace MnogoLibAPI.Authorization
                 return null;
 
             var tokenHangler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
+            var key = Encoding.UTF8.GetBytes(_appSettings.Secret);
             try
             {
                 tokenHangler.ValidateToken(token, new TokenValidationParameters

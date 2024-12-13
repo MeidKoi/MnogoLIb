@@ -5,13 +5,15 @@ using Domain.Interfaces;
 using Domain.Models;
 using Domain.Wrapper;
 using Mapster;
-using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using MnogoLibAPI.Authorization;
-using MnogoLibAPI.MiddleWare;
+using MnogoLibAPI.Helpers;
 using System.Reflection;
+using System.Text;
+using BusinessLogic.Helpers;
 
 namespace MnogoLibAPI
 {
@@ -35,6 +37,11 @@ namespace MnogoLibAPI
                     options => options.UseSqlServer(
                                     "Server=LAPTOP-ISLFEJ9E;Database=MnogoLib;Trusted_Connection=True;"));
             }
+
+            builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+
+            // Зарегистрируйте AppSettings
+            builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
 
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             builder.Services.AddScoped<IUserService, UserService>();
@@ -61,12 +68,6 @@ namespace MnogoLibAPI
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddMapster();
             builder.Services.AddLogging();
-
-            builder.Services.AddAuthentication(options =>
-            {
-                options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme; //if you dont use Jwt i think you can just delete this line
-            }).AddCookie(/*cookie=> you can add some options here*/);
 
             builder.Services.AddSwaggerGen(options =>
             {
@@ -96,6 +97,7 @@ namespace MnogoLibAPI
                     Type = SecuritySchemeType.ApiKey,
                     Scheme = "Bearer"
                 });
+                
                 options.AddSecurityRequirement(new OpenApiSecurityRequirement()
                 {
                 {
@@ -116,10 +118,8 @@ namespace MnogoLibAPI
                 });
                 var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
+                
             });
-
-            // Add services to the container.
-
 
             var app = builder.Build();
 
@@ -132,7 +132,7 @@ namespace MnogoLibAPI
 
                 context.Database.EnsureCreated();
 
-                if (context.AuthorStatuses.Count() < 4)
+                if (!context.AuthorStatuses.Any())
                     context.AuthorStatuses.AddRange(
                         new AuthorStatus { NameAuthorStatus = "Ongoing" },
                         new AuthorStatus { NameAuthorStatus = "Completed" },
@@ -140,14 +140,14 @@ namespace MnogoLibAPI
                         new AuthorStatus { NameAuthorStatus = "Discontinued" }
                     );
 
-                if (context.Roles.Count() < 3)
+                if (!context.Roles.Any())
                     context.Roles.AddRange(
                         new Role { NameRole = "User" },
                         new Role { NameRole = "Moder" },
                         new Role { NameRole = "Admin" }
                     );
 
-                if (context.Categories.Count() < 4)
+                if (!context.Categories.Any())
                     context.Categories.AddRange(
                         new Category { NameCategory = "Manga" },
                         new Category { NameCategory = "Manhua" },
@@ -155,7 +155,7 @@ namespace MnogoLibAPI
                         new Category { NameCategory = "Comics" }
                     );
 
-                if (context.Genres.Count() < 4)
+                if (!context.Genres.Any())
                     context.Genres.AddRange(
                         new Genre { NameGenre = "Cyberpunk" },
                         new Genre { NameGenre = "Isekai" },
@@ -179,7 +179,7 @@ namespace MnogoLibAPI
                         new Genre { NameGenre = "Post-Apocalyptic" }
                     );
 
-                if (context.UserStatuses.Count() < 4)
+                if (!context.UserStatuses.Any())
                     context.UserStatuses.AddRange(
                         new UserStatus { NameUserStatus = "Reading" },
                         new UserStatus { NameUserStatus = "In the plans" },
@@ -197,6 +197,12 @@ namespace MnogoLibAPI
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            app.UseCors(builder => builder.WithOrigins(new[] { "http://localhost:5088/", })
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowAnyOrigin());
+
 
             app.UseCors(builder => builder.WithOrigins(new[] { "https://mnogolibapi-f7vitvir.b4a.run/", })
                     .AllowAnyHeader()

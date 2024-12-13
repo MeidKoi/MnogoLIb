@@ -1,7 +1,6 @@
 using BusinessLogic.Authorization;
 using BusinessLogic.Models.Accounts;
 using Domain.Entites;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MnogoLibAPI.Authorization;
 
@@ -36,7 +35,7 @@ namespace MnogoLibAPI.Controllers
                 return HttpContext.Connection.RemoteIpAddress.MapToIPv4().ToString();
         }
 
-        [Authorization.AllowAnonymous]
+        [AllowAnonymous]
         [HttpPost("authenticate")]
         public async Task<ActionResult<AuthenticateResponse>> Authencticate(AuthenticateRequest model)
         {
@@ -45,7 +44,7 @@ namespace MnogoLibAPI.Controllers
             return Ok(resposne);
         }
 
-        [Authorization.AllowAnonymous]
+        [AllowAnonymous]
         [HttpPost("refresh-token")]
         public async Task<ActionResult<AuthenticateResponse>> RefreshToken()
         {
@@ -55,7 +54,7 @@ namespace MnogoLibAPI.Controllers
             return Ok(resposne);
         }
 
-        [Authorization.AllowAnonymous]
+        [AllowAnonymous]
         [HttpPost("revoke-token")]
         public async Task<ActionResult<AuthenticateResponse>> RevokeToken(RevokeTokenRequest model)
         {
@@ -71,7 +70,7 @@ namespace MnogoLibAPI.Controllers
             return Ok(new { message = "Token revoked" });
         }
 
-        [Authorization.AllowAnonymous]
+        [AllowAnonymous]
         [HttpPost("register")]
         public async Task<ActionResult<AuthenticateResponse>> Register(RegisterRequest model)
         {
@@ -79,7 +78,7 @@ namespace MnogoLibAPI.Controllers
             return Ok(new { message = "Registration successful, please check your email" });
         }
 
-        [Authorization.AllowAnonymous]
+        [AllowAnonymous]
         [HttpPost("verify-email")]
         public async Task<ActionResult<AuthenticateResponse>> VerifyEmail(VerifyEmailRequest model)
         {
@@ -87,7 +86,7 @@ namespace MnogoLibAPI.Controllers
             return Ok(new { message = "Verification successful, you can now login" });
         }
 
-        [Authorization.AllowAnonymous]
+        [AllowAnonymous]
         [HttpPost("forgot-password")]
         public async Task<ActionResult<AuthenticateResponse>> ForgotPassword(ForgotPasswordRequest model)
         {
@@ -95,7 +94,7 @@ namespace MnogoLibAPI.Controllers
             return Ok(new { message = "Please check your email for password reset instuctions" });
         }
 
-        [Authorization.AllowAnonymous]
+        [AllowAnonymous]
         [HttpPost("validate-reset-token")]
         public async Task<ActionResult<AuthenticateResponse>> ValidateResetToken(ValidateResetTokenRequest model)
         {
@@ -103,7 +102,7 @@ namespace MnogoLibAPI.Controllers
             return Ok(new { message = "Token is valid" });
         }
 
-        [Authorization.AllowAnonymous]
+        [AllowAnonymous]
         [HttpPost("reset-password")]
         public async Task<ActionResult<AuthenticateResponse>> ResetPassword(ResetPasswordRequest model)
         {
@@ -111,7 +110,7 @@ namespace MnogoLibAPI.Controllers
             return Ok(new { message = "Password reset successful, you can now login" });
         }
 
-        [BusinessLogic.Authorization.Authorization(roles: 3)]
+        [Authorize(3)]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AccountResponse>>> GetAll()
         {
@@ -129,7 +128,7 @@ namespace MnogoLibAPI.Controllers
             return Ok(accounts);
         }
 
-        [BusinessLogic.Authorization.Authorization(roles: 3)]
+        [Authorize(3)]
         [HttpPost]
         public async Task<ActionResult<IEnumerable<AccountResponse>>> Create(CreateRequest model)
         {

@@ -1,13 +1,12 @@
-﻿using BusinessLogic.Helpers;
-using System.Net;
+﻿using System.Net;
 using System.Text.Json;
+using BusinessLogic.Helpers;
+using MnogoLibAPI.Helpers;
 
-namespace MnogoLibAPI.MiddleWare
+namespace MnogoLibAPI.Helpers
 {
     public class ExceptionHandlingMiddleware
     {
-        public record ExceptionResponse(HttpStatusCode StatusCode, string Description);
-
         private readonly RequestDelegate _next;
         private readonly ILogger<ExceptionHandlingMiddleware> _logger;
 
@@ -15,9 +14,10 @@ namespace MnogoLibAPI.MiddleWare
         {
             _next = next;
             _logger = logger;
+
         }
 
-        public async Task InvokeAsync(HttpContext context)
+        public async Task Invoke(HttpContext context)
         {
             try
             {
@@ -34,7 +34,7 @@ namespace MnogoLibAPI.MiddleWare
                         response.StatusCode = (int)HttpStatusCode.BadRequest;
                         break;
                     case KeyNotFoundException e:
-                        response.StatusCode = (int)HttpStatusCode.NotFound;
+                        response.StatusCode = (int)HttpStatusCode.NotFound; 
                         break;
                     default:
                         _logger.LogError(error, error.Message);
@@ -44,7 +44,10 @@ namespace MnogoLibAPI.MiddleWare
 
                 var result = JsonSerializer.Serialize(new { message = error?.Message });
                 await response.WriteAsync(result);
+
             }
+
         }
+
     }
 }
