@@ -1,15 +1,15 @@
+using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using Domain.Models;
 using MnogoLibAPI.Authorization;
- 
+
 
 namespace BusinessLogic.Authorization
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     public class AuthorizeAttribute : Attribute, IAuthorizationFilter
     {
-        private readonly IList<int> _roles; 
+        private readonly IList<int> _roles;
         public AuthorizeAttribute(params int[] roles)
         {
             _roles = roles ?? new int[] { };
@@ -23,9 +23,9 @@ namespace BusinessLogic.Authorization
             }
             var account = (User)context.HttpContext.Items["User"];
 
-            if(account == null || (_roles.Any() && !_roles.Contains(account.IdRole)))
+            if (account == null || (_roles.Any() && !_roles.Contains(account.IdRole)))
             {
-                context.Result = new JsonResult(new {message = "Unauthorized"}) { StatusCode = StatusCodes.Status401Unauthorized };
+                context.Result = new JsonResult(new { message = "Unauthorized" }) { StatusCode = StatusCodes.Status401Unauthorized };
             }
         }
     }

@@ -10,7 +10,7 @@ namespace BusinessLogic.Models.Accounts
         public string NicknameUser { get; set; } = null!;
         public int IdRole { get; set; }
         public DateTime CreatedTime { get; set; }
-         public DateTime LastUpdateTime { get; set; }
+        public DateTime LastUpdateTime { get; set; }
         public bool IsVerified { get; set; }
         public string JwtToken { get; set; }
 

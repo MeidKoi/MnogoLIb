@@ -1,8 +1,8 @@
 using BusinessLogic.Authorization;
 using BusinessLogic.Helpers;
 using Domain.Interfaces;
-using Microsoft.Extensions.Options;
 using Domain.Wrapper;
+using Microsoft.Extensions.Options;
 
 namespace MnogoLibAPI.Authorization
 {
@@ -21,7 +21,7 @@ namespace MnogoLibAPI.Authorization
         {
             var token = context.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
             var accountId = jwtUtils.ValidateJwtToken(token);
-            if(accountId != null)
+            if (accountId != null)
             {
                 context.Items["User"] = (await wrapper.User.GetByIdWithToken(accountId.Value)); //to string
             }

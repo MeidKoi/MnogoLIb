@@ -1,19 +1,19 @@
 using BusinessLogic.Authorization;
+using BusinessLogic.Helpers;
 using BusinessLogic.Services;
 using DataAccess.Wrapper;
 using Domain.Interfaces;
 using Domain.Models;
 using Domain.Wrapper;
 using Mapster;
-using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using MnogoLibAPI.Authorization;
 using MnogoLibAPI.Helpers;
 using System.Reflection;
 using System.Text;
-using BusinessLogic.Helpers;
 
 namespace MnogoLibAPI
 {
@@ -97,7 +97,7 @@ namespace MnogoLibAPI
                     Type = SecuritySchemeType.ApiKey,
                     Scheme = "Bearer"
                 });
-                
+
                 options.AddSecurityRequirement(new OpenApiSecurityRequirement()
                 {
                 {
@@ -118,7 +118,7 @@ namespace MnogoLibAPI
                 });
                 var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
-                
+
             });
 
             var app = builder.Build();

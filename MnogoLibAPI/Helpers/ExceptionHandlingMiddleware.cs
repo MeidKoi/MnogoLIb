@@ -1,7 +1,7 @@
-﻿using System.Net;
-using System.Text.Json;
-using BusinessLogic.Helpers;
+﻿using BusinessLogic.Helpers;
 using MnogoLibAPI.Helpers;
+using System.Net;
+using System.Text.Json;
 
 namespace MnogoLibAPI.Helpers
 {
@@ -34,7 +34,7 @@ namespace MnogoLibAPI.Helpers
                         response.StatusCode = (int)HttpStatusCode.BadRequest;
                         break;
                     case KeyNotFoundException e:
-                        response.StatusCode = (int)HttpStatusCode.NotFound; 
+                        response.StatusCode = (int)HttpStatusCode.NotFound;
                         break;
                     default:
                         _logger.LogError(error, error.Message);
