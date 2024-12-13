@@ -5,27 +5,18 @@ namespace BusinessLogic.Models.Accounts
     public class RegisterRequest
     {
         [Required]
-        public string Login { get; set; }
-
-        [Required]
-        public string Firstname { get; set; }
-
-        [Required]
-        public string Lastname { get; set; }
-
-        [Required]
-        public string Middlename { get; set; }
+        public string NicknameUser { get; set; }
 
         [Required]
         [EmailAddress]
-        public string Email { get; set; }
+        public string EmailUser { get; set; }
 
         [Required]
         [MinLength(6)]
-        public string Password { get; set; }
+        public string PasswordUser { get; set; }
 
         [Required]
-        [Compare("Password")]
+        [Compare("PasswordUser")]
         public string ConfirmPassword { get; set; }
 
         [Range(typeof(bool), "true", "true")]

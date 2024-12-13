@@ -3,7 +3,7 @@ namespace BusinessLogic.Helpers
     public class AppSettings
     {
         // Ключ шифрования токена
-        public string Secret { get; set; }
+        public string Secret { get; set; } = null!;
 
         // рефреш токен для обновления, неактивные токены будут
         // автоматически удалены после указанного времени

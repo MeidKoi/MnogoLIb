@@ -200,19 +200,19 @@ namespace BusinessLogic.Services
 
         public async Task Register(RegisterRequest model, string origin)
         {
-            if ((await _repositoryWrapper.User.FindByCondition(x => x.EmailUser == model.Email)).Count > 0)
+            if ((await _repositoryWrapper.User.FindByCondition(x => x.EmailUser == model.EmailUser)).Count > 0)
                 return;
 
             var account = _mapper.Map<User>(model);
 
             var isFitstAccount = (await _repositoryWrapper.User.FindAll()).Count == 0;
             // 1 - User, 2 - Moder, 3 - Admin
-            account.IdRole = isFitstAccount ? 2 : 1;
+            account.IdRole = isFitstAccount ? 3 : 1;
             account.CreatedTime = DateTime.UtcNow;
             account.Verified = DateTime.UtcNow;
             account.VerificationToken = await generateVerificationToken();
 
-            account.PasswordUser = BCrypt.Net.BCrypt.HashPassword(model.Password);
+            account.PasswordUser = BCrypt.Net.BCrypt.HashPassword(model.PasswordUser);
 
             await _repositoryWrapper.User.Create(account);
             await _repositoryWrapper.Save();

@@ -762,7 +762,7 @@ namespace Domain.Models
                     .HasColumnName("nickname_user");
 
                 entity.Property(e => e.PasswordUser)
-                    .HasMaxLength(50)
+                    .HasMaxLength(255)
                     .IsUnicode(true)
                     .HasColumnName("password_user");
 
