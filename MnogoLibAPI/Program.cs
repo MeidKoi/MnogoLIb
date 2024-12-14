@@ -38,11 +38,6 @@ namespace MnogoLibAPI
                                     "Server=LAPTOP-ISLFEJ9E;Database=MnogoLib;Trusted_Connection=True;"));
             }
 
-            builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
-
-            // Зарегистрируйте AppSettings
-            builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
-
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<IMaterialService, MaterialService>();
