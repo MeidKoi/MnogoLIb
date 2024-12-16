@@ -1,16 +1,20 @@
-﻿using BusinessLogic.Services;
+﻿using BusinessLogic.Authorization;
+using BusinessLogic.Services;
 using Domain.Interfaces;
 using Domain.Models;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
+using MnogoLibAPI.Authorization;
 using MnogoLibAPI.Contracts.MaterialFile;
 using MnogoLibAPI.Contracts.User;
+using MnogoLibAPI.Controllers;
 
 namespace BackendApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    public class MaterialFileController : ControllerBase
+    public class MaterialFileController : BaseController
     {
         private IMaterialFileService _materialFileService;
         public MaterialFileController(IMaterialFileService materialFileService)
@@ -26,7 +30,7 @@ namespace BackendApi.Controllers
         /// 
         // GET api/<MaterialFileController>
 
-
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -43,7 +47,7 @@ namespace BackendApi.Controllers
         /// <returns></returns>
 
         // GET api/<MaterialFileController>
-
+        [AllowAnonymous]
         [HttpGet("{idMaterial}/{idFile}")]
         public async Task<IActionResult> GetById(int idMaterial, int idFile)
         {
@@ -71,7 +75,7 @@ namespace BackendApi.Controllers
         /// <returns></returns>
 
         // POST api/<MaterialFileController>
-
+        [Authorize(2, 3)]
         [HttpPost]
         public async Task<IActionResult> Add(CreateMaterialFileRequest material)
         {
@@ -100,7 +104,7 @@ namespace BackendApi.Controllers
         /// <returns></returns>
 
         // PUT api/<MaterialFileController>
-
+        [Authorize(2, 3)]
         [HttpPut]
         public async Task<IActionResult> Update(GetMaterialFileRequest material)
         {
@@ -118,7 +122,7 @@ namespace BackendApi.Controllers
 
         // DELETE api/<MaterialFileController>
 
-
+        [Authorize(2, 3)]
         [HttpDelete]
         public async Task<IActionResult> Delete(int idMaterial, int idFile)
         {

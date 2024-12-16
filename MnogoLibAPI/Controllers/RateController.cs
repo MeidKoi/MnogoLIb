@@ -1,16 +1,19 @@
-﻿using BusinessLogic.Services;
+﻿using BusinessLogic.Authorization;
+using BusinessLogic.Services;
 using Domain.Interfaces;
 using Domain.Models;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
+using MnogoLibAPI.Authorization;
 using MnogoLibAPI.Contracts.Rate;
 using MnogoLibAPI.Contracts.User;
+using MnogoLibAPI.Controllers;
 
 namespace BackendApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class RateController : ControllerBase
+    public class RateController : BaseController
     {
         private IRateService _rateService;
         public RateController(IRateService rateService)
@@ -25,7 +28,7 @@ namespace BackendApi.Controllers
         /// <returns></returns>
 
         // GET api/<RateController>
-
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -41,7 +44,7 @@ namespace BackendApi.Controllers
         /// <returns></returns>
 
         // GET api/<RateController>
-
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -73,6 +76,8 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> Add(CreateRateRequest rate)
         {
             var Dto = rate.Adapt<Rate>();
+            if (Dto.IdUser != User.IdUser && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             await _rateService.Create(Dto);
             return Ok();
         }
@@ -105,6 +110,8 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> Update(GetRateRequest rate)
         {
             var Dto = rate.Adapt<Rate>();
+            if (Dto.IdUser != User.IdUser && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             await _rateService.Update(Dto);
             return Ok();
         }
@@ -120,6 +127,9 @@ namespace BackendApi.Controllers
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {
+            var Dto = await _rateService.GetById(id);
+            if (Dto.IdUser != User.IdUser && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             await _rateService.Delete(id);
             return Ok();
         }

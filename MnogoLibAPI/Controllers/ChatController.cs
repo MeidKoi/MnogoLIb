@@ -1,17 +1,21 @@
-﻿using BusinessLogic.Services;
+﻿using BusinessLogic.Authorization;
+using BusinessLogic.Services;
 using Domain.Interfaces;
 using Domain.Models;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
+using MnogoLibAPI.Authorization;
 using MnogoLibAPI.Contracts.Chat;
 using MnogoLibAPI.Contracts.User;
+using MnogoLibAPI.Controllers;
 using System;
 
 namespace BackendApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    public class ChatController : ControllerBase
+    public class ChatController : BaseController
     {
         private IChatService _chatService;
         public ChatController(IChatService chatService)
@@ -26,6 +30,7 @@ namespace BackendApi.Controllers
         /// 
         // GET api/<ChatController>
 
+        [Authorize(3)]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -46,6 +51,8 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> GetById(int id)
         {
             var Dto = await _chatService.GetById(id);
+            if (Dto.IdOwner != User.IdUser && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             return Ok(Dto.Adapt<GetChatRequest>());
         }
 
@@ -73,6 +80,8 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> Add(CreateChatRequest chat)
         {
             var Dto = chat.Adapt<Chat>();
+            if (Dto.IdOwner != User.IdUser && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             Dto.LastUpdateBy = Dto.IdOwner;
             await _chatService.Create(Dto);
             return Ok();
@@ -103,6 +112,7 @@ namespace BackendApi.Controllers
 
         // PUT api/<ChatController>
 
+        [Authorize(3)]
         [HttpPut]
         public async Task<IActionResult> Update(GetChatRequest chat)
         {
@@ -122,6 +132,9 @@ namespace BackendApi.Controllers
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {
+            var Dto = await _chatService.GetById(id);
+            if (Dto.IdOwner != User.IdUser && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             await _chatService.Delete(id);
             return Ok();
         }

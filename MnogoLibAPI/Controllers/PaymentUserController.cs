@@ -1,17 +1,21 @@
-﻿using BusinessLogic.Services;
+﻿using BusinessLogic.Authorization;
+using BusinessLogic.Services;
 using Domain.Interfaces;
 using Domain.Models;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
+using MnogoLibAPI.Authorization;
 using MnogoLibAPI.Contracts.PaymentUser;
 using MnogoLibAPI.Contracts.User;
+using MnogoLibAPI.Controllers;
 using System;
 
 namespace BackendApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    public class PaymentUserController : ControllerBase
+    public class PaymentUserController : BaseController
     {
         private IPaymentUserService _paymentUser;
         public PaymentUserController(IPaymentUserService chatUserService)
@@ -25,7 +29,7 @@ namespace BackendApi.Controllers
         /// <returns></returns>
         /// 
         // GET api/<PaymentUserController>
-
+        [Authorize(3)]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -48,6 +52,8 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> GetById(int idPayment, int idUser)
         {
             var Dto = await _paymentUser.GetById(idPayment, idUser);
+            if (Dto.IdUser != User.IdUser && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             return Ok(Dto.Adapt<GetPaymentUserRequest>());
         }
 
@@ -74,6 +80,8 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> Add(CreatePaymentUserRequest paymentUser)
         {
             var Dto = paymentUser.Adapt<PaymentUser>();
+            if (Dto.IdUser != User.IdUser && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             await _paymentUser.Create(Dto);
             return Ok();
         }
@@ -102,6 +110,8 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> Update(PaymentUser paymentUser)
         {
             var Dto = paymentUser.Adapt<PaymentUser>();
+            if (Dto.IdUser != User.IdUser && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             await _paymentUser.Update(Dto);
             return Ok();
         }
@@ -118,6 +128,9 @@ namespace BackendApi.Controllers
         [HttpDelete]
         public async Task<IActionResult> Delete(int idPayment, int idUser)
         {
+            var Dto = await _paymentUser.GetById(idPayment, idUser);
+            if (Dto.IdUser != User.IdUser && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             await _paymentUser.Delete(idPayment, idUser);
             return Ok();
         }

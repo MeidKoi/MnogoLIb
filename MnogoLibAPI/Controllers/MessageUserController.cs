@@ -1,21 +1,26 @@
-﻿using BusinessLogic.Services;
+﻿using BusinessLogic.Authorization;
+using BusinessLogic.Services;
 using Domain.Interfaces;
 using Domain.Models;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
+using MnogoLibAPI.Authorization;
 using MnogoLibAPI.Contracts.MessageUser;
-using MnogoLibAPI.Contracts.User;
+using MnogoLibAPI.Controllers;
 
 namespace BackendApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    public class MessageUserController : ControllerBase
+    public class MessageUserController : BaseController
     {
-        private IMessageUserService _materialService;
-        public MessageUserController(IMessageUserService materialService)
+        private IMessageUserService _messageService;
+        private IChatUserService _chatUserService;
+        public MessageUserController(IMessageUserService messageService, IChatUserService chatUserService)
         {
-            _materialService = materialService;
+            _messageService = messageService;
+            _chatUserService = chatUserService;
         }
 
         /// <summary>
@@ -25,11 +30,11 @@ namespace BackendApi.Controllers
 
         // GET api/<MessageUserController>
 
-
+        [Authorize(3)]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var Dto = await _materialService.GetAll();
+            var Dto = await _messageService.GetAll();
 
             return Ok(Dto.Adapt<List<GetMessageUserRequest>>());
         }
@@ -46,7 +51,9 @@ namespace BackendApi.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var Dto = await _materialService.GetById(id);
+            var Dto = await _messageService.GetById(id);
+            if (Dto.IdUser != User.IdUser && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             return Ok(Dto.Adapt<GetMessageUserRequest>());
         }
 
@@ -74,7 +81,10 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> Add(CreateMessageUserRequest message)
         {
             var Dto = message.Adapt<MessagesUser>();
-            await _materialService.Create(Dto);
+            var chatUser = await _chatUserService.GetById(message.IdChat, Dto.IdUser);
+            if (Dto.IdUser != User.IdUser && User.IdRole != 3 && chatUser is null)
+                return Unauthorized(new { message = "Unauthorized" });
+            await _messageService.Create(Dto);
             return Ok();
         }
 
@@ -108,7 +118,10 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> Update(GetMessageUserRequest message)
         {
             var Dto = message.Adapt<MessagesUser>();
-            await _materialService.Update(Dto);
+            var chatUser = await _chatUserService.GetById(message.IdChat, Dto.IdUser);
+            if (Dto.IdUser != User.IdUser && User.IdRole != 3 && chatUser is null)
+                return Unauthorized(new { message = "Unauthorized" });
+            await _messageService.Update(Dto);
             return Ok();
         }
 
@@ -123,7 +136,10 @@ namespace BackendApi.Controllers
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {
-            await _materialService.Delete(id);
+            var Dto = await _messageService.GetById(id);
+            if (Dto.IdUser != User.IdUser && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
+            await _messageService.Delete(id);
             return Ok();
         }
     }

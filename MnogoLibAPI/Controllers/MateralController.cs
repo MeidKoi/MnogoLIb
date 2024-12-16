@@ -1,13 +1,17 @@
-﻿using BusinessLogic.Services;
+﻿using BusinessLogic.Authorization;
+using BusinessLogic.Services;
 using Domain.Interfaces;
 using Domain.Models;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
+using MnogoLibAPI.Authorization;
 using MnogoLibAPI.Contracts.Material;
 using MnogoLibAPI.Contracts.User;
+using MnogoLibAPI.Controllers;
 
 namespace BackendApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class MaterialController : ControllerBase
@@ -24,7 +28,7 @@ namespace BackendApi.Controllers
         /// <returns></returns>
 
         // GET api/<MaterialController>
-
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -40,7 +44,7 @@ namespace BackendApi.Controllers
         /// <returns></returns>
 
         // GET api/<MaterialController>
-
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -70,7 +74,7 @@ namespace BackendApi.Controllers
         /// <returns></returns>
 
         // POST api/<MaterialController>
-
+        [Authorize(2, 3)]
         [HttpPost]
         public async Task<IActionResult> Add(CreateMaterialRequest material)
         {
@@ -108,7 +112,7 @@ namespace BackendApi.Controllers
         /// <returns></returns>
 
         // PUT api/<MaterialController>
-
+        [Authorize(2, 3)]
         [HttpPut]
         public async Task<IActionResult> Update(GetMaterialRequest material)
         {
@@ -124,7 +128,7 @@ namespace BackendApi.Controllers
         /// <returns></returns>
 
         // DELETE api/<MaterialController>
-
+        [Authorize(2, 3)]
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {

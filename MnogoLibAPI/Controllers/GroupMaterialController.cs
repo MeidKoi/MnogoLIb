@@ -1,13 +1,16 @@
-﻿using BusinessLogic.Services;
+﻿using BusinessLogic.Authorization;
+using BusinessLogic.Services;
 using Domain.Interfaces;
 using Domain.Models;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
+using MnogoLibAPI.Authorization;
 using MnogoLibAPI.Contracts.GroupMaterial;
-using MnogoLibAPI.Contracts.User;
+using MnogoLibAPI.Controllers;
 
 namespace BackendApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class GroupMaterialController : ControllerBase
@@ -25,6 +28,7 @@ namespace BackendApi.Controllers
 
         // GET api/<GroupMaterialController>
 
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -41,7 +45,7 @@ namespace BackendApi.Controllers
         /// <returns></returns>
 
         // GET api/<GroupMaterialController>
-
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -67,7 +71,7 @@ namespace BackendApi.Controllers
         /// <returns></returns>
 
         // POST api/<GroupMaterialController>
-
+        [Authorize(2, 3)]
         [HttpPost]
         public async Task<IActionResult> Add(CreateGroupMaterialRequest group)
         {
@@ -77,7 +81,7 @@ namespace BackendApi.Controllers
         }
 
         /// <summary>
-        /// Изменение информации о пользователе
+        /// Изменение информации о группе материалов
         /// </summary>
         /// <remarks>
         /// Пример запроса:
@@ -94,7 +98,7 @@ namespace BackendApi.Controllers
         /// <returns></returns>
 
         // PUT api/<GroupMaterialController>
-
+        [Authorize(2, 3)]
         [HttpPut]
         public async Task<IActionResult> Update(GetGroupMaterialRequest group)
         {
@@ -104,13 +108,13 @@ namespace BackendApi.Controllers
         }
 
         /// <summary>
-        /// Удаление пользователя
+        /// Удаление групп материалов
         /// </summary>
         /// <param name="id">ID</param>
         /// <returns></returns>
 
         // DELETE api/<GroupMaterialController>
-
+        [Authorize(2, 3)]
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {

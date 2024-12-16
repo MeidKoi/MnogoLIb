@@ -1,18 +1,22 @@
-﻿using BusinessLogic.Services;
+﻿using BusinessLogic.Authorization;
+using BusinessLogic.Services;
 using Domain.Interfaces;
 using Domain.Models;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
+using MnogoLibAPI.Authorization;
 using MnogoLibAPI.Contracts.CommentRate;
 using MnogoLibAPI.Contracts.User;
+using MnogoLibAPI.Controllers;
 using System;
 using System.Xml.Linq;
 
 namespace BackendApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    public class CommentRateController : ControllerBase
+    public class CommentRateController : BaseController
     {
         private ICommentRateService _commentRateService;
         public CommentRateController(ICommentRateService commentRateService)
@@ -27,6 +31,7 @@ namespace BackendApi.Controllers
         /// 
         // GET api/<CommentRateController>
 
+        [Authorize(3)]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -47,6 +52,8 @@ namespace BackendApi.Controllers
         [HttpGet("{idComment}/{idUser}")]
         public async Task<IActionResult> GetById(int idUser, int idComment)
         {
+            if (idUser != User.IdUser && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             var Dto = await _commentRateService.GetById(idUser, idComment);
             return Ok(Dto.Adapt<GetCommentRateRequest>());
         }
@@ -74,6 +81,8 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> Add(CreateCommentRateRequest commentRate)
         {
             var Dto = commentRate.Adapt<CommentRate>();
+            if (commentRate.IdUser != User.IdUser && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             await _commentRateService.Create(Dto);
             return Ok();
         }
@@ -98,10 +107,13 @@ namespace BackendApi.Controllers
         /// <returns></returns>
 
         // PUT api/<CommentRateController>
+
         [HttpPut]
         public async Task<IActionResult> Update(GetCommentRateRequest commentRate)
         {
             var Dto = commentRate.Adapt<CommentRate>();
+            if (commentRate.IdUser != User.IdUser && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             await _commentRateService.Update(Dto);
             return Ok();
         }
@@ -118,6 +130,8 @@ namespace BackendApi.Controllers
         [HttpDelete]
         public async Task<IActionResult> Delete(int idUser, int idComment)
         {
+            if (idUser != User.IdUser && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             await _commentRateService.Delete(idUser, idComment);
             return Ok();
         }

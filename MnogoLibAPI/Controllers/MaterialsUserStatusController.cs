@@ -1,17 +1,20 @@
-﻿using BusinessLogic.Services;
+﻿using BusinessLogic.Authorization;
+using BusinessLogic.Services;
 using Domain.Interfaces;
 using Domain.Models;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
+using MnogoLibAPI.Authorization;
 using MnogoLibAPI.Contracts.MaterialUserStatus;
 using MnogoLibAPI.Contracts.User;
-using System;
+using MnogoLibAPI.Controllers;
+
 
 namespace BackendApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class MaterialsUserStatusController : ControllerBase
+    public class MaterialsUserStatusController : BaseController
     {
         private IMaterialsUserStatusService _materialsUserStatusService;
         public MaterialsUserStatusController(IMaterialsUserStatusService materialsUserStatusService)
@@ -26,7 +29,7 @@ namespace BackendApi.Controllers
         /// <returns></returns>
         /// 
         // GET api/<MaterialsUserStatusController>
-
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -44,7 +47,7 @@ namespace BackendApi.Controllers
         /// <returns></returns>
 
         // GET api/<MaterialsUserStatusController>
-
+        [AllowAnonymous]
         [HttpGet("{idMaterial}/{idUser}/{idUserStatus}")]
         public async Task<IActionResult> GetById(int idMaterial, int idUser, int idUserStatus)
         {
@@ -66,7 +69,7 @@ namespace BackendApi.Controllers
         ///     }
         ///
         /// </remarks>
-        /// <param name="materialsUserStatusService">Пользовательский статус</param>
+        /// <param name="materialsUserStatus">Пользовательский статус</param>
         /// <returns></returns>
 
         // POST api/<MaterialsUserStatusController>
@@ -75,6 +78,8 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> Add(CreateMaterialUserStatusRequest materialsUserStatus)
         {
             var Dto = materialsUserStatus.Adapt<MaterialsUserStatus>();
+            if (Dto.IdUser != User.IdUser && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             await _materialsUserStatusService.Create(Dto);
             return Ok();
         }
@@ -105,6 +110,8 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> Update(GetMaterialUserStatusRequest materialsUserStatusService)
         {
             var Dto = materialsUserStatusService.Adapt<MaterialsUserStatus>();
+            if (Dto.IdUser != User.IdUser && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             await _materialsUserStatusService.Update(Dto);
             return Ok();
         }
@@ -122,6 +129,9 @@ namespace BackendApi.Controllers
         [HttpDelete]
         public async Task<IActionResult> Delete(int idMaterial, int idUser, int idUserStatus)
         {
+            var Dto = await _materialsUserStatusService.GetById(idMaterial, idUser, idUserStatus);
+            if (Dto.IdUser != User.IdUser && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             await _materialsUserStatusService.Delete(idMaterial, idUser, idUserStatus);
             return Ok();
         }

@@ -1,16 +1,20 @@
-﻿using BusinessLogic.Services;
+﻿using BusinessLogic.Authorization;
+using BusinessLogic.Services;
 using Domain.Interfaces;
 using Domain.Models;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
+using MnogoLibAPI.Authorization;
 using MnogoLibAPI.Contracts.Author;
 using MnogoLibAPI.Contracts.User;
+using MnogoLibAPI.Controllers;
 
 namespace BackendApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    public class AuthorController : ControllerBase
+    public class AuthorController : BaseController
     {
         private IAuthorService _authorService;
         public AuthorController(IAuthorService authorService)
@@ -25,6 +29,7 @@ namespace BackendApi.Controllers
 
         // GET api/<AuthorController>
 
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -40,7 +45,7 @@ namespace BackendApi.Controllers
         /// <returns></returns>
 
         // GET api/<AuthorController>
-
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -65,6 +70,7 @@ namespace BackendApi.Controllers
 
         // POST api/<AuthorController>
 
+        [Authorize(2, 3)]
         [HttpPost]
         public async Task<IActionResult> Add(CreateAuthorRequest author)
         {
@@ -92,7 +98,7 @@ namespace BackendApi.Controllers
 
         // PUT api/<AuthorController>
 
-
+        [Authorize(2, 3)]
         [HttpPut]
         public async Task<IActionResult> Update(GetAuthorRequest author)
         {
@@ -108,7 +114,7 @@ namespace BackendApi.Controllers
         /// <returns></returns>
 
         // DELETE api/<AuthorController>
-
+        [Authorize(2, 3)]
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {

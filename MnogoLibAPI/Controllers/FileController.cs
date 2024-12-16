@@ -1,14 +1,18 @@
-﻿using BusinessLogic.Services;
+﻿using BusinessLogic.Authorization;
+using BusinessLogic.Services;
 using Domain.Interfaces;
 using Domain.Models;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
+using MnogoLibAPI.Authorization;
 using MnogoLibAPI.Contracts.File;
 using MnogoLibAPI.Contracts.User;
+using MnogoLibAPI.Controllers;
 using File = Domain.Models.File;
 
 namespace BackendApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class FileController : ControllerBase
@@ -27,6 +31,7 @@ namespace BackendApi.Controllers
 
         // GET api/<FileController>
 
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -43,7 +48,7 @@ namespace BackendApi.Controllers
 
         // GET api/<FileController>
 
-
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -71,6 +76,7 @@ namespace BackendApi.Controllers
 
         // POST api/<FileController>
 
+        [Authorize(2, 3)]
         [HttpPost]
         public async Task<IActionResult> Add(CreateFileRequest file)
         {
@@ -106,7 +112,7 @@ namespace BackendApi.Controllers
 
         // PUT api/<FileController>
 
-
+        [Authorize(2, 3)]
         [HttpPut]
         public async Task<IActionResult> Update(GetFileRequest file)
         {
@@ -124,6 +130,7 @@ namespace BackendApi.Controllers
 
         // DELETE api/<FileController>
 
+        [Authorize(2, 3)]
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {

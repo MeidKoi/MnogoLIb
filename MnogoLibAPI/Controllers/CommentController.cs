@@ -1,17 +1,22 @@
-﻿using BusinessLogic.Services;
+﻿using BusinessLogic.Authorization;
+using BusinessLogic.Services;
 using Domain.Interfaces;
 using Domain.Models;
 using Mapster;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MnogoLibAPI.Contracts.Comment;
 using MnogoLibAPI.Contracts.User;
+using MnogoLibAPI.Controllers;
 using System;
+using AuthorizeAttribute = BusinessLogic.Authorization.AuthorizeAttribute;
 
 namespace BackendApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    public class CommentController : ControllerBase
+    public class CommentController : BaseController
     {
         private ICommentService _comment;
         public CommentController(ICommentService comment)
@@ -25,7 +30,7 @@ namespace BackendApi.Controllers
         /// <returns></returns>
 
         // GET api/<CommentController>
-
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -42,6 +47,7 @@ namespace BackendApi.Controllers
 
         // GET api/<CommentController>
 
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -68,6 +74,8 @@ namespace BackendApi.Controllers
         [HttpPost]
         public async Task<IActionResult> Add(CreateCommentRequest comment)
         {
+            if (comment.IdUser != User.IdUser && User.IdRole != 3 && string.IsNullOrEmpty(comment.TextComment))
+                return Unauthorized(new { message = "Unauthorized" });
             var Dto = comment.Adapt<Comment>();
             await _comment.Create(Dto);
             return Ok();
@@ -98,6 +106,8 @@ namespace BackendApi.Controllers
         [HttpPut]
         public async Task<IActionResult> Update(GetCommentRequest comment)
         {
+            if (comment.IdUser != User.IdUser && User.IdRole != 3 && string.IsNullOrEmpty(comment.TextComment))
+                return Unauthorized(new { message = "Unauthorized" });
             var Dto = comment.Adapt<Comment>();
             await _comment.Update(Dto);
             return Ok();
@@ -115,6 +125,9 @@ namespace BackendApi.Controllers
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {
+            var comment = await _comment.GetById(id);
+            if (comment.IdUser != User.IdUser && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             await _comment.Delete(id);
             return Ok();
         }

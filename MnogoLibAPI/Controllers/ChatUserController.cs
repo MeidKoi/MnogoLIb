@@ -1,22 +1,28 @@
-﻿using BusinessLogic.Services;
+﻿using BusinessLogic.Authorization;
+using BusinessLogic.Services;
 using Domain.Interfaces;
 using Domain.Models;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
+using MnogoLibAPI.Authorization;
 using MnogoLibAPI.Contracts.ChatUser;
 using MnogoLibAPI.Contracts.User;
+using MnogoLibAPI.Controllers;
 using System;
 
 namespace BackendApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    public class ChatUserController : ControllerBase
+    public class ChatUserController : BaseController
     {
         private IChatUserService _chatUserService;
-        public ChatUserController(IChatUserService chatUserService)
+        private IChatService _chatService;
+        public ChatUserController(IChatUserService chatUserService, IChatService chatService)
         {
             _chatUserService = chatUserService;
+            _chatService = chatService;
         }
 
         /// <summary>
@@ -26,6 +32,7 @@ namespace BackendApi.Controllers
         /// 
         // GET api/<ChatUserController>
 
+        [Authorize(3)]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -47,6 +54,8 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> GetById(int idChat, int idUser)
         {
             var Dto = await _chatUserService.GetById(idChat, idUser);
+            if (Dto.IdUser != User.IdUser && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             return Ok(Dto.Adapt<GetChatUserRequest>());
         }
 
@@ -73,6 +82,9 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> Add(CreateChatUserRequest chatUser)
         {
             var Dto = chatUser.Adapt<ChatUser>();
+            var chat = await _chatService.GetById(Dto.IdChat);
+            if (Dto.IdUser != User.IdUser && User.IdUser != chat.IdOwner && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             await _chatUserService.Create(Dto);
             return Ok();
         }
@@ -99,6 +111,7 @@ namespace BackendApi.Controllers
 
         // PUT api/<ChatUserController>
 
+        [Authorize(3)]
         [HttpPut]
         public async Task<IActionResult> Update(GetChatUserRequest chatUser)
         {
@@ -119,6 +132,10 @@ namespace BackendApi.Controllers
         [HttpDelete]
         public async Task<IActionResult> Delete(int idChat, int idUser)
         {
+            var Dto = await _chatUserService.GetById(idChat, idUser);
+            var chat = await _chatService.GetById(Dto.IdChat);
+            if (Dto.IdUser != User.IdUser && User.IdUser != chat.IdOwner && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             await _chatUserService.Delete(idChat, idUser);
             return Ok();
         }

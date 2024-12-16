@@ -22,8 +22,12 @@ namespace MnogoLibAPI
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            //builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
-            var platform = Environment.OSVersion.Platform.ToString();
+            // Зарегистрируйте AppSettings
+            //builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
+
+            string platform = Environment.OSVersion.Platform.ToString();
 
             if (platform == "Unix")
             {

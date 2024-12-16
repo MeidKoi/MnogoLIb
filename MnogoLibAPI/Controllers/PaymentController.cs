@@ -1,21 +1,27 @@
-﻿using BusinessLogic.Services;
+﻿using BusinessLogic.Authorization;
+using BusinessLogic.Services;
 using Domain.Interfaces;
 using Domain.Models;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
+using MnogoLibAPI.Authorization;
 using MnogoLibAPI.Contracts.Payment;
 using MnogoLibAPI.Contracts.User;
+using MnogoLibAPI.Controllers;
 
 namespace BackendApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    public class PaymentController : ControllerBase
+    public class PaymentController : BaseController
     {
         private IPaymentService _paymentService;
-        public PaymentController(IPaymentService paymentService)
+        private IPaymentUserService _paymentUserService;
+        public PaymentController(IPaymentService paymentService, IPaymentUserService paymentUserService)
         {
             _paymentService = paymentService;
+            _paymentUserService = paymentUserService;
         }
 
 
@@ -26,11 +32,11 @@ namespace BackendApi.Controllers
 
         // GET api/<PaymentController>
 
+        [Authorize(3)]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
             var Dto = await _paymentService.GetAll();
-
             return Ok(Dto.Adapt<List<GetPaymentRequest>>());
         }
 
@@ -47,6 +53,9 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> GetById(int id)
         {
             var Dto = await _paymentService.GetById(id);
+            var paymentUser = _paymentUserService.GetById(id, User.IdUser);
+            if (paymentUser is null && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             return Ok(Dto.Adapt<GetPaymentRequest>());
         }
 
@@ -101,6 +110,9 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> Update(GetPaymentRequest payment)
         {
             var Dto = payment.Adapt<Payment>();
+            var paymentUser = _paymentUserService.GetById(Dto.IdPayment, User.IdUser);
+            if (paymentUser is null && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             await _paymentService.Update(Dto);
             return Ok();
         }
@@ -116,6 +128,10 @@ namespace BackendApi.Controllers
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {
+            var Dto = await _paymentService.GetById(id);
+            var paymentUser = _paymentUserService.GetById(Dto.IdPayment, User.IdUser);
+            if (paymentUser is null && User.IdRole != 3)
+                return Unauthorized(new { message = "Unauthorized" });
             await _paymentService.Delete(id);
             return Ok();
         }

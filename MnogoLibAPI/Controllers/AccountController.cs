@@ -121,7 +121,7 @@ namespace MnogoLibAPI.Controllers
         [HttpGet("{id:int}")]
         public async Task<ActionResult<IEnumerable<AccountResponse>>> GetById(int id)
         {
-            if (id != User.IdRole && User.IdRole != 3)
+            if (id != User.IdUser && User.IdRole != 3)
                 return Unauthorized(new { message = "Unauthorized" });
 
             var accounts = await _accountService.GetById(id);
@@ -143,7 +143,7 @@ namespace MnogoLibAPI.Controllers
                 return Unauthorized(new { message = "Unauthorized" });
 
             if (User.IdRole != 3)
-                model.Role = 0;
+                model.Role = 1;
 
             var accounts = await _accountService.Update(id, model);
             return Ok(accounts);
