@@ -108,6 +108,7 @@ namespace BusinessLogic.Services
 
             await _repositoryWrapper.User.Update(account);
             await _repositoryWrapper.Save();
+            _emailService.Send(account.EmailUser, "Сброс пароля", $"Пачуля не может сказать твой пароль, но может дать тебе новый\nДля сброса вашего пароля введите этот токен:\n{account.ResetToken}");
         }
 
         public async Task<IEnumerable<AccountResponse>> GetAll()
@@ -216,6 +217,7 @@ namespace BusinessLogic.Services
 
             await _repositoryWrapper.User.Create(account);
             await _repositoryWrapper.Save();
+            _emailService.Send(account.EmailUser, "Подтвердите почту", $"Если вы не введете этот токен, то я вам ничего не сделаю:\n{account.VerificationToken}");
         }
 
         private async Task<User> getAccountByResetToken(string token)
