@@ -13,12 +13,12 @@ using System.Text;
 
 namespace MnogoLibAPI.Authorization
 {
-    public class jwtUtils : IJwtUtils
+    public class JwtUtils : IJwtUtils
     {
         private readonly IRepositoryWrapper _wrapper;
         private readonly AppSettings _appSettings;
 
-        public jwtUtils(
+        public JwtUtils(
             IRepositoryWrapper wrapper,
             IOptions<AppSettings> appSettings)
         {

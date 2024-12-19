@@ -22,10 +22,10 @@ namespace MnogoLibAPI
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            //builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
             // Зарегистрируйте AppSettings
-            //builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
+            builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
+
 
             string platform = Environment.OSVersion.Platform.ToString();
 
@@ -33,13 +33,13 @@ namespace MnogoLibAPI
             {
                 builder.Services.AddDbContext<MnogoLibContext>(
                      options => options.UseSqlServer(
-                                        builder.Configuration["ConnectionString"]));
+                                        builder.Configuration.GetConnectionString("Unix")));
             }
             else if (platform == "Win32NT")
             {
                 builder.Services.AddDbContext<MnogoLibContext>(
                     options => options.UseSqlServer(
-                                    "Server=LAPTOP-ISLFEJ9E;Database=MnogoLib;Trusted_Connection=True;"));
+                                    builder.Configuration.GetConnectionString("Win32NT")));
             }
 
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
@@ -59,7 +59,7 @@ namespace MnogoLibAPI
             builder.Services.AddScoped<IPaymentUserService, PaymentUserService>();
             builder.Services.AddScoped<IRateService, RateService>();
 
-            builder.Services.AddScoped<IJwtUtils, jwtUtils>();
+            builder.Services.AddScoped<IJwtUtils, JwtUtils>();
             builder.Services.AddScoped<IAccountService, AccountService>();
             builder.Services.AddScoped<IEmailService, EmailService>();
 
