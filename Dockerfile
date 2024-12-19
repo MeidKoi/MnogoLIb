@@ -18,7 +18,7 @@ RUN dotnet restore "MnogoLibAPI/MnogoLibAPI.csproj"
 
 COPY . .
 FROM build as publish
-RUN dotnet publish "MnogoLibAPI/MnogoLibAPI.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "MnogoLibAPI/MnogoLibAPI.csproj" -c Release -o /app/publish /p:UserAppHost=false
 
 FROM base as final
 WORKDIR /app
