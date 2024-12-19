@@ -26,7 +26,6 @@ namespace MnogoLibAPI
             // Зарегистрируйте AppSettings
             builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
 
-
             string platform = Environment.OSVersion.Platform.ToString();
 
             if (platform == "Unix")
