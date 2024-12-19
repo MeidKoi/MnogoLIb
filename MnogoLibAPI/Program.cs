@@ -22,6 +22,7 @@ namespace MnogoLibAPI
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            //builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
             // Зарегистрируйте AppSettings
             builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
@@ -32,13 +33,13 @@ namespace MnogoLibAPI
             {
                 builder.Services.AddDbContext<MnogoLibContext>(
                      options => options.UseSqlServer(
-                                        builder.Configuration.GetConnectionString("Unix")));
+                                        builder.Configuration["ConnectionString"]));
             }
             else if (platform == "Win32NT")
             {
                 builder.Services.AddDbContext<MnogoLibContext>(
                     options => options.UseSqlServer(
-                                    builder.Configuration.GetConnectionString("Win32NT")));
+                                    "Server=LAPTOP-ISLFEJ9E;Database=MnogoLib;Trusted_Connection=True;"));
             }
 
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();

@@ -29,7 +29,7 @@ namespace MnogoLibAPI.Authorization
         public string GenerateJwtToken(User account)
         {
             var tokenHangler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
+            var key = Encoding.ASCII.GetBytes("This-is-key-that-have-many-letters");
             var tokenDescription = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new[] { new Claim("id", account.IdUser.ToString()) }),
