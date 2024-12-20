@@ -25,8 +25,6 @@ namespace MnogoLibAPI
             //builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
             // Зарегистрируйте AppSettings
-            //builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
-
             string platform = Environment.OSVersion.Platform.ToString();
 
             if (platform == "Unix")
@@ -58,6 +56,9 @@ namespace MnogoLibAPI
             builder.Services.AddScoped<IPaymentService, PaymentService>();
             builder.Services.AddScoped<IPaymentUserService, PaymentUserService>();
             builder.Services.AddScoped<IRateService, RateService>();
+
+            builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
+
 
             builder.Services.AddScoped<IJwtUtils, JwtUtils>();
             builder.Services.AddScoped<IAccountService, AccountService>();
