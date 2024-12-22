@@ -29,7 +29,7 @@ namespace MnogoLibAPI
                 options.AddPolicy("AllowSpecificOrigins", builder =>
                 {
                     builder.WithOrigins("http://localhost:5088", "https://mnogolibapi-f7vitvir.b4a.run", "https://localhost:7053"
-                    , "http://localhost:5052","https://patchoulilib-77vab6cr.b4a.run")
+                    , "http://localhost:5052", "https://patchoulilib-77vab6cr.b4a.run")
                         .AllowAnyHeader()
                         .AllowAnyMethod()
                         .AllowCredentials(); // Разрешить отправку учётных данных (кук)
@@ -196,7 +196,7 @@ namespace MnogoLibAPI
             }
 
             // Настройка HTTP-конвейера
-           
+
             app.UseRouting();
 
             app.UseCors("AllowSpecificOrigins"); // CORS должен быть первым
