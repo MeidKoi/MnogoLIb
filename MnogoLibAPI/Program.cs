@@ -197,31 +197,21 @@ namespace MnogoLibAPI
 
             // Настройка HTTP-конвейера
 
-            app.UseRouting();
-
-            app.UseCors("AllowSpecificOrigins"); // CORS должен быть первым
-
-            app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
-
-
             //if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
 
+            app.UseCors("AllowSpecificOrigins"); // CORS должен быть первым
+
             app.UseHttpsRedirection();
+
+            app.UseAuthorization();
 
             app.UseMiddleware<ExceptionHandlingMiddleware>();
 
             app.UseMiddleware<JwtMiddleware>();
-
-
 
             app.MapControllers();
 
