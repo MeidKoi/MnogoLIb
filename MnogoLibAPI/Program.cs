@@ -22,24 +22,34 @@ namespace MnogoLibAPI
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            //builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
-            // Зарегистрируйте AppSettings
-            string platform = Environment.OSVersion.Platform.ToString();
-
-            if (platform == "Unix")
+            // Настройка CORS
+            builder.Services.AddCors(options =>
             {
-                builder.Services.AddDbContext<MnogoLibContext>(
-                     options => options.UseSqlServer(
-                                        builder.Configuration["ConnectionString"]));
-            }
-            else if (platform == "Win32NT")
-            {
-                builder.Services.AddDbContext<MnogoLibContext>(
-                    options => options.UseSqlServer(
-                                    "Server=LAPTOP-ISLFEJ9E;Database=MnogoLib;Trusted_Connection=True;"));
-            }
+                options.AddPolicy("AllowSpecificOrigins", builder =>
+                {
+                    builder.WithOrigins("http://localhost:5088", "https://mnogolibapi-f7vitvir.b4a.run", "https://localhost:7053"
+                    , "http://localhost:5052","https://patchoulilib-77vab6cr.b4a.run")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowCredentials(); // Разрешить отправку учётных данных (кук)
+                });
+            });
 
+            // Другие настройки сервисов
+            builder.Services.AddDbContext<MnogoLibContext>(options =>
+            {
+                if (Environment.OSVersion.Platform.ToString() == "Unix")
+                {
+                    options.UseSqlServer(builder.Configuration["ConnectionString"]);
+                }
+                else if (Environment.OSVersion.Platform.ToString() == "Win32NT")
+                {
+                    options.UseSqlServer("Server=LAPTOP-ISLFEJ9E;Database=MnogoLib;Trusted_Connection=True;");
+                }
+            });
+
+            // Регистрация сервисов
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<IMaterialService, MaterialService>();
@@ -58,7 +68,6 @@ namespace MnogoLibAPI
             builder.Services.AddScoped<IRateService, RateService>();
 
             builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
-
 
             builder.Services.AddScoped<IJwtUtils, JwtUtils>();
             builder.Services.AddScoped<IAccountService, AccountService>();
@@ -100,25 +109,23 @@ namespace MnogoLibAPI
 
                 options.AddSecurityRequirement(new OpenApiSecurityRequirement()
                 {
-                {
-                    new OpenApiSecurityScheme
                     {
-                    Reference = new OpenApiReference
+                        new OpenApiSecurityScheme
                         {
-                            Type = ReferenceType.SecurityScheme,
-                            Id = "Bearer"
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            },
+                            Scheme = "oauth2",
+                            Name = "Bearer",
+                            In = ParameterLocation.Header,
                         },
-                        Scheme = "oauth2",
-                        Name = "Bearer",
-                        In = ParameterLocation.Header,
-
-                    },
-                    new List<string>()
+                        new List<string>()
                     }
                 });
                 var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
-
             });
 
             var app = builder.Build();
@@ -126,10 +133,8 @@ namespace MnogoLibAPI
             using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
-
                 var context = services.GetRequiredService<MnogoLibContext>();
                 context.Database.Migrate();
-
                 context.Database.EnsureCreated();
 
                 if (!context.AuthorStatuses.Any())
@@ -190,24 +195,25 @@ namespace MnogoLibAPI
                 context.SaveChanges();
             }
 
+            // Настройка HTTP-конвейера
+           
+            app.UseRouting();
 
-            // Configure the HTTP request pipeline.
+            app.UseCors("AllowSpecificOrigins"); // CORS должен быть первым
+
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
+
+
             //if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
-            app.UseCors(builder => builder.WithOrigins(new[] { "http://localhost:5088/", })
-                    .AllowAnyHeader()
-                    .AllowAnyMethod()
-                    .AllowAnyOrigin());
-
-
-            app.UseCors(builder => builder.WithOrigins(new[] { "https://mnogolibapi-f7vitvir.b4a.run/", })
-                    .AllowAnyHeader()
-                    .AllowAnyMethod()
-                    .AllowAnyOrigin());
 
             app.UseHttpsRedirection();
 
@@ -215,7 +221,7 @@ namespace MnogoLibAPI
 
             app.UseMiddleware<JwtMiddleware>();
 
-            app.UseAuthorization();
+
 
             app.MapControllers();
 

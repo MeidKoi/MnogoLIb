@@ -1,11 +1,13 @@
 using BusinessLogic.Authorization;
 using BusinessLogic.Models.Accounts;
 using Domain.Entites;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using MnogoLibAPI.Authorization;
 
 namespace MnogoLibAPI.Controllers
 {
+    [EnableCors("AllowSpecificOrigins")]
     [Authorize]
     [ApiController]
     [Route("[controller]")]
@@ -21,8 +23,10 @@ namespace MnogoLibAPI.Controllers
         {
             var cookieOptions = new CookieOptions
             {
-                HttpOnly = true,
-                Expires = DateTime.UtcNow.AddDays(7)
+                HttpOnly = false,
+                Expires = DateTime.UtcNow.AddDays(7),
+                SameSite = SameSiteMode.Lax,
+                Secure = false       
             };
             Response.Cookies.Append("refreshToken", token, cookieOptions);
         }
@@ -34,6 +38,7 @@ namespace MnogoLibAPI.Controllers
             else
                 return HttpContext.Connection.RemoteIpAddress.MapToIPv4().ToString();
         }
+
 
         [AllowAnonymous]
         [HttpPost("authenticate")]
