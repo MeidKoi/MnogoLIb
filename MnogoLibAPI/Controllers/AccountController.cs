@@ -45,17 +45,17 @@ namespace MnogoLibAPI.Controllers
         public async Task<ActionResult<AuthenticateResponse>> Authencticate(AuthenticateRequest model)
         {
             var resposne = await _accountService.Authenticate(model, ipAddress());
-            setTokenCoockie(resposne.RefreshToken);
+            //setTokenCoockie(resposne.RefreshToken);
             return Ok(resposne);
         }
 
         [AllowAnonymous]
         [HttpPost("refresh-token")]
-        public async Task<ActionResult<AuthenticateResponse>> RefreshToken()
+        public async Task<ActionResult<AuthenticateResponse>> RefreshToken(string refreshToken)
         {
-            var refreshToken = Request.Cookies["refreshToken"];
+            //var refreshToken = Request.Cookies["refreshToken"];
             var resposne = await _accountService.RefreshToken(refreshToken, ipAddress());
-            setTokenCoockie(resposne.RefreshToken);
+            //setTokenCoockie(resposne.RefreshToken);
             return Ok(resposne);
         }
 
