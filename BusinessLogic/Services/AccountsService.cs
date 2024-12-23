@@ -211,7 +211,6 @@ namespace BusinessLogic.Services
             // 1 - User, 2 - Moder, 3 - Admin
             account.IdRole = isFitstAccount ? 3 : 1;
             account.CreatedTime = DateTime.UtcNow;
-            account.Verified = DateTime.UtcNow;
             account.VerificationToken = await generateVerificationToken();
 
             account.PasswordUser = BCrypt.Net.BCrypt.HashPassword(model.PasswordUser);
