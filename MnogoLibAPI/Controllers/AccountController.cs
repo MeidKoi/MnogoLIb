@@ -51,10 +51,10 @@ namespace MnogoLibAPI.Controllers
 
         [AllowAnonymous]
         [HttpPost("refresh-token")]
-        public async Task<ActionResult<AuthenticateResponse>> RefreshToken(string refreshToken)
+        public async Task<ActionResult<AuthenticateResponse>> RefreshToken(RefreshTokenRequest refreshToken)
         {
             //var refreshToken = Request.Cookies["refreshToken"];
-            var resposne = await _accountService.RefreshToken(refreshToken, ipAddress());
+            var resposne = await _accountService.RefreshToken(refreshToken.Token, ipAddress());
             //setTokenCoockie(resposne.RefreshToken);
             return Ok(resposne);
         }
